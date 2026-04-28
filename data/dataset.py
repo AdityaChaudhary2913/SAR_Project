@@ -16,41 +16,53 @@ class SARFloodDataset(Dataset):
             tile_size     : sub-tile size (default 256)
             augment       : enable SAR-safe augmentations (flips + 90° rotations)
         """
+
         self.tile_size = tile_size
         self.augment = augment
-        self.tiles = []  # list of (img_path, mask_path, row_offset, col_offset)
+        self.tiles = []
 
-        img_dir = os.path.join(processed_dir, "images")
-        mask_dir = os.path.join(processed_dir, "masks")
+        if not os.path.exists(processed_dir):
+            raise FileNotFoundError(f"processed_dir not found: {processed_dir}")
 
-        if not os.path.exists(img_dir):
-            raise FileNotFoundError(f"images/ not found inside {processed_dir}")
-        if not os.path.exists(mask_dir):
-            raise FileNotFoundError(f"masks/ not found inside {processed_dir}")
-
-        for fname in sorted(os.listdir(img_dir)):
-            if not fname.endswith(".npy"):
+        # Walk through event subdirectories automatically
+        for entry in sorted(os.scandir(processed_dir)):
+            if not entry.is_dir():
                 continue
 
-            img_path = os.path.join(img_dir, fname)
-            mask_path = os.path.join(mask_dir, fname)
+            img_dir = os.path.join(entry.path, "images")
+            mask_dir = os.path.join(entry.path, "masks")
 
-            if not os.path.exists(mask_path):
-                print(f"⚠️  Missing mask for {fname}, skipping.")
+            if not os.path.exists(img_dir) or not os.path.exists(mask_dir):
+                print(f"⚠️  Skipping {entry.name} — missing images/ or masks/")
                 continue
 
-            # Memory-map to read shape without loading full array
-            img = np.load(img_path, mmap_mode="r")  # (2, H, W)
-            _, H, W = img.shape
+            for fname in sorted(os.listdir(img_dir)):
+                if not fname.endswith(".npy"):
+                    continue
 
-            # Generate all non-overlapping tile positions
-            for r in range(0, H - tile_size + 1, tile_size):
-                for c in range(0, W - tile_size + 1, tile_size):
-                    self.tiles.append((img_path, mask_path, r, c))
+                img_path = os.path.join(img_dir, fname)
+                mask_path = os.path.join(mask_dir, fname)
 
+                if not os.path.exists(mask_path):
+                    print(f"⚠️  Missing mask for {fname}, skipping.")
+                    continue
+
+                img = np.load(img_path, mmap_mode="r")  # (2, H, W)
+                _, H, W = img.shape
+
+                for r in range(0, H - tile_size + 1, tile_size):
+                    for c in range(0, W - tile_size + 1, tile_size):
+                        self.tiles.append((img_path, mask_path, r, c))
+
+        total_chips = sum(
+            len(os.listdir(os.path.join(processed_dir, e.name, "images")))
+            for e in os.scandir(processed_dir)
+            if e.is_dir() and os.path.exists(os.path.join(processed_dir, e.name, "images"))
+        )
         print(
             f"✅ SARFloodDataset: {len(self.tiles)} tiles from "
-            f"{len(os.listdir(img_dir))} chips "
+            f"{total_chips} chips across "
+            f"{sum(1 for e in os.scandir(processed_dir) if e.is_dir())} events "
             f"(tile_size={tile_size}, augment={augment})"
         )
 
