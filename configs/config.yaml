@@ -1,0 +1,14 @@
+data:
+  raw_dir: data/raw
+  processed_dir: data/processed
+  norm_min: -25.0
+  norm_max: 0.0
+  max_nodata_ratio: 0.10   # skip chips with >10% nodata pixels
+  min_flood_ratio: 0.01    # skip chips with <1% flood pixels
+
+training:
+  batch_size: 16
+  epochs: 30
+  lr: 0.001
+  val_split: 0.2
+  device: cuda
