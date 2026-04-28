@@ -1,6 +1,6 @@
 # SAR Flood Detection (Sentinel-1)
 
-![SAR Flood Detection Demo](https://www.youtube.com/watch?v=y6T_L64VMVg)
+[![SAR Flood Detection Demo](https://img.youtube.com/vi/y6T_L64VMVg/maxresdefault.jpg)](https://www.youtube.com/watch?v=y6T_L64VMVg)
 
 A small end-to-end SAR flood segmentation project: data preprocessing, a Random Forest baseline, a UNet model, and a minimal web map UI for AOI-based inference using precomputed masks.
 
