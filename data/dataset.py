@@ -25,7 +25,7 @@ class SARFloodDataset(Dataset):
             raise FileNotFoundError(f"processed_dir not found: {processed_dir}")
 
         # Walk through event subdirectories automatically
-        for entry in sorted(os.scandir(processed_dir)):
+        for entry in sorted(os.scandir(processed_dir), key=lambda e: e.name):
             if not entry.is_dir():
                 continue
 
