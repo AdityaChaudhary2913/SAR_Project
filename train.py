@@ -110,9 +110,7 @@ def main():
     )
 
     optimizer = Adam(model.parameters(), lr=cfg["train"]["lr"])
-    scheduler = ReduceLROnPlateau(
-        optimizer, mode="max", patience=3, factor=0.5, verbose=True
-    )
+    scheduler = ReduceLROnPlateau(optimizer, mode="max", patience=3, factor=0.5)
 
     # Checkpointing
     ckpt_dir = cfg["paths"]["checkpoints"]
