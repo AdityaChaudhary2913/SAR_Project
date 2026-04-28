@@ -27,7 +27,7 @@ def train_rf(
     train_loader,
     save_path="checkpoints/rf_baseline.joblib",
     n_estimators=100,
-    max_samples=200_000,
+    max_samples=500000,
 ):
     """
     Train Random Forest on pixel-level VV/VH features.
@@ -47,13 +47,15 @@ def train_rf(
     clf = RandomForestClassifier(
         n_estimators=n_estimators,
         max_depth=15,
-        class_weight="balanced",  # handles flood/dry imbalance
+        class_weight="balanced",
         n_jobs=-1,
         random_state=42,
     )
     clf.fit(X, y)
     print("✅ Training complete.")
 
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    save_path = os.path.join(base_dir, save_path)
     os.makedirs(os.path.dirname(save_path), exist_ok=True)
     joblib.dump(clf, save_path)
     print(f"💾 Saved to {save_path}")
@@ -81,5 +83,4 @@ def evaluate_rf(clf, val_loader):
     print(f"  IoU : {iou:.4f}")
     print(f"  F1  : {f1:.4f}")
     print(f"{'=' * 35}")
-    print(f"  (UNet target IoU: >0.877)")
     return {"iou": iou, "f1": f1}
