@@ -159,7 +159,7 @@ def main():
     print(f"\n{'=' * 55}")
     print(f"  Training complete!")
     print(f"  Best Val IoU : {best_iou:.4f} (epoch {best_epoch})")
-    print(f"  RF Baseline  : 0.6148")
+    print(f"  RF Baseline  : 0.6240")
     print(f"  Target       : 0.877+")
     print(f"{'=' * 55}")
 
