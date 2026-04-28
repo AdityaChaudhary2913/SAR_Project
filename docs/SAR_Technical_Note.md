@@ -45,7 +45,7 @@ They correspond to two different types of physical interactions:
 * **VV**: Surface / specular scattering - it is highly sensitive to water and smooth surfaces in particular.
 * **VH**: Volume scattering - it is particularly sensitive to forests and other forms of vegetation, since forests disturb polarization of reflected waves.
 
-A flooded zone will appear dark in VV and a forest will be bright in VH compared to the VV channel. Consequently, **VV/VH ratio** (equal to `VV - VH` in dB) can be used as an analog of vegetation indices known from optical sensing (like NDVI) and thus serves as a third engineered feature channel. Thus, the total number of inputs equals three and I have an input tensor of size `[3, H, W]` per tile.
+Model uses 2-channel input [VV, VH], shape [2, H, W]. The VV−VH ratio was considered as an engineered 3rd channel but deliberately excluded to keep the model simpler and avoid potential overfitting on a small dataset.
 
 ### Incidence Angle
 
@@ -138,8 +138,8 @@ To avoid being a straight tutorial re-implementation, I'm training on a **geogra
 
 ### Planned Model Setup
 
-- **Baseline:** Pixel-wise logistic regression on `[VV, VH, VV−VH]` per pixel equivalent to a classical thresholding approach with learned weights. Fast, interpretable, easy to beat.
-- **Advanced model:** Lightweight UNet with a ResNet-18 encoder and standard decoder, using 3-channel SAR input `[VV, VH, VV−VH]`. ImageNet-pretrained encoder weights, fine-tuned end-to-end.
+- **Baseline:** Pixel-wise logistic regression on `[VV, VH]` per pixel equivalent to a classical thresholding approach with learned weights. Fast, interpretable, easy to beat.
+- **Advanced model:** Lightweight UNet with a ResNet-18 encoder and standard decoder, using 3-channel SAR input `[VV, VH]`. ImageNet-pretrained encoder weights, fine-tuned end-to-end.
 - **Evaluation:** IoU (intersection over union) for the flood class and F1 score, the standard metrics for Sen1Floods11, enabling direct comparison to published results.
 
 ## Summary: Where the Field Stands
