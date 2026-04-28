@@ -1,0 +1,14 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #0f1117;
+  color: #e2e8f0;
+  height: 100dvh;
+  overflow: hidden;
+}
+
+#root {
+  display: flex;
+  height: 100dvh;
+}
