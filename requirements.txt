@@ -1,0 +1,7 @@
+torch
+rasterio
+numpy
+pyyaml
+segmentation-models-pytorch
+scikit-learn
+matplotlib
