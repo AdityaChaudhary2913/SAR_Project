@@ -25,7 +25,6 @@ def extract_features(loader):
 
 def train_rf(
     train_loader,
-    save_path="checkpoints/rf_baseline.joblib",
     n_estimators=100,
     max_samples=500000,
 ):
@@ -53,12 +52,6 @@ def train_rf(
     )
     clf.fit(X, y)
     print("✅ Training complete.")
-
-    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    save_path = os.path.join(base_dir, save_path)
-    os.makedirs(os.path.dirname(save_path), exist_ok=True)
-    joblib.dump(clf, save_path)
-    print(f"💾 Saved to {save_path}")
     return clf
 
 
