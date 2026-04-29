@@ -132,10 +132,6 @@ Three reasons this is the right call:
 2. **Ready-made benchmark**: Sen1Floods11 is public, download-ready, and pre-chipped into 512×512 tiles with hand labels. No custom labeling needed.
 3. **Known SOTA**: Published baselines exist, so I can honestly report where my model lands in the field rather than inventing evaluation criteria.
 
-### My Specific Angle
-
-To avoid being a straight tutorial re-implementation, I'm training on a **geographic subset** (Asia flood events only) and explicitly evaluating generalization to a held-out continent. This tests cross-regional transfer, a real operational concern for flood response systems and gives something to analyze rather than just reporting numbers.
-
 ### Planned Model Setup
 
 - **Baseline:** Pixel-wise logistic regression on `[VV, VH]` per pixel equivalent to a classical thresholding approach with learned weights. Fast, interpretable, easy to beat.
