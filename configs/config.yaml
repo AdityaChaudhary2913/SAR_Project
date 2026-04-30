@@ -5,7 +5,6 @@ data:
   tile_size: 256
   norm_min: -25.0
   norm_max: 0.0
-  max_nodata_ratio: 0.10   # skip chips with >10% nodata pixels
   min_flood_ratio: 0.003    # skip chips with <0.3% flood pixels
 
 train:

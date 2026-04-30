@@ -21,20 +21,10 @@ def normalize_sar(chip: np.ndarray, norm_min: float, norm_max: float) -> np.ndar
     return (chip - norm_min) / (norm_max - norm_min)
 
 
-def is_valid_chip(
-    mask: np.ndarray, max_nodata_ratio: float, min_flood_ratio: float
-) -> bool:
-    """Return True if chip has acceptable nodata and at least some flood pixels."""
-    nodata_ratio = (mask == 255).mean()
-    flood_ratio = (mask == 1).mean()
-    return nodata_ratio < max_nodata_ratio and flood_ratio >= min_flood_ratio
-
-
 def process_event(event_dir: Path, out_dir: Path, cfg: dict) -> dict:
     """Process all chips in one event folder."""
     norm_min = cfg["data"]["norm_min"]
     norm_max = cfg["data"]["norm_max"]
-    max_nodata = cfg["data"]["max_nodata_ratio"]
     min_flood = cfg["data"]["min_flood_ratio"]
 
     img_out = out_dir / "images"
@@ -64,11 +54,6 @@ def process_event(event_dir: Path, out_dir: Path, cfg: dict) -> dict:
         # Read label
         with rasterio.open(label_path) as src:
             mask = src.read(1).astype(np.uint8)  # (512, 512), values: 0, 1, 255
-
-        # Filter: nodata check
-        if (mask == 255).mean() >= max_nodata:
-            stats["skipped_nodata"] += 1
-            continue
 
         # Filter: must have some flood pixels
         if (mask == 1).mean() < min_flood:
