@@ -34,7 +34,7 @@ class DecoderBlock(nn.Module):
     def __init__(self, in_ch, out_ch):
         super().__init__()
         self.up = nn.ConvTranspose2d(in_ch, out_ch, kernel_size=2, stride=2)
-        self.conv = DoubleConv(out_ch * 2, out_ch)  # *2 because of skip concat
+        self.conv = DoubleConv(out_ch * 2, out_ch) 
     def forward(self, x, skip):
         x = self.up(x)
         x = torch.cat([x, skip], dim=1)

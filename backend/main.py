@@ -3,8 +3,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
-import json, math
-from pathlib import Path
+import json
 
 app = FastAPI(title="SAR Flood Detection API")
 
