@@ -1,13 +1,18 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import MapView from "./MapView";
 import InferencePanel from "./InferencePanel";
-import { runInference } from "./api";
+import { getMetrics, runInference } from "./api";
 
 export default function App() {
-	const [selection, setSelection] = useState(null); // { bbox, bounds }
+	const [selection, setSelection] = useState(null);
 	const [result, setResult] = useState(null);
+	const [metrics, setMetrics] = useState(null);
 	const [loading, setLoading] = useState(false);
 	const [error, setError] = useState(null);
+
+	useEffect(() => {
+		getMetrics().then(setMetrics).catch(() => null);
+	}, []);
 
 	async function handleRun() {
 		if (!selection) return;
@@ -30,6 +35,7 @@ export default function App() {
 				bbox={selection?.bbox}
 				onRun={handleRun}
 				result={result}
+				metrics={metrics}
 				loading={loading}
 				error={error}
 			/>

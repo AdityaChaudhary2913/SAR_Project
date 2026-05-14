@@ -3,14 +3,17 @@
 Click on the image to watch the demo
 [![SAR Flood Detection Demo](https://img.youtube.com/vi/y6T_L64VMVg/maxresdefault.jpg)](https://www.youtube.com/watch?v=y6T_L64VMVg)
 
-A small end-to-end SAR flood segmentation project: data preprocessing, a Random Forest baseline, a UNet model, and a minimal web map UI for AOI-based inference using precomputed masks.
+A small end-to-end SAR flood segmentation project: data preprocessing, a Random Forest baseline, a UNet model, and a map UI for AOI-based inference using exported prediction tiles.
 
 ## Highlights
 
-- Task: flood / water segmentation on Sentinel-1 VV/VH SAR chips
+- Task: flood / water segmentation on Sentinel-1 SAR chips
 - Models: Random Forest baseline + UNet
-- Data source: C2SMSFloods v1 (Cloud to Street + Microsoft), two flood events
-- Web app: AOI selection on a map, match the best tile, overlay precomputed mask
+- Data source: C2SMSFloods v1 (Cloud to Street + Microsoft)
+- Data split: chip-level train/validation split plus a dedicated holdout event for final testing
+- Features: normalized VV, VH, VV-VH, and VV/VH
+- Labels: nodata is preserved through a valid-mask and ignored in loss / metrics
+- Web app: AOI selection on a map, match the best exported tile, overlay the prediction mask
 
 ## Project Structure
 
@@ -40,10 +43,11 @@ pip install -r requirements.txt
 uvicorn main:app --reload --port 8000
 ```
 
-The API serves precomputed masks from backend/tiles and exposes:
+The API serves exported prediction masks from `backend/tiles` and exposes:
 
 - POST /predict - body: { "bbox": [min_lon, min_lat, max_lon, max_lat] }
 - GET /tiles_list - available coverage rectangles
+- GET /metrics - latest saved evaluation metrics from `checkspots/metrics.json`
 
 ### 3) Frontend (React + Vite)
 
@@ -68,25 +72,31 @@ The notebook will:
 
 - Install dependencies (awscli, rasterio, segmentation-models-pytorch)
 - Clone this repo into /kaggle/working
-- Download C2SMSFloods chips for two flood events
+- Download the configured train events plus one holdout event
 - Preprocess the raw chips into data/processed
 - Train the RF baseline and the UNet
-- Run evaluation and save plots
+- Tune the decision threshold on validation data
+- Evaluate the dedicated holdout event
+- Export demo tiles and save plots / metrics
 
 Outputs to expect:
 
 - checkspots/unet_best.pth
 - checkspots/history.npy
-- results/predictions.png
+- checkspots/metrics.json
+- results/predictions_val.png
+- results/predictions_test.png
 - results/training_curve.png
+- backend/tile_registry.json
+- backend/tiles/*.png
 - rf_baseline.joblib (saved under /kaggle/working/trained_models)
 
 If Internet is disabled, upload the raw data into Kaggle and update the download cell to point to your local dataset path.
 
 ## Web App Notes
 
-- The backend does not run the model live; it matches the AOI against a registry of tiles and serves the corresponding precomputed PNG mask.
-- The dashed rectangles on the map show where tiles exist. Draw your AOI inside those areas for a valid match.
+- The backend does not run the model live; it matches the AOI against a registry of exported prediction tiles and serves the corresponding PNG overlay.
+- Coverage rectangles are colored by split so the holdout event is visible in the demo.
 
 ## References and Notes
 

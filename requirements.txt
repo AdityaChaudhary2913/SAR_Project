@@ -5,3 +5,5 @@ pyyaml
 segmentation-models-pytorch
 scikit-learn
 matplotlib
+pillow
+joblib

@@ -1,23 +1,53 @@
 data:
   raw_dir: data/raw
   processed_dir: data/processed
-  train_split: 0.8
+  train_event_ids:
+    - e7e6e693-aec9-44b2-928d-80ba818b647e
+    - e92c811f-ba53-4df2-aad0-afea8b733621
+  holdout_event_ids:
+    - 95eff095-c3e9-4c12-bfde-1708b7e19bae
+  event_names:
+    e7e6e693-aec9-44b2-928d-80ba818b647e: Spain_Valencia_2019
+    e92c811f-ba53-4df2-aad0-afea8b733621: WestAfrica_Niger_2019
+    95eff095-c3e9-4c12-bfde-1708b7e19bae: Holdout_Event_95eff095
+  split_scope: chip
+  val_split: 0.2
   tile_size: 256
   norm_min: -25.0
   norm_max: 0.0
-  min_flood_ratio: 0.003    # skip chips with <0.3% flood pixels
+  min_flood_ratio: 0.0
+  derived_channels:
+    - vv_minus_vh
+    - vv_div_vh
+  ratio_eps: 0.001
 
 train:
   batch_size: 8
   epochs: 50
   lr: 0.0001
-  val_split: 0.2
   device: cuda
+  num_workers: 2
+  seed: 42
+  augment_train: true
+  balance_train: true
+  sampler_no_flood_max: 0.0
+  sampler_low_flood_max: 0.02
+  loss:
+    bce_weight: 0.4
+    dice_weight: 0.6
 
 model:
-  in_channels: 2
   features: [32, 64, 128, 256]
 
 paths:
-  checkpoints: "checkspots"
-  results: "results"
+  checkpoints: checkspots
+  best_checkpoint: checkspots/unet_best.pth
+  history: checkspots/history.npy
+  metrics: checkspots/metrics.json
+  rf_baseline: checkspots/rf_baseline.joblib
+  results: results
+
+demo:
+  export_assets: true
+  tiles_dir: backend/tiles
+  registry_path: backend/tile_registry.json

@@ -1,46 +1,43 @@
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import f1_score
-import joblib, os
+from sklearn.metrics import f1_score, precision_score, recall_score
 
 
 def extract_features(loader):
-    """
-    Flatten every tile in a DataLoader into per-pixel feature rows.
-    Features: [VV, VH]  →  shape (N_pixels, 2)
-    Labels  : flood=1/dry=0  →  shape (N_pixels,)
-    """
     X, y = [], []
-    for imgs, masks in loader:
-        imgs = imgs.numpy()  # (B, 2, 256, 256)
-        masks = masks.numpy()  # (B, 1, 256, 256)
-        B = imgs.shape[0]
-        for i in range(B):
-            vv = imgs[i, 0].flatten()  # (65536,)
-            vh = imgs[i, 1].flatten()  # (65536,)
-            X.append(np.stack([vv, vh], axis=1))  # (65536, 2)
-            y.append(masks[i, 0].flatten())  # (65536,)
+    for batch in loader:
+        images = batch["image"].numpy()
+        masks = batch["mask"].numpy()
+        valid_masks = batch["valid_mask"].numpy()
+
+        batch_size, channels, _, _ = images.shape
+        for idx in range(batch_size):
+            image = images[idx].reshape(channels, -1).T
+            mask = masks[idx, 0].reshape(-1)
+            valid = valid_masks[idx, 0].reshape(-1) > 0.5
+
+            if not np.any(valid):
+                continue
+
+            X.append(image[valid])
+            y.append(mask[valid])
+
+    if not X:
+        return np.empty((0, 0), dtype=np.float32), np.empty((0,), dtype=np.float32)
     return np.vstack(X), np.concatenate(y)
 
 
-def train_rf(
-    train_loader,
-    n_estimators=100,
-    max_samples=500000,
-):
-    """
-    Train Random Forest on pixel-level VV/VH features.
-    Subsample to max_samples pixels to keep training fast.
-    """
+def train_rf(train_loader, n_estimators=100, max_samples=500000):
     print("📦 Extracting pixel features from train set...")
     X, y = extract_features(train_loader)
-    print(f"   Raw   : {X.shape[0]:,} pixels, {y.mean() * 100:.1f}% flood")
+    if X.size == 0:
+        raise RuntimeError("No valid pixels available for Random Forest training.")
 
-    # Subsample — RF doesn't need all 3.5M pixels to learn
+    print(f"   Raw   : {X.shape[0]:,} pixels, {y.mean() * 100:.2f}% flood")
     if len(X) > max_samples:
         idx = np.random.choice(len(X), max_samples, replace=False)
         X, y = X[idx], y[idx]
-    print(f"   Using : {X.shape[0]:,} pixels (subsampled), {y.mean() * 100:.1f}% flood")
+    print(f"   Using : {X.shape[0]:,} pixels (subsampled), {y.mean() * 100:.2f}% flood")
 
     print("🌲 Training Random Forest...")
     clf = RandomForestClassifier(
@@ -55,25 +52,32 @@ def train_rf(
     return clf
 
 
-def evaluate_rf(clf, val_loader):
-    """
-    Evaluate RF on val set.
-    Returns: pixel-level IoU and F1.
-    """
-    print("📊 Evaluating on val set...")
-    X_val, y_val = extract_features(val_loader)
+def evaluate_rf(clf, loader, split_name="val"):
+    print(f"📊 Evaluating RF on {split_name} split...")
+    X_eval, y_eval = extract_features(loader)
+    if X_eval.size == 0:
+        return None
 
-    y_pred = clf.predict(X_val)
-
-    intersection = ((y_pred == 1) & (y_val == 1)).sum()
-    union = ((y_pred == 1) | (y_val == 1)).sum()
-    iou = intersection / (union + 1e-6)
-    f1 = f1_score(y_val, y_pred, zero_division=0)
+    y_pred = clf.predict(X_eval)
+    intersection = ((y_pred == 1) & (y_eval == 1)).sum()
+    union = ((y_pred == 1) | (y_eval == 1)).sum()
+    iou = float(intersection / (union + 1e-6))
+    f1 = float(f1_score(y_eval, y_pred, zero_division=0))
+    precision = float(precision_score(y_eval, y_pred, zero_division=0))
+    recall = float(recall_score(y_eval, y_pred, zero_division=0))
 
     print(f"\n{'=' * 35}")
-    print(f"  Baseline RF Results")
+    print(f"  Baseline RF Results ({split_name})")
     print(f"{'=' * 35}")
-    print(f"  IoU : {iou:.4f}")
-    print(f"  F1  : {f1:.4f}")
+    print(f"  IoU       : {iou:.4f}")
+    print(f"  F1        : {f1:.4f}")
+    print(f"  Precision : {precision:.4f}")
+    print(f"  Recall    : {recall:.4f}")
     print(f"{'=' * 35}")
-    return {"iou": iou, "f1": f1}
+    return {
+        "iou": iou,
+        "f1": f1,
+        "precision": precision,
+        "recall": recall,
+        "num_pixels": int(len(y_eval)),
+    }
