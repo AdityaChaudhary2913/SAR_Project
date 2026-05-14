@@ -1,6 +1,6 @@
 {
-  "best_epoch": 48,
-  "best_val_iou_05": 0.23180181879018033,
+  "best_epoch": 44,
+  "best_val_iou_05": 0.254404784246747,
   "in_channels": 2,
   "derived_channels": [],
   "split_scope": "chip",
