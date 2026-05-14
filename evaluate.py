@@ -11,7 +11,7 @@ import yaml
 
 from backend.demo_assets import export_demo_assets
 from data.dataset import get_dataloaders
-from models.baseline import evaluate_rf
+from models.baseline import collect_rf_records, evaluate_rf
 from models.unet import get_model
 from train import combined_loss
 
@@ -112,6 +112,21 @@ def summarize_records(records, threshold, loss_value):
         "num_tiles": len(per_tile),
         "per_tile": per_tile,
     }
+
+
+def attach_tile_metrics(records, threshold):
+    metrics_by_tile = {}
+    for record in records:
+        metrics_by_tile[record["tile_id"]] = {
+            "tile_id": record["tile_id"],
+            **compute_sample_metrics(
+                record["probability"],
+                record["mask"],
+                record["valid_mask"],
+                threshold=threshold,
+            ),
+        }
+    return metrics_by_tile
 
 
 def tune_threshold(records, thresholds):
@@ -318,12 +333,17 @@ def main():
         print_summary("test", test_summary)
 
     rf_baseline = {}
+    rf_test_records = None
+    rf_skip = None
     rf_path = cfg["paths"].get("rf_baseline")
     if rf_path and os.path.exists(rf_path):
         rf_model = joblib.load(rf_path)
         rf_baseline["val"] = evaluate_rf(rf_model, val_loader, split_name="val")
         if test_summary["num_tiles"] > 0:
             rf_baseline["test"] = evaluate_rf(rf_model, test_loader, split_name="test")
+            rf_test_records, rf_skip = collect_rf_records(rf_model, test_loader)
+            if rf_skip:
+                rf_baseline["test_export"] = rf_skip
 
     metrics_payload = build_metrics_payload(
         cfg,
@@ -363,10 +383,19 @@ def main():
 
     demo_cfg = cfg.get("demo", {})
     if demo_cfg.get("export_assets", False) and test_summary["num_tiles"] > 0:
-        metrics_by_tile = {item["tile_id"]: item for item in test_summary["per_tile"]}
+        metrics_by_tile = attach_tile_metrics(test_records, threshold=val_summary["threshold"])
+        rf_metrics_by_tile = {}
+        rf_records_by_tile = {}
+        if rf_test_records:
+            rf_metrics_by_tile = attach_tile_metrics(rf_test_records, threshold=val_summary["threshold"])
+            rf_records_by_tile = {record["tile_id"]: record for record in rf_test_records}
         demo_records = []
         for record in test_records:
-            demo_records.append({**record, **metrics_by_tile[record["tile_id"]]})
+            tile_id = record["tile_id"]
+            rf_record = rf_records_by_tile.get(tile_id)
+            if rf_record is not None:
+                rf_record = {**rf_record, **rf_metrics_by_tile[tile_id]}
+            demo_records.append({**record, **metrics_by_tile[tile_id], "rf_record": rf_record})
 
         export_demo_assets(
             split_records={"test": demo_records},

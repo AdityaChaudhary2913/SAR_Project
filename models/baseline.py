@@ -94,3 +94,58 @@ def evaluate_rf(clf, loader, split_name="val"):
         "recall": recall,
         "num_pixels": int(len(y_eval)),
     }
+
+
+def collect_rf_records(clf, loader):
+    expected_features = getattr(clf, "n_features_in_", None)
+    records = []
+
+    for batch in loader:
+        images = batch["image"].numpy()
+        masks = batch["mask"].numpy()
+        valid_masks = batch["valid_mask"].numpy()
+
+        batch_size, channels, height, width = images.shape
+        if expected_features is not None and channels != expected_features:
+            return None, {
+                "skipped": True,
+                "reason": f"feature_mismatch:{expected_features}!={channels}",
+                "expected_features": int(expected_features),
+                "provided_features": int(channels),
+            }
+
+        for idx in range(batch_size):
+            image = images[idx]
+            mask = masks[idx, 0]
+            valid_mask = valid_masks[idx, 0]
+            pixel_features = image.reshape(channels, -1).T
+            valid = valid_mask.reshape(-1) > 0.5
+
+            probability = np.zeros(height * width, dtype=np.float32)
+            if np.any(valid):
+                valid_features = pixel_features[valid]
+                if hasattr(clf, "predict_proba"):
+                    probability[valid] = clf.predict_proba(valid_features)[:, 1].astype(np.float32)
+                else:
+                    probability[valid] = clf.predict(valid_features).astype(np.float32)
+
+            records.append(
+                {
+                    "image": image,
+                    "mask": mask,
+                    "valid_mask": valid_mask,
+                    "probability": probability.reshape(height, width),
+                    "event_id": batch["event_id"][idx],
+                    "source": batch["source"][idx],
+                    "source_event_id": batch["source_event_id"][idx],
+                    "chip_id": batch["chip_id"][idx],
+                    "geo_image_path": batch["geo_image_path"][idx],
+                    "row": int(batch["row"][idx]),
+                    "col": int(batch["col"][idx]),
+                    "tile_id": batch["tile_id"][idx],
+                    "flood_ratio": float(batch["flood_ratio"][idx]),
+                    "valid_ratio": float(batch["valid_ratio"][idx]),
+                }
+            )
+
+    return records, None

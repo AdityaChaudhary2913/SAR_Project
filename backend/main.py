@@ -74,21 +74,29 @@ def predict(req: AOIRequest):
         )
 
     meta = registry[best_tile]
+    legacy_mask_file = meta.get("file")
     return {
         "tile_id": best_tile,
-        "mask_url": f"/tiles/{meta['file']}",
+        "base_tile_url": f"/tiles/{meta['base_file']}" if meta.get("base_file") else None,
+        "unet_overlay_url": f"/tiles/{meta['unet_file']}" if meta.get("unet_file") else (f"/tiles/{legacy_mask_file}" if legacy_mask_file else None),
+        "rf_overlay_url": f"/tiles/{meta['rf_file']}" if meta.get("rf_file") else None,
         "bbox": meta["bbox"],
         "event": meta.get("event", meta.get("chip", best_tile)),
         "event_id": meta.get("event_id"),
         "source": meta.get("source"),
         "source_event_id": meta.get("source_event_id"),
         "split": meta.get("split", "unknown"),
-        "tile_iou": meta.get("tile_iou"),
-        "tile_f1": meta.get("tile_f1"),
-        "precision": meta.get("precision"),
-        "recall": meta.get("recall"),
+        "unet_tile_iou": meta.get("unet_tile_iou", meta.get("tile_iou")),
+        "unet_tile_f1": meta.get("unet_tile_f1", meta.get("tile_f1")),
+        "unet_precision": meta.get("unet_precision", meta.get("precision")),
+        "unet_recall": meta.get("unet_recall", meta.get("recall")),
+        "rf_tile_iou": meta.get("rf_tile_iou"),
+        "rf_tile_f1": meta.get("rf_tile_f1"),
+        "rf_precision": meta.get("rf_precision"),
+        "rf_recall": meta.get("rf_recall"),
         "threshold": meta.get("threshold"),
-        "flood_pct": meta.get("flood_pct"),
+        "unet_flood_pct": meta.get("unet_flood_pct", meta.get("flood_pct")),
+        "rf_flood_pct": meta.get("rf_flood_pct"),
         "overlap_score": round(best_score, 3),
     }
 

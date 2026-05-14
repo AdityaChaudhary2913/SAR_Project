@@ -2,4409 +2,3001 @@
   "tile_0000": {
     "file": "tile_0000_mask.png",
     "bbox": [
-      1.8944220730237873,
-      13.822307565160706,
-      1.9415794566575943,
-      13.868804073092866
+      -0.6446581061029347,
+      38.28917197394644,
+      -0.6146545778998272,
+      38.31281543792947
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_05632-06656",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_00603-05687",
     "offset": [
-      256,
+      0,
       0
     ],
-    "tile_iou": 0.0,
-    "flood_px": 0,
-    "total_px": 65536,
-    "flood_pct": 0.0
+    "tile_iou": 0.0476,
+    "tile_f1": 0.0909,
+    "precision": 0.068,
+    "recall": 0.1373,
+    "threshold": 0.6,
+    "flood_pct": 0.16
   },
   "tile_0001": {
     "file": "tile_0001_mask.png",
     "bbox": [
-      -0.8292810845085359,
-      38.08273751967916,
-      -0.7695407454340005,
-      38.12775517144934
+      -0.6154097060569802,
+      38.28857351605459,
+      -0.585397799892325,
+      38.312223777655376
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09038-07768",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_00603-05687",
     "offset": [
-      256,
+      0,
       256
     ],
-    "tile_iou": 0.5831,
-    "flood_px": 1507,
-    "total_px": 65536,
-    "flood_pct": 2.3
+    "tile_iou": 0.4558,
+    "tile_f1": 0.6262,
+    "precision": 0.6154,
+    "recall": 0.6373,
+    "threshold": 0.6,
+    "flood_pct": 0.75
   },
   "tile_0002": {
     "file": "tile_0002_mask.png",
     "bbox": [
-      2.0353701543906695,
-      14.100638138732997,
-      2.082610592227113,
-      14.147111932408546
+      -0.645403141667607,
+      38.266120066805556,
+      -0.6154097060569802,
+      38.28976314811865
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_07168-03584",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_00603-05687",
     "offset": [
-      0,
+      256,
       0
     ],
-    "tile_iou": 0.0,
-    "flood_px": 235,
-    "total_px": 65536,
-    "flood_pct": 0.36
+    "tile_iou": 0.1458,
+    "tile_f1": 0.2545,
+    "precision": 0.2429,
+    "recall": 0.2674,
+    "threshold": 0.6,
+    "flood_pct": 0.48
   },
   "tile_0003": {
     "file": "tile_0003_mask.png",
     "bbox": [
-      -0.9672509019924312,
-      38.03672452146072,
-      -0.9076307493320475,
-      38.081816276323565
+      -0.6161639721635875,
+      38.26552210069029,
+      -0.5861621680612453,
+      38.28917197394644
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_07839-08306",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_00603-05687",
     "offset": [
       256,
-      0
+      256
     ],
-    "tile_iou": 0.0,
-    "flood_px": 0,
-    "total_px": 65536,
-    "flood_pct": 0.0
+    "tile_iou": 0.3788,
+    "tile_f1": 0.5494,
+    "precision": 0.4871,
+    "recall": 0.63,
+    "threshold": 0.6,
+    "flood_pct": 0.59
   },
   "tile_0004": {
     "file": "tile_0004_mask.png",
     "bbox": [
-      -0.9212843342540391,
-      38.08277958109232,
-      -0.8615982498603239,
-      38.12784573251879
+      -0.6446576066593028,
+      38.197173618260464,
+      -0.6146934140543888,
+      38.22081624602864
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08231-07786",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_00629-06708",
     "offset": [
-      256,
+      0,
       0
     ],
-    "tile_iou": 0.0,
-    "flood_px": 0,
-    "total_px": 65536,
-    "flood_pct": 0.0
+    "tile_iou": 0.3559,
+    "tile_f1": 0.5249,
+    "precision": 0.4055,
+    "recall": 0.7441,
+    "threshold": 0.6,
+    "flood_pct": 0.83
   },
   "tile_0005": {
     "file": "tile_0005_mask.png",
     "bbox": [
-      1.7970299681800672,
-      14.330991846531996,
-      1.844262649574146,
-      14.377511858836401
+      -0.6154460446380038,
+      38.196576382592774,
+      -0.5854735129465892,
+      38.22022578469365
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_04608-01024",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_00629-06708",
     "offset": [
       0,
       256
     ],
-    "tile_iou": 0.0,
-    "flood_px": 123,
-    "total_px": 65536,
-    "flood_pct": 0.19
+    "tile_iou": 0.8904,
+    "tile_f1": 0.942,
+    "precision": 0.8963,
+    "recall": 0.9927,
+    "threshold": 0.6,
+    "flood_pct": 31.96
   },
   "tile_0006": {
     "file": "tile_0006_mask.png",
     "bbox": [
-      -0.6914012516857644,
-      38.1747235973572,
-      -0.631501627814167,
-      38.21966524268536
+      -0.6454001897672219,
+      38.17412134850538,
+      -0.6154460446380038,
+      38.197763594092464
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_10222-06718",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_00629-06708",
     "offset": [
-      0,
+      256,
       0
     ],
-    "tile_iou": 0.7904,
-    "flood_px": 5132,
-    "total_px": 65536,
-    "flood_pct": 7.83
+    "tile_iou": 0.8926,
+    "tile_f1": 0.9433,
+    "precision": 0.9259,
+    "recall": 0.9612,
+    "threshold": 0.6,
+    "flood_pct": 60.54
   },
   "tile_0007": {
     "file": "tile_0007_mask.png",
     "bbox": [
-      -0.829293081396791,
-      38.17474159239449,
-      -0.76947480046779,
-      38.21975628595258
+      -0.6161978163144045,
+      38.17352460400197,
+      -0.5862353415235968,
+      38.197173618260464
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09014-06747",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_00629-06708",
     "offset": [
       256,
-      0
+      256
     ],
-    "tile_iou": 0.2211,
-    "flood_px": 384,
-    "total_px": 65536,
-    "flood_pct": 0.59
+    "tile_iou": 0.8817,
+    "tile_f1": 0.9371,
+    "precision": 0.8852,
+    "recall": 0.9956,
+    "threshold": 0.6,
+    "flood_pct": 84.74
   },
   "tile_0008": {
     "file": "tile_0008_mask.png",
     "bbox": [
-      2.081673946711736,
-      14.37855212913613,
-      2.1289788064334796,
-      14.425019708426827
+      -0.644653642878969,
+      38.1512189685079,
+      -0.6147090325536206,
+      38.17486117875829
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_07680-00512",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_00642-07218",
     "offset": [
-      256,
+      0,
       0
     ],
-    "tile_iou": 0.803,
-    "flood_px": 2518,
-    "total_px": 65536,
-    "flood_pct": 3.84
+    "tile_iou": 0.9323,
+    "tile_f1": 0.965,
+    "precision": 0.9401,
+    "recall": 0.9911,
+    "threshold": 0.6,
+    "flood_pct": 61.58
   },
   "tile_0009": {
     "file": "tile_0009_mask.png",
     "bbox": [
-      1.987329468284795,
-      14.239304911160346,
-      2.0345863445578503,
-      14.285788854136895
+      -0.6154604191239422,
+      38.15062234298736,
+      -0.5855074890619598,
+      38.174271315959686
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_06656-02048",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_00642-07218",
     "offset": [
-      256,
+      0,
       256
     ],
-    "tile_iou": 0.036,
-    "flood_px": 423,
-    "total_px": 65536,
-    "flood_pct": 0.65
+    "tile_iou": 0.9998,
+    "tile_f1": 0.9999,
+    "precision": 0.9998,
+    "recall": 1.0,
+    "threshold": 0.6,
+    "flood_pct": 99.94
   },
   "tile_0010": {
     "file": "tile_0010_mask.png",
     "bbox": [
-      1.6071586973216996,
-      14.329953680040841,
-      1.6543486568118282,
-      14.376508273178578
+      -0.6453950044250045,
+      38.12816651778945,
+      -0.6154604191239422,
+      38.15180834610085
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_02560-01024",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_00642-07218",
     "offset": [
       256,
       0
     ],
-    "tile_iou": 0.8967,
-    "flood_px": 3295,
-    "total_px": 65536,
-    "flood_pct": 5.03
+    "tile_iou": 0.9691,
+    "tile_f1": 0.9843,
+    "precision": 0.9692,
+    "recall": 1.0,
+    "threshold": 0.6,
+    "flood_pct": 67.75
   },
   "tile_0011": {
     "file": "tile_0011_mask.png",
     "bbox": [
-      -0.6453950044250045,
-      38.12875541047742,
-      -0.5855074890619598,
-      38.17367419927453
+      -0.6162109483489794,
+      38.127570383129196,
+      -0.5862680527138777,
+      38.1512189685079
     ],
-    "split": "train",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
     "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_00642-07218",
     "offset": [
       256,
-      0
+      256
     ],
-    "tile_iou": 0.0,
-    "flood_px": 0,
-    "total_px": 65536,
-    "flood_pct": 0.0
+    "tile_iou": 1.0,
+    "tile_f1": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "threshold": 0.6,
+    "flood_pct": 100.0
   },
   "tile_0012": {
     "file": "tile_0012_mask.png",
     "bbox": [
-      2.0345863445578503,
-      14.285788854136895,
-      2.08186262006336,
-      14.332264453944513
+      -0.9665706982228028,
+      38.15127880919724,
+      -0.936721124322875,
+      38.17484597790808
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_07168-01536",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_07817-07285",
     "offset": [
-      256,
+      0,
       0
     ],
-    "tile_iou": 0.8634,
-    "flood_px": 8201,
-    "total_px": 65536,
-    "flood_pct": 12.51
+    "tile_iou": 0.674,
+    "tile_f1": 0.8052,
+    "precision": 0.8231,
+    "recall": 0.7882,
+    "threshold": 0.6,
+    "flood_pct": 1.31
   },
   "tile_0013": {
     "file": "tile_0013_mask.png",
     "bbox": [
-      -0.6914114276692137,
-      38.03676573161969,
-      -0.6316289811135624,
-      38.081712037061045
+      -0.9373711227350764,
+      38.150762198118976,
+      -0.907513105449589,
+      38.174336200461596
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_10260-08249",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_07817-07285",
     "offset": [
-      256,
-      0
+      0,
+      256
     ],
-    "tile_iou": 0.843,
-    "flood_px": 2865,
-    "total_px": 65536,
-    "flood_pct": 4.37
+    "tile_iou": 0.1304,
+    "tile_f1": 0.2307,
+    "precision": 0.1553,
+    "recall": 0.4485,
+    "threshold": 0.6,
+    "flood_pct": 2.53
   },
   "tile_0014": {
     "file": "tile_0014_mask.png",
     "bbox": [
-      1.7020924310187295,
-      14.330491735144157,
-      1.7493038191726356,
-      14.377029103391802
+      -0.9672107791660843,
+      38.12822131778464,
+      -0.9373711227350764,
+      38.15178816722314
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_03584-01024",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_07817-07285",
     "offset": [
       256,
-      256
+      0
     ],
-    "tile_iou": 0.4743,
-    "flood_px": 421,
-    "total_px": 65536,
-    "flood_pct": 0.64
+    "tile_iou": 0.476,
+    "tile_f1": 0.645,
+    "precision": 0.6382,
+    "recall": 0.6519,
+    "threshold": 0.6,
+    "flood_pct": 1.37
   },
   "tile_0015": {
     "file": "tile_0015_mask.png",
     "bbox": [
-      1.6540712556849397,
-      14.422788910367364,
-      1.7012895679304607,
-      14.469336314225137
+      -0.938020379325363,
+      38.12770513182971,
+      -0.9081722890689846,
+      38.15127880919724
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_03072-00000",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_07817-07285",
     "offset": [
       256,
-      0
+      256
     ],
-    "tile_iou": 0.6864,
-    "flood_px": 15664,
-    "total_px": 65536,
-    "flood_pct": 23.9
+    "tile_iou": 0.0507,
+    "tile_f1": 0.0964,
+    "precision": 0.0519,
+    "recall": 0.6719,
+    "threshold": 0.6,
+    "flood_pct": 4.99
   },
   "tile_0016": {
     "file": "tile_0016_mask.png",
     "bbox": [
-      -0.9212843342540391,
-      38.08277958109232,
-      -0.8615982498603239,
-      38.12784573251879
+      -0.9665912382272916,
+      38.10532185120781,
+      -0.9367610483368823,
+      38.12888867737332
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08231-07786",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_07828-07795",
     "offset": [
-      256,
-      256
+      0,
+      0
     ],
-    "tile_iou": 0.0,
-    "flood_px": 0,
-    "total_px": 65536,
-    "flood_pct": 0.0
+    "tile_iou": 0.0812,
+    "tile_f1": 0.1502,
+    "precision": 0.0956,
+    "recall": 0.3508,
+    "threshold": 0.6,
+    "flood_pct": 1.07
   },
   "tile_0017": {
     "file": "tile_0017_mask.png",
     "bbox": [
-      -0.6454001897672219,
-      38.17471083913576,
-      -0.5854735129465892,
-      38.21962805755662
+      -0.9374099635974926,
+      38.104805775662975,
+      -0.9075713498441637,
+      38.12837942382238
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_00629-06708",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_07828-07795",
     "offset": [
-      256,
-      0
+      0,
+      256
     ],
-    "tile_iou": 0.6993,
-    "flood_px": 2335,
-    "total_px": 65536,
-    "flood_pct": 3.56
+    "tile_iou": 0.0231,
+    "tile_f1": 0.0452,
+    "precision": 0.0242,
+    "recall": 0.342,
+    "threshold": 0.6,
+    "flood_pct": 4.98
   },
   "tile_0018": {
     "file": "tile_0018_mask.png",
     "bbox": [
-      1.9877406322580957,
-      14.146730882273832,
-      2.034979660464567,
-      14.193213858916478
+      -0.967230258233061,
+      38.08226417849545,
+      -0.9374099635974926,
+      38.105830685599734
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_06656-03072",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_07828-07795",
     "offset": [
-      0,
-      256
+      256,
+      0
     ],
-    "tile_iou": 0.1401,
-    "flood_px": 69,
-    "total_px": 65536,
-    "flood_pct": 0.11
+    "tile_iou": 0.0189,
+    "tile_f1": 0.0371,
+    "precision": 0.0247,
+    "recall": 0.075,
+    "threshold": 0.6,
+    "flood_pct": 7.61
   },
   "tile_0019": {
     "file": "tile_0019_mask.png",
     "bbox": [
-      1.5146350639002808,
-      13.959147305891538,
-      1.561735178352227,
-      14.005712601795821
+      -0.9380581383932586,
+      38.08174852780562,
+      -0.9082294294322601,
+      38.10532185120781
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_01536-05120",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_07828-07795",
     "offset": [
       256,
       256
     ],
-    "tile_iou": 0.7212,
-    "flood_px": 207,
-    "total_px": 65536,
-    "flood_pct": 0.32
+    "tile_iou": 0.1901,
+    "tile_f1": 0.3194,
+    "precision": 0.2082,
+    "recall": 0.686,
+    "threshold": 0.6,
+    "flood_pct": 10.07
   },
   "tile_0020": {
     "file": "tile_0020_mask.png",
     "bbox": [
-      -0.6914114276692137,
-      38.03676573161969,
-      -0.6316289811135624,
-      38.081712037061045
+      -0.9666129440183255,
+      38.059274485281854,
+      -0.9368021333370061,
+      38.08284096757631
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_10260-08249",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_07839-08306",
     "offset": [
       0,
-      256
+      0
     ],
-    "tile_iou": 0.0053,
-    "flood_px": 7302,
-    "total_px": 65536,
-    "flood_pct": 11.14
+    "tile_iou": 0.0449,
+    "tile_f1": 0.086,
+    "precision": 0.0473,
+    "recall": 0.4778,
+    "threshold": 0.6,
+    "flood_pct": 3.13
   },
   "tile_0021": {
     "file": "tile_0021_mask.png",
     "bbox": [
-      -0.9212199029847518,
-      38.036730332427126,
-      -0.861572571730295,
-      38.08179788806835
+      -0.9374499643628537,
+      38.05875894690621,
+      -0.9076307493320475,
+      38.08233223954825
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08243-08297",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_07839-08306",
     "offset": [
       0,
-      0
+      256
     ],
-    "tile_iou": 0.695,
-    "flood_px": 648,
-    "total_px": 65536,
-    "flood_pct": 0.99
+    "tile_iou": 0.5124,
+    "tile_f1": 0.6776,
+    "precision": 0.5721,
+    "recall": 0.8309,
+    "threshold": 0.6,
+    "flood_pct": 15.49
   },
   "tile_0022": {
     "file": "tile_0022_mask.png",
     "bbox": [
-      -0.9212199029847518,
-      38.036730332427126,
-      -0.861572571730295,
-      38.08179788806835
+      -0.9672509019924312,
+      38.03621663096845,
+      -0.9374499643628537,
+      38.059782794412605
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08243-08297",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_07839-08306",
     "offset": [
-      0,
-      256
+      256,
+      0
     ],
-    "tile_iou": 0.3064,
-    "flood_px": 445,
-    "total_px": 65536,
-    "flood_pct": 0.68
+    "tile_iou": 0.3352,
+    "tile_f1": 0.502,
+    "precision": 0.374,
+    "recall": 0.7632,
+    "threshold": 0.6,
+    "flood_pct": 1.0
   },
   "tile_0023": {
     "file": "tile_0023_mask.png",
     "bbox": [
-      1.9895543486968221,
-      13.730138857980137,
-      2.0367147379284316,
-      13.776617471856525
+      -0.9380970562800207,
+      38.03570151717937,
+      -0.9082877238157856,
+      38.059274485281854
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_06656-07680",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_07839-08306",
     "offset": [
-      0,
-      0
+      256,
+      256
     ],
-    "tile_iou": 0.547,
-    "flood_px": 967,
-    "total_px": 65536,
-    "flood_pct": 1.48
+    "tile_iou": 0.317,
+    "tile_f1": 0.4814,
+    "precision": 0.421,
+    "recall": 0.5621,
+    "threshold": 0.6,
+    "flood_pct": 1.03
   },
   "tile_0024": {
     "file": "tile_0024_mask.png",
     "bbox": [
-      -0.8292716792027147,
-      38.03678001282355,
-      -0.7695701415485827,
-      38.08179914128949
+      -0.9205814893626537,
+      38.15127286186747,
+      -0.8907182794765977,
+      38.174850796801415
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09050-08278",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08220-07276",
     "offset": [
-      256,
-      256
+      0,
+      0
     ],
-    "tile_iou": 0.0,
-    "flood_px": 14,
-    "total_px": 65536,
-    "flood_pct": 0.02
+    "tile_iou": 0.0655,
+    "tile_f1": 0.123,
+    "precision": 0.0807,
+    "recall": 0.2588,
+    "threshold": 0.6,
+    "flood_pct": 2.23
   },
   "tile_0025": {
     "file": "tile_0025_mask.png",
     "bbox": [
-      1.6071586973216996,
-      14.329953680040841,
-      1.6543486568118282,
-      14.376508273178578
+      -0.8913827636742652,
+      38.15074481876915,
+      -0.8615111280012049,
+      38.174329577247086
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_02560-01024",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08220-07276",
     "offset": [
-      256,
+      0,
       256
     ],
-    "tile_iou": 0.2804,
-    "flood_px": 441,
-    "total_px": 65536,
-    "flood_pct": 0.67
+    "tile_iou": 0.4006,
+    "tile_f1": 0.5721,
+    "precision": 0.4761,
+    "recall": 0.7165,
+    "threshold": 0.6,
+    "flood_pct": 2.9
   },
   "tile_0026": {
     "file": "tile_0026_mask.png",
     "bbox": [
-      -0.6914012516857644,
-      38.1747235973572,
-      -0.631501627814167,
-      38.21966524268536
+      -0.921236040647728,
+      38.1282160459217,
+      -0.8913827636742652,
+      38.15179365259966
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_10222-06718",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08220-07276",
     "offset": [
-      0,
-      256
+      256,
+      0
     ],
-    "tile_iou": 0.7174,
-    "flood_px": 7021,
-    "total_px": 65536,
-    "flood_pct": 10.71
+    "tile_iou": 0.0054,
+    "tile_f1": 0.0107,
+    "precision": 0.0055,
+    "recall": 0.2222,
+    "threshold": 0.6,
+    "flood_pct": 6.67
   },
   "tile_0027": {
     "file": "tile_0027_mask.png",
     "bbox": [
-      -0.6454001897672219,
-      38.17471083913576,
-      -0.5854735129465892,
-      38.21962805755662
+      -0.8920464895400936,
+      38.12768843734145,
+      -0.8621847963174325,
+      38.15127286186747
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_00629-06708",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08220-07276",
     "offset": [
-      0,
+      256,
       256
     ],
-    "tile_iou": 0.0411,
-    "flood_px": 97,
-    "total_px": 65536,
-    "flood_pct": 0.15
+    "tile_iou": 0.0384,
+    "tile_f1": 0.0739,
+    "precision": 0.0401,
+    "recall": 0.4758,
+    "threshold": 0.6,
+    "flood_pct": 4.88
   },
   "tile_0028": {
     "file": "tile_0028_mask.png",
     "bbox": [
-      -0.8292864416967775,
-      38.12878475461918,
-      -0.7695071364087179,
-      38.173800925213634
+      -0.920630876786895,
+      38.10531675869236,
+      -0.8907870824132057,
+      38.1288943327564
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09026-07257",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08231-07786",
     "offset": [
-      256,
-      256
+      0,
+      0
     ],
-    "tile_iou": 0.3642,
-    "flood_px": 469,
-    "total_px": 65536,
-    "flood_pct": 0.72
+    "tile_iou": 0.0079,
+    "tile_f1": 0.0157,
+    "precision": 0.008,
+    "recall": 0.3758,
+    "threshold": 0.6,
+    "flood_pct": 11.77
   },
   "tile_0029": {
     "file": "tile_0029_mask.png",
     "bbox": [
-      1.9895543486968221,
-      13.730138857980137,
-      2.0367147379284316,
-      13.776617471856525
+      -0.8914504505421583,
+      38.10478926986749,
+      -0.8615982498603239,
+      38.1283736558507
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_06656-07680",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08231-07786",
     "offset": [
-      256,
-      0
+      0,
+      256
     ],
-    "tile_iou": 0.1224,
-    "flood_px": 53,
-    "total_px": 65536,
-    "flood_pct": 0.08
+    "tile_iou": 0.1707,
+    "tile_f1": 0.2916,
+    "precision": 0.1833,
+    "recall": 0.7125,
+    "threshold": 0.6,
+    "flood_pct": 0.47
   },
   "tile_0030": {
     "file": "tile_0030_mask.png",
     "bbox": [
-      2.0345863445578503,
-      14.285788854136895,
-      2.08186262006336,
-      14.332264453944513
+      -0.9212843342540391,
+      38.08225976101929,
+      -0.8914504505421583,
+      38.10583700704912
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_07168-01536",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08231-07786",
     "offset": [
-      0,
+      256,
       0
     ],
-    "tile_iou": 0.0783,
-    "flood_px": 5917,
-    "total_px": 65536,
-    "flood_pct": 9.03
+    "tile_iou": 0.2865,
+    "tile_f1": 0.4454,
+    "precision": 0.3132,
+    "recall": 0.7708,
+    "threshold": 0.6,
+    "flood_pct": 8.73
   },
   "tile_0031": {
     "file": "tile_0031_mask.png",
     "bbox": [
-      -0.8292983379326,
-      38.22069809571075,
-      -0.7694409940129918,
-      38.26571131206123
+      -0.892113061736544,
+      38.081732706432554,
+      -0.8622707812317052,
+      38.10531675869236
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09002-06237",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08231-07786",
     "offset": [
       256,
       256
     ],
-    "tile_iou": 0.5689,
-    "flood_px": 9527,
-    "total_px": 65536,
-    "flood_pct": 14.54
+    "tile_iou": 0.2354,
+    "tile_f1": 0.3811,
+    "precision": 0.2747,
+    "recall": 0.6224,
+    "threshold": 0.6,
+    "flood_pct": 1.14
   },
   "tile_0032": {
     "file": "tile_0032_mask.png",
     "bbox": [
-      1.5611570521187583,
-      14.098272899290635,
-      1.6082931405331535,
-      14.144832220117129
+      -0.9205675047366976,
+      38.05926820590134,
+      -0.8907430882769326,
+      38.082845444332804
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_02048-03584",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08243-08297",
     "offset": [
-      256,
-      256
+      0,
+      0
     ],
-    "tile_iou": 0.5999,
-    "flood_px": 1464,
-    "total_px": 65536,
-    "flood_pct": 2.23
+    "tile_iou": 0.6746,
+    "tile_f1": 0.8057,
+    "precision": 0.8567,
+    "recall": 0.7603,
+    "threshold": 0.6,
+    "flood_pct": 16.01
   },
   "tile_0033": {
     "file": "tile_0033_mask.png",
     "bbox": [
-      -0.6454001897672219,
-      38.17471083913576,
-      -0.5854735129465892,
-      38.21962805755662
+      -0.8914053749841627,
+      38.05874124476371,
+      -0.861572571730295,
+      38.0823252834556
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_00629-06708",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08243-08297",
     "offset": [
-      256,
+      0,
       256
     ],
-    "tile_iou": 0.0201,
-    "flood_px": 12,
-    "total_px": 65536,
-    "flood_pct": 0.02
+    "tile_iou": 0.6006,
+    "tile_f1": 0.7505,
+    "precision": 0.7567,
+    "recall": 0.7443,
+    "threshold": 0.6,
+    "flood_pct": 7.07
   },
   "tile_0034": {
     "file": "tile_0034_mask.png",
     "bbox": [
-      1.9887556141800935,
-      13.915292652867874,
-      2.0359506159165752,
-      13.961773208666724
+      -0.9212199029847518,
+      38.03621102788307,
+      -0.8914053749841627,
+      38.05978793847967
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_06656-05632",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08243-08297",
     "offset": [
-      0,
-      256
+      256,
+      0
     ],
-    "tile_iou": 0.764,
-    "flood_px": 29339,
-    "total_px": 65536,
-    "flood_pct": 44.77
+    "tile_iou": 0.6973,
+    "tile_f1": 0.8217,
+    "precision": 0.9188,
+    "recall": 0.7431,
+    "threshold": 0.6,
+    "flood_pct": 1.26
   },
   "tile_0035": {
     "file": "tile_0035_mask.png",
     "bbox": [
-      1.9889563999709592,
-      13.869004470118973,
-      2.0361426979482222,
-      13.915484540878802
+      -0.8920669061124382,
+      38.035684500726774,
+      -0.8622440008103004,
+      38.05926820590134
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_06656-06144",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08243-08297",
     "offset": [
       256,
       256
     ],
-    "tile_iou": 0.6591,
-    "flood_px": 1299,
-    "total_px": 65536,
-    "flood_pct": 1.98
+    "tile_iou": 0.5,
+    "tile_f1": 0.6667,
+    "precision": 0.8028,
+    "recall": 0.57,
+    "threshold": 0.6,
+    "flood_pct": 0.87
   },
   "tile_0036": {
     "file": "tile_0036_mask.png",
     "bbox": [
-      1.8928736300853863,
-      14.146312380125046,
-      1.9400919204036078,
-      14.19281272113317
+      -0.874624930396202,
+      38.197295931629434,
+      -0.8447286150716286,
+      38.2208849710014
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_05632-03072",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08611-06756",
     "offset": [
-      256,
-      256
+      0,
+      0
     ],
-    "tile_iou": 0.6685,
-    "flood_px": 2920,
-    "total_px": 65536,
-    "flood_pct": 4.46
+    "tile_iou": 0.4511,
+    "tile_f1": 0.6217,
+    "precision": 0.7682,
+    "recall": 0.5221,
+    "threshold": 0.6,
+    "flood_pct": 1.17
   },
   "tile_0037": {
     "file": "tile_0037_mask.png",
     "bbox": [
-      1.6581291143707486,
-      13.728560087270798,
-      1.70521855196589,
-      13.775096920329263
+      -0.8454087019468329,
+      38.19675591084055,
+      -0.8155039588996272,
+      38.22035177532372
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_03072-07680",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08611-06756",
     "offset": [
-      256,
+      0,
       256
     ],
-    "tile_iou": 0.4582,
-    "flood_px": 276,
-    "total_px": 65536,
-    "flood_pct": 0.42
+    "tile_iou": 0.4008,
+    "tile_f1": 0.5723,
+    "precision": 0.6205,
+    "recall": 0.531,
+    "threshold": 0.6,
+    "flood_pct": 0.72
   },
   "tile_0038": {
     "file": "tile_0038_mask.png",
     "bbox": [
-      -0.9212843342540391,
-      38.08277958109232,
-      -0.8615982498603239,
-      38.12784573251879
+      -0.8752950465993645,
+      38.174239986890605,
+      -0.8454087019468329,
+      38.197828688821325
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08231-07786",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08611-06756",
     "offset": [
-      0,
-      256
+      256,
+      0
     ],
-    "tile_iou": 0.6042,
-    "flood_px": 4628,
-    "total_px": 65536,
-    "flood_pct": 7.06
+    "tile_iou": 0.4153,
+    "tile_f1": 0.5868,
+    "precision": 0.5681,
+    "recall": 0.6068,
+    "threshold": 0.6,
+    "flood_pct": 0.86
   },
   "tile_0039": {
     "file": "tile_0039_mask.png",
     "bbox": [
-      -0.8752252959903994,
-      38.08276653026694,
-      -0.8155120242914715,
-      38.12780841589063
+      -0.8460880125781421,
+      38.17370041028338,
+      -0.8161932497410667,
+      38.197295931629434
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08635-07777",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08611-06756",
     "offset": [
       256,
       256
     ],
-    "tile_iou": 0.8065,
-    "flood_px": 25036,
-    "total_px": 65536,
-    "flood_pct": 38.2
+    "tile_iou": 0.8309,
+    "tile_f1": 0.9077,
+    "precision": 0.9104,
+    "recall": 0.905,
+    "threshold": 0.6,
+    "flood_pct": 18.47
   },
   "tile_0040": {
     "file": "tile_0040_mask.png",
     "bbox": [
-      1.9881488384273354,
-      14.054156129563385,
-      2.0353701543906695,
-      14.100638138732997
+      -0.8745931167708382,
+      38.151248894077845,
+      -0.844716298068716,
+      38.17483757966484
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_06656-04096",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08623-07267",
     "offset": [
-      256,
+      0,
       0
     ],
-    "tile_iou": 0.2999,
-    "flood_px": 5590,
-    "total_px": 65536,
-    "flood_pct": 8.53
+    "tile_iou": 0.2771,
+    "tile_f1": 0.4339,
+    "precision": 0.318,
+    "recall": 0.6827,
+    "threshold": 0.6,
+    "flood_pct": 9.73
   },
   "tile_0041": {
     "file": "tile_0041_mask.png",
     "bbox": [
-      -0.6914012516857644,
-      38.1747235973572,
-      -0.631501627814167,
-      38.21966524268536
+      -0.8453952669096486,
+      38.15070941973481,
+      -0.815510040048104,
+      38.17430491875966
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_10222-06718",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08623-07267",
     "offset": [
-      256,
-      0
+      0,
+      256
     ],
-    "tile_iou": 0.8235,
-    "flood_px": 34655,
-    "total_px": 65536,
-    "flood_pct": 52.88
+    "tile_iou": 0.6904,
+    "tile_f1": 0.8169,
+    "precision": 0.7617,
+    "recall": 0.8807,
+    "threshold": 0.6,
+    "flood_pct": 13.01
   },
   "tile_0042": {
     "file": "tile_0042_mask.png",
     "bbox": [
-      1.6071586973216996,
-      14.329953680040841,
-      1.6543486568118282,
-      14.376508273178578
+      -0.8752621372901245,
+      38.12819276840279,
+      -0.8453952669096486,
+      38.15178111676073
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_02560-01024",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08623-07267",
     "offset": [
-      0,
-      256
+      256,
+      0
     ],
-    "tile_iou": 0.0,
-    "flood_px": 0,
-    "total_px": 65536,
-    "flood_pct": 0.0
+    "tile_iou": 0.0555,
+    "tile_f1": 0.1051,
+    "precision": 0.0606,
+    "recall": 0.3974,
+    "threshold": 0.6,
+    "flood_pct": 5.32
   },
   "tile_0043": {
     "file": "tile_0043_mask.png",
     "bbox": [
-      -0.6453950044250045,
-      38.12875541047742,
-      -0.5855074890619598,
-      38.17367419927453
+      -0.8460734609116383,
+      38.127653737971166,
+      -0.8161981918871104,
+      38.151248894077845
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_00642-07218",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08623-07267",
     "offset": [
       256,
       256
     ],
-    "tile_iou": 0.9631,
-    "flood_px": 44684,
-    "total_px": 65536,
-    "flood_pct": 68.18
+    "tile_iou": 0.5234,
+    "tile_f1": 0.6871,
+    "precision": 0.6072,
+    "recall": 0.7912,
+    "threshold": 0.6,
+    "flood_pct": 13.64
   },
   "tile_0044": {
     "file": "tile_0044_mask.png",
     "bbox": [
-      -0.7833142750666144,
-      38.12873688613864,
-      -0.723507894012827,
-      38.173728756513604
+      -0.8745573664110433,
+      38.10529158423417,
+      -0.8446999618658603,
+      38.12887991722928
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09429-07248",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08635-07777",
     "offset": [
-      256,
-      256
+      0,
+      0
     ],
-    "tile_iou": 0.0,
-    "flood_px": 7,
-    "total_px": 65536,
-    "flood_pct": 0.01
+    "tile_iou": 0.1776,
+    "tile_f1": 0.3017,
+    "precision": 0.2355,
+    "recall": 0.4196,
+    "threshold": 0.6,
+    "flood_pct": 1.0
   },
   "tile_0045": {
     "file": "tile_0045_mask.png",
     "bbox": [
-      -0.967230258233061,
-      38.082772593987784,
-      -0.9075713498441637,
-      38.12786292315944
+      -0.8453778175166091,
+      38.10475265462347,
+      -0.8155120242914715,
+      38.12834778941916
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_07828-07795",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08635-07777",
     "offset": [
       0,
-      0
+      256
     ],
-    "tile_iou": 0.6785,
-    "flood_px": 11552,
-    "total_px": 65536,
-    "flood_pct": 17.63
+    "tile_iou": 0.0535,
+    "tile_f1": 0.1015,
+    "precision": 0.0559,
+    "recall": 0.552,
+    "threshold": 0.6,
+    "flood_pct": 12.31
   },
   "tile_0046": {
     "file": "tile_0046_mask.png",
     "bbox": [
-      1.9895543486968221,
-      13.730138857980137,
-      2.0367147379284316,
-      13.776617471856525
+      -0.8752252959903994,
+      38.082235278107305,
+      -0.8453778175166091,
+      38.10582327408353
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_06656-07680",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08635-07777",
     "offset": [
-      0,
-      256
+      256,
+      0
     ],
-    "tile_iou": 0.0,
-    "flood_px": 0,
-    "total_px": 65536,
-    "flood_pct": 0.0
+    "tile_iou": 0.1801,
+    "tile_f1": 0.3052,
+    "precision": 0.2246,
+    "recall": 0.4762,
+    "threshold": 0.6,
+    "flood_pct": 1.29
   },
   "tile_0047": {
     "file": "tile_0047_mask.png",
     "bbox": [
-      1.7970299681800672,
-      14.330991846531996,
-      1.844262649574146,
-      14.377511858836401
+      -0.8460548997251037,
+      38.08169679213973,
+      -0.8161990420641373,
+      38.10529158423417
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_04608-01024",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08635-07777",
     "offset": [
-      0,
-      0
+      256,
+      256
     ],
-    "tile_iou": 0.5255,
-    "flood_px": 385,
-    "total_px": 65536,
-    "flood_pct": 0.59
+    "tile_iou": 0.518,
+    "tile_f1": 0.6825,
+    "precision": 0.6636,
+    "recall": 0.7025,
+    "threshold": 0.6,
+    "flood_pct": 2.48
   },
   "tile_0048": {
     "file": "tile_0048_mask.png",
     "bbox": [
-      -0.7373926734338829,
-      38.082715630023436,
-      -0.6775982849145494,
-      38.12768472592598
+      -0.8286125931333257,
+      38.243208843072054,
+      -0.7986831317079719,
+      38.26680900658868
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09844-07749",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09002-06237",
     "offset": [
       0,
-      256
+      0
     ],
-    "tile_iou": 0.0,
-    "flood_px": 167,
-    "total_px": 65536,
-    "flood_pct": 0.25
+    "tile_iou": 0.6667,
+    "tile_f1": 0.8,
+    "precision": 0.7727,
+    "recall": 0.8293,
+    "threshold": 0.6,
+    "flood_pct": 1.07
   },
   "tile_0049": {
     "file": "tile_0049_mask.png",
     "bbox": [
-      -0.8752252959903994,
-      38.08276653026694,
-      -0.8155120242914715,
-      38.12780841589063
+      -0.7993788849887016,
+      38.24265680957032,
+      -0.7694409940129918,
+      38.26626379971232
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08635-07777",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09002-06237",
     "offset": [
       0,
       256
     ],
-    "tile_iou": 0.6475,
-    "flood_px": 3935,
-    "total_px": 65536,
-    "flood_pct": 6.0
+    "tile_iou": 0.9048,
+    "tile_f1": 0.95,
+    "precision": 0.9171,
+    "recall": 0.9854,
+    "threshold": 0.6,
+    "flood_pct": 11.64
   },
   "tile_0050": {
     "file": "tile_0050_mask.png",
     "bbox": [
-      1.5149309387371985,
-      13.912867683256774,
-      1.562022668959764,
-      13.959432179512744
+      -0.8292983379326,
+      38.22015378489805,
+      -0.7993788849887016,
+      38.24375360177721
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_01536-05632",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09002-06237",
     "offset": [
-      0,
+      256,
       0
     ],
-    "tile_iou": 0.5346,
-    "flood_px": 4153,
-    "total_px": 65536,
-    "flood_pct": 6.34
+    "tile_iou": 0.2946,
+    "tile_f1": 0.4551,
+    "precision": 0.4935,
+    "recall": 0.4222,
+    "threshold": 0.6,
+    "flood_pct": 0.12
   },
   "tile_0051": {
     "file": "tile_0051_mask.png",
     "bbox": [
-      -0.7833142750666144,
-      38.12873688613864,
-      -0.723507894012827,
-      38.173728756513604
+      -0.8000738440346343,
+      38.21960220526325,
+      -0.7701459710785741,
+      38.243208843072054
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09429-07248",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09002-06237",
     "offset": [
       256,
-      0
+      256
     ],
-    "tile_iou": 0.0,
-    "flood_px": 0,
-    "total_px": 65536,
-    "flood_pct": 0.0
+    "tile_iou": 0.4362,
+    "tile_f1": 0.6074,
+    "precision": 0.4414,
+    "recall": 0.9735,
+    "threshold": 0.6,
+    "flood_pct": 0.51
   },
   "tile_0052": {
     "file": "tile_0052_mask.png",
     "bbox": [
-      -0.8292983379326,
-      38.22069809571075,
-      -0.7694409940129918,
-      38.26571131206123
+      -0.8286084640958875,
+      38.19725307209182,
+      -0.7986985356007953,
+      38.220852864897964
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09002-06237",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09014-06747",
     "offset": [
       0,
-      256
+      0
     ],
-    "tile_iou": 0.0348,
-    "flood_px": 1727,
-    "total_px": 65536,
-    "flood_pct": 2.64
+    "tile_iou": 0.1882,
+    "tile_f1": 0.3167,
+    "precision": 0.1882,
+    "recall": 1.0,
+    "threshold": 0.6,
+    "flood_pct": 0.28
   },
   "tile_0053": {
     "file": "tile_0053_mask.png",
     "bbox": [
-      1.8928736300853863,
-      14.146312380125046,
-      1.9400919204036078,
-      14.19281272113317
+      -0.7993931389848318,
+      38.19670160206583,
+      -0.76947480046779,
+      38.22030820984553
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_05632-03072",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09014-06747",
     "offset": [
       0,
       256
     ],
-    "tile_iou": 0.8522,
-    "flood_px": 2935,
-    "total_px": 65536,
-    "flood_pct": 4.48
+    "tile_iou": 0.5535,
+    "tile_f1": 0.7126,
+    "precision": 0.7825,
+    "recall": 0.6541,
+    "threshold": 0.6,
+    "flood_pct": 2.24
   },
   "tile_0054": {
     "file": "tile_0054_mask.png",
     "bbox": [
-      -0.7373926734338829,
-      38.082715630023436,
-      -0.6775982849145494,
-      38.12768472592598
+      -0.829293081396791,
+      38.17419783285634,
+      -0.7993931389848318,
+      38.19779727924806
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09844-07749",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09014-06747",
     "offset": [
       256,
       0
     ],
-    "tile_iou": 0.0,
-    "flood_px": 0,
-    "total_px": 65536,
-    "flood_pct": 0.0
+    "tile_iou": 0.8094,
+    "tile_f1": 0.8947,
+    "precision": 0.8694,
+    "recall": 0.9215,
+    "threshold": 0.6,
+    "flood_pct": 35.97
   },
   "tile_0055": {
     "file": "tile_0055_mask.png",
     "bbox": [
-      -0.7833142750666144,
-      38.12873688613864,
-      -0.723507894012827,
-      38.173728756513604
+      -0.8000869495803683,
+      38.17364681641552,
+      -0.7701786066619777,
+      38.19725307209182
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09429-07248",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09014-06747",
     "offset": [
-      0,
+      256,
       256
     ],
-    "tile_iou": 0.0408,
-    "flood_px": 211,
-    "total_px": 65536,
-    "flood_pct": 0.32
+    "tile_iou": 0.9065,
+    "tile_f1": 0.951,
+    "precision": 0.9559,
+    "recall": 0.9461,
+    "threshold": 0.6,
+    "flood_pct": 61.78
   },
   "tile_0056": {
     "file": "tile_0056_mask.png",
     "bbox": [
-      1.4681611118717437,
-      13.820016831098286,
-      1.5152257331204124,
-      13.866587879190208
+      -0.8286029500525587,
+      38.15129696657515,
+      -0.7987125108082269,
+      38.1748963885687
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_01024-06656",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09026-07257",
     "offset": [
-      256,
-      256
+      0,
+      0
     ],
-    "tile_iou": 0.0,
-    "flood_px": 33,
-    "total_px": 65536,
-    "flood_pct": 0.05
+    "tile_iou": 0.8387,
+    "tile_f1": 0.9123,
+    "precision": 0.8753,
+    "recall": 0.9525,
+    "threshold": 0.6,
+    "flood_pct": 21.9
   },
   "tile_0057": {
     "file": "tile_0057_mask.png",
     "bbox": [
-      1.8939836889022335,
-      13.914881266033882,
-      1.9411583056287187,
-      13.961378870471533
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_05632-05632",
-    "offset": [
-      0,
-      256
-    ],
-    "tile_iou": 0.035,
-    "flood_px": 1980,
-    "total_px": 65536,
-    "flood_pct": 3.02
-  },
-  "tile_0058": {
-    "file": "tile_0058_mask.png",
-    "bbox": [
-      -0.6913671812866601,
-      38.12876724448428,
-      -0.6315066561627335,
-      38.17371042173852
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_10235-07228",
-    "offset": [
-      256,
-      0
-    ],
-    "tile_iou": 0.8971,
-    "flood_px": 9905,
-    "total_px": 65536,
-    "flood_pct": 15.11
-  },
-  "tile_0059": {
-    "file": "tile_0059_mask.png",
-    "bbox": [
-      1.6540712556849397,
-      14.422788910367364,
-      1.7012895679304607,
-      14.469336314225137
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_03072-00000",
-    "offset": [
-      256,
-      256
-    ],
-    "tile_iou": 0.0,
-    "flood_px": 0,
-    "total_px": 65536,
-    "flood_pct": 0.0
-  },
-  "tile_0060": {
-    "file": "tile_0060_mask.png",
-    "bbox": [
-      1.8928736300853863,
-      14.146312380125046,
-      1.9400919204036078,
-      14.19281272113317
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_05632-03072",
-    "offset": [
-      256,
-      0
-    ],
-    "tile_iou": 0.7782,
-    "flood_px": 3232,
-    "total_px": 65536,
-    "flood_pct": 4.93
-  },
-  "tile_0061": {
-    "file": "tile_0061_mask.png",
-    "bbox": [
-      1.7020924310187295,
-      14.330491735144157,
-      1.7493038191726356,
-      14.377029103391802
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_03584-01024",
-    "offset": [
-      256,
-      0
-    ],
-    "tile_iou": 0.1624,
-    "flood_px": 299,
-    "total_px": 65536,
-    "flood_pct": 0.46
-  },
-  "tile_0062": {
-    "file": "tile_0062_mask.png",
-    "bbox": [
-      1.9883518341078419,
-      14.007868483136479,
-      2.035564344807366,
-      14.054350008138773
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_06656-04608",
-    "offset": [
-      0,
-      0
-    ],
-    "tile_iou": 0.8391,
-    "flood_px": 8037,
-    "total_px": 65536,
-    "flood_pct": 12.26
-  },
-  "tile_0063": {
-    "file": "tile_0063_mask.png",
-    "bbox": [
-      2.081673946711736,
-      14.37855212913613,
-      2.1289788064334796,
-      14.425019708426827
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_07680-00512",
-    "offset": [
-      0,
-      256
-    ],
-    "tile_iou": 0.2193,
-    "flood_px": 132,
-    "total_px": 65536,
-    "flood_pct": 0.2
-  },
-  "tile_0064": {
-    "file": "tile_0064_mask.png",
-    "bbox": [
-      1.5634444366227886,
-      13.728027355040371,
-      1.6105133008387265,
-      13.77458052924148
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_02048-07680",
-    "offset": [
-      256,
-      0
-    ],
-    "tile_iou": 0.8124,
-    "flood_px": 20427,
-    "total_px": 65536,
-    "flood_pct": 31.17
-  },
-  "tile_0065": {
-    "file": "tile_0065_mask.png",
-    "bbox": [
-      -0.9672107791660843,
-      38.12873025664997,
-      -0.907513105449589,
-      38.17381916399627
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_07817-07285",
-    "offset": [
-      0,
-      0
-    ],
-    "tile_iou": 0.0,
-    "flood_px": 80,
-    "total_px": 65536,
-    "flood_pct": 0.12
-  },
-  "tile_0066": {
-    "file": "tile_0066_mask.png",
-    "bbox": [
-      1.5140400687630766,
-      14.051706004629871,
-      1.5611570521187583,
-      14.098272899290635
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_01536-04096",
-    "offset": [
-      256,
-      256
-    ],
-    "tile_iou": 0.6329,
-    "flood_px": 1086,
-    "total_px": 65536,
-    "flood_pct": 1.66
-  },
-  "tile_0067": {
-    "file": "tile_0067_mask.png",
-    "bbox": [
-      -0.921236040647728,
-      38.128736408097595,
-      -0.8615111280012049,
-      38.17380109936118
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08220-07276",
-    "offset": [
-      256,
-      256
-    ],
-    "tile_iou": 0.0,
-    "flood_px": 0,
-    "total_px": 65536,
-    "flood_pct": 0.0
-  },
-  "tile_0068": {
-    "file": "tile_0068_mask.png",
-    "bbox": [
-      -0.9212199029847518,
-      38.036730332427126,
-      -0.861572571730295,
-      38.08179788806835
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08243-08297",
-    "offset": [
-      256,
-      256
-    ],
-    "tile_iou": 0.33,
-    "flood_px": 98,
-    "total_px": 65536,
-    "flood_pct": 0.15
-  },
-  "tile_0069": {
-    "file": "tile_0069_mask.png",
-    "bbox": [
-      -0.7833571327530596,
-      38.03673390634587,
-      -0.7236286446162032,
-      38.08172881135547
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09453-08269",
-    "offset": [
-      256,
-      256
-    ],
-    "tile_iou": 0.8482,
-    "flood_px": 8031,
-    "total_px": 65536,
-    "flood_pct": 12.25
-  },
-  "tile_0070": {
-    "file": "tile_0070_mask.png",
-    "bbox": [
-      1.8944220730237873,
-      13.822307565160706,
-      1.9415794566575943,
-      13.868804073092866
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_05632-06656",
-    "offset": [
-      256,
-      256
-    ],
-    "tile_iou": 0.4968,
-    "flood_px": 579,
-    "total_px": 65536,
-    "flood_pct": 0.88
-  },
-  "tile_0071": {
-    "file": "tile_0071_mask.png",
-    "bbox": [
-      -0.7374032417401318,
-      38.17471831749132,
-      -0.6775307255157497,
-      38.21968436178516
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09819-06728",
-    "offset": [
-      0,
-      0
-    ],
-    "tile_iou": 0.2662,
-    "flood_px": 457,
-    "total_px": 65536,
-    "flood_pct": 0.7
-  },
-  "tile_0072": {
-    "file": "tile_0072_mask.png",
-    "bbox": [
-      1.9881488384273354,
-      14.054156129563385,
-      2.0353701543906695,
-      14.100638138732997
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_06656-04096",
-    "offset": [
-      0,
-      0
-    ],
-    "tile_iou": 1.0,
-    "flood_px": 65536,
-    "total_px": 65536,
-    "flood_pct": 100.0
-  },
-  "tile_0073": {
-    "file": "tile_0073_mask.png",
-    "bbox": [
-      1.9887556141800935,
-      13.915292652867874,
-      2.0359506159165752,
-      13.961773208666724
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_06656-05632",
-    "offset": [
-      0,
-      0
-    ],
-    "tile_iou": 0.8544,
-    "flood_px": 49075,
-    "total_px": 65536,
-    "flood_pct": 74.88
-  },
-  "tile_0074": {
-    "file": "tile_0074_mask.png",
-    "bbox": [
-      1.4681611118717437,
-      13.820016831098286,
-      1.5152257331204124,
-      13.866587879190208
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_01024-06656",
-    "offset": [
-      0,
-      0
-    ],
-    "tile_iou": 0.3861,
-    "flood_px": 237,
-    "total_px": 65536,
-    "flood_pct": 0.36
-  },
-  "tile_0075": {
-    "file": "tile_0075_mask.png",
-    "bbox": [
-      2.0345863445578503,
-      14.285788854136895,
-      2.08186262006336,
-      14.332264453944513
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_07168-01536",
-    "offset": [
-      0,
-      256
-    ],
-    "tile_iou": 0.8037,
-    "flood_px": 2678,
-    "total_px": 65536,
-    "flood_pct": 4.09
-  },
-  "tile_0076": {
-    "file": "tile_0076_mask.png",
-    "bbox": [
-      1.656532429397681,
-      14.00625653062255,
-      1.7036725085429976,
-      14.052797597659335
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_03072-04608",
-    "offset": [
-      256,
-      256
-    ],
-    "tile_iou": 0.3847,
-    "flood_px": 305,
-    "total_px": 65536,
-    "flood_pct": 0.47
-  },
-  "tile_0077": {
-    "file": "tile_0077_mask.png",
-    "bbox": [
-      -0.7833350686044086,
-      38.08278059369341,
-      -0.7235676387159755,
-      38.12777397930286
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09441-07758",
-    "offset": [
-      256,
-      256
-    ],
-    "tile_iou": 0.0936,
-    "flood_px": 619,
-    "total_px": 65536,
-    "flood_pct": 0.94
-  },
-  "tile_0078": {
-    "file": "tile_0078_mask.png",
-    "bbox": [
-      -0.645403141667607,
-      38.26671075517867,
-      -0.585397799892325,
-      38.311624827680504
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_00603-05687",
-    "offset": [
-      0,
-      0
-    ],
-    "tile_iou": 0.3489,
-    "flood_px": 2201,
-    "total_px": 65536,
-    "flood_pct": 3.36
-  },
-  "tile_0079": {
-    "file": "tile_0079_mask.png",
-    "bbox": [
-      -0.7833571327530596,
-      38.03673390634587,
-      -0.7236286446162032,
-      38.08172881135547
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09453-08269",
-    "offset": [
-      256,
-      0
-    ],
-    "tile_iou": 0.6507,
-    "flood_px": 913,
-    "total_px": 65536,
-    "flood_pct": 1.39
-  },
-  "tile_0080": {
-    "file": "tile_0080_mask.png",
-    "bbox": [
-      1.5143381075851527,
-      14.005426746535445,
-      1.5614466397385929,
-      14.051992841907362
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_01536-04608",
-    "offset": [
-      256,
-      0
-    ],
-    "tile_iou": 0.0,
-    "flood_px": 0,
-    "total_px": 65536,
-    "flood_pct": 0.0
-  },
-  "tile_0081": {
-    "file": "tile_0081_mask.png",
-    "bbox": [
-      2.0353701543906695,
-      14.100638138732997,
-      2.082610592227113,
-      14.147111932408546
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_07168-03584",
-    "offset": [
-      0,
-      256
-    ],
-    "tile_iou": 0.6475,
-    "flood_px": 6881,
-    "total_px": 65536,
-    "flood_pct": 10.5
-  },
-  "tile_0082": {
-    "file": "tile_0082_mask.png",
-    "bbox": [
-      2.129870222498733,
-      14.193577414568654,
-      2.17714911577814,
-      14.240034489144222
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_08192-02560",
-    "offset": [
-      0,
-      0
-    ],
-    "tile_iou": 0.2105,
-    "flood_px": 5714,
-    "total_px": 65536,
-    "flood_pct": 8.72
-  },
-  "tile_0083": {
-    "file": "tile_0083_mask.png",
-    "bbox": [
-      1.5634444366227886,
-      13.728027355040371,
-      1.6105133008387265,
-      13.77458052924148
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_02048-07680",
-    "offset": [
-      0,
-      0
-    ],
-    "tile_iou": 0.5757,
-    "flood_px": 578,
-    "total_px": 65536,
-    "flood_pct": 0.88
-  },
-  "tile_0084": {
-    "file": "tile_0084_mask.png",
-    "bbox": [
-      1.8939836889022335,
-      13.914881266033882,
-      1.9411583056287187,
-      13.961378870471533
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_05632-05632",
-    "offset": [
-      256,
-      0
-    ],
-    "tile_iou": 0.4106,
-    "flood_px": 1429,
-    "total_px": 65536,
-    "flood_pct": 2.18
-  },
-  "tile_0085": {
-    "file": "tile_0085_mask.png",
-    "bbox": [
-      2.129870222498733,
-      14.193577414568654,
-      2.17714911577814,
-      14.240034489144222
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_08192-02560",
-    "offset": [
-      256,
-      0
-    ],
-    "tile_iou": 0.005,
-    "flood_px": 35,
-    "total_px": 65536,
-    "flood_pct": 0.05
-  },
-  "tile_0086": {
-    "file": "tile_0086_mask.png",
-    "bbox": [
-      2.0820506206382126,
-      14.2859765961347,
-      2.1293372862480773,
-      14.332443337485442
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_07680-01536",
-    "offset": [
-      0,
-      256
-    ],
-    "tile_iou": 0.2827,
-    "flood_px": 218,
-    "total_px": 65536,
-    "flood_pct": 0.33
-  },
-  "tile_0087": {
-    "file": "tile_0087_mask.png",
-    "bbox": [
-      -0.8752621372901245,
-      38.12872455313505,
-      -0.815510040048104,
-      38.1737650002299
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08623-07267",
-    "offset": [
-      0,
-      256
-    ],
-    "tile_iou": 0.4716,
-    "flood_px": 482,
-    "total_px": 65536,
-    "flood_pct": 0.74
-  },
-  "tile_0088": {
-    "file": "tile_0088_mask.png",
-    "bbox": [
-      -0.7833142750666144,
-      38.12873688613864,
-      -0.723507894012827,
-      38.173728756513604
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09429-07248",
-    "offset": [
-      0,
-      0
-    ],
-    "tile_iou": 0.8574,
-    "flood_px": 39037,
-    "total_px": 65536,
-    "flood_pct": 59.57
-  },
-  "tile_0089": {
-    "file": "tile_0089_mask.png",
-    "bbox": [
-      -0.8752621372901245,
-      38.12872455313505,
-      -0.815510040048104,
-      38.1737650002299
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08623-07267",
-    "offset": [
-      256,
-      256
-    ],
-    "tile_iou": 0.0,
-    "flood_px": 1,
-    "total_px": 65536,
-    "flood_pct": 0.0
-  },
-  "tile_0090": {
-    "file": "tile_0090_mask.png",
-    "bbox": [
-      2.1317754630707135,
-      13.68438855685147,
-      2.1789570818198345,
-      13.730841341494083
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_08192-08192",
-    "offset": [
-      0,
-      256
-    ],
-    "tile_iou": 0.6393,
-    "flood_px": 1423,
-    "total_px": 65536,
-    "flood_pct": 2.17
-  },
-  "tile_0091": {
-    "file": "tile_0091_mask.png",
-    "bbox": [
-      -0.8752950465993645,
-      38.174772305869,
-      -0.8155039588996272,
-      38.21981131007723
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08611-06756",
-    "offset": [
-      0,
-      256
-    ],
-    "tile_iou": 0.7523,
-    "flood_px": 17538,
-    "total_px": 65536,
-    "flood_pct": 26.76
-  },
-  "tile_0092": {
-    "file": "tile_0092_mask.png",
-    "bbox": [
-      -0.645403141667607,
-      38.26671075517867,
-      -0.585397799892325,
-      38.311624827680504
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_00603-05687",
-    "offset": [
-      0,
-      256
-    ],
-    "tile_iou": 0.4905,
-    "flood_px": 2714,
-    "total_px": 65536,
-    "flood_pct": 4.14
-  },
-  "tile_0093": {
-    "file": "tile_0093_mask.png",
-    "bbox": [
-      1.9877406322580957,
-      14.146730882273832,
-      2.034979660464567,
-      14.193213858916478
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_06656-03072",
-    "offset": [
-      256,
-      0
-    ],
-    "tile_iou": 0.0,
-    "flood_px": 7,
-    "total_px": 65536,
-    "flood_pct": 0.01
-  },
-  "tile_0094": {
-    "file": "tile_0094_mask.png",
-    "bbox": [
-      -0.829293081396791,
-      38.17474159239449,
-      -0.76947480046779,
-      38.21975628595258
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09014-06747",
-    "offset": [
-      0,
-      0
-    ],
-    "tile_iou": 0.0212,
-    "flood_px": 3092,
-    "total_px": 65536,
-    "flood_pct": 4.72
-  },
-  "tile_0095": {
-    "file": "tile_0095_mask.png",
-    "bbox": [
-      1.562594510136449,
-      13.866870790661078,
-      1.6096883323947224,
-      13.913426271300947
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_02048-06144",
-    "offset": [
-      256,
-      256
-    ],
-    "tile_iou": 0.0,
-    "flood_px": 196,
-    "total_px": 65536,
-    "flood_pct": 0.3
-  },
-  "tile_0096": {
-    "file": "tile_0096_mask.png",
-    "bbox": [
-      -0.8292864416967775,
-      38.12878475461918,
+      -0.799405966193067,
+      38.15074606002257,
       -0.7695071364087179,
-      38.173800925213634
+      38.174352285351716
     ],
-    "split": "train",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
     "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09026-07257",
     "offset": [
       0,
       256
     ],
-    "tile_iou": 0.0,
-    "flood_px": 0,
-    "total_px": 65536,
-    "flood_pct": 0.0
+    "tile_iou": 0.9038,
+    "tile_f1": 0.9495,
+    "precision": 0.9402,
+    "recall": 0.9589,
+    "threshold": 0.6,
+    "flood_pct": 17.96
   },
-  "tile_0097": {
-    "file": "tile_0097_mask.png",
+  "tile_0058": {
+    "file": "tile_0058_mask.png",
     "bbox": [
-      1.5128370676819836,
-      14.23682120035558,
-      1.559988191431178,
-      14.28339129042193
+      -0.8292864416967775,
+      38.12824154636898,
+      -0.799405966193067,
+      38.15184062217002
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_01536-02048",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09026-07257",
     "offset": [
       256,
       0
     ],
-    "tile_iou": 0.4301,
-    "flood_px": 413,
-    "total_px": 65536,
-    "flood_pct": 0.63
+    "tile_iou": 0.6528,
+    "tile_f1": 0.7899,
+    "precision": 0.6896,
+    "recall": 0.9245,
+    "threshold": 0.6,
+    "flood_pct": 17.4
   },
-  "tile_0098": {
-    "file": "tile_0098_mask.png",
+  "tile_0059": {
+    "file": "tile_0059_mask.png",
     "bbox": [
-      -0.921236040647728,
-      38.128736408097595,
-      -0.8615111280012049,
-      38.17380109936118
+      -0.8000986302309914,
+      38.12769109312076,
+      -0.7702097736801912,
+      38.15129696657515
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08220-07276",
-    "offset": [
-      0,
-      256
-    ],
-    "tile_iou": 0.0,
-    "flood_px": 0,
-    "total_px": 65536,
-    "flood_pct": 0.0
-  },
-  "tile_0099": {
-    "file": "tile_0099_mask.png",
-    "bbox": [
-      1.9877406322580957,
-      14.146730882273832,
-      2.034979660464567,
-      14.193213858916478
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_06656-03072",
-    "offset": [
-      0,
-      0
-    ],
-    "tile_iou": 0.8791,
-    "flood_px": 21373,
-    "total_px": 65536,
-    "flood_pct": 32.61
-  },
-  "tile_0100": {
-    "file": "tile_0100_mask.png",
-    "bbox": [
-      2.0820506206382126,
-      14.2859765961347,
-      2.1293372862480773,
-      14.332443337485442
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_07680-01536",
-    "offset": [
-      256,
-      0
-    ],
-    "tile_iou": 0.9914,
-    "flood_px": 41266,
-    "total_px": 65536,
-    "flood_pct": 62.97
-  },
-  "tile_0101": {
-    "file": "tile_0101_mask.png",
-    "bbox": [
-      -0.6914114276692137,
-      38.03676573161969,
-      -0.6316289811135624,
-      38.081712037061045
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_10260-08249",
-    "offset": [
-      0,
-      0
-    ],
-    "tile_iou": 0.1265,
-    "flood_px": 102,
-    "total_px": 65536,
-    "flood_pct": 0.16
-  },
-  "tile_0102": {
-    "file": "tile_0102_mask.png",
-    "bbox": [
-      1.562594510136449,
-      13.866870790661078,
-      1.6096883323947224,
-      13.913426271300947
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_02048-06144",
-    "offset": [
-      0,
-      256
-    ],
-    "tile_iou": 0.7911,
-    "flood_px": 12979,
-    "total_px": 65536,
-    "flood_pct": 19.8
-  },
-  "tile_0103": {
-    "file": "tile_0103_mask.png",
-    "bbox": [
-      1.5637256599666676,
-      13.681745851443795,
-      1.6107862716066552,
-      13.728298256433147
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_02048-08192",
-    "offset": [
-      256,
-      0
-    ],
-    "tile_iou": 0.6685,
-    "flood_px": 9321,
-    "total_px": 65536,
-    "flood_pct": 14.22
-  },
-  "tile_0104": {
-    "file": "tile_0104_mask.png",
-    "bbox": [
-      -0.7833571327530596,
-      38.03673390634587,
-      -0.7236286446162032,
-      38.08172881135547
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09453-08269",
-    "offset": [
-      0,
-      256
-    ],
-    "tile_iou": 0.5394,
-    "flood_px": 362,
-    "total_px": 65536,
-    "flood_pct": 0.55
-  },
-  "tile_0105": {
-    "file": "tile_0105_mask.png",
-    "bbox": [
-      1.656532429397681,
-      14.00625653062255,
-      1.7036725085429976,
-      14.052797597659335
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_03072-04608",
-    "offset": [
-      0,
-      256
-    ],
-    "tile_iou": 0.5071,
-    "flood_px": 1401,
-    "total_px": 65536,
-    "flood_pct": 2.14
-  },
-  "tile_0106": {
-    "file": "tile_0106_mask.png",
-    "bbox": [
-      -0.7373269032374685,
-      38.036757720094265,
-      -0.6775713762561127,
-      38.08172830925262
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09857-08259",
-    "offset": [
-      0,
-      0
-    ],
-    "tile_iou": 0.0,
-    "flood_px": 147,
-    "total_px": 65536,
-    "flood_pct": 0.22
-  },
-  "tile_0107": {
-    "file": "tile_0107_mask.png",
-    "bbox": [
-      -0.8752950465993645,
-      38.174772305869,
-      -0.8155039588996272,
-      38.21981131007723
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08611-06756",
-    "offset": [
-      256,
-      0
-    ],
-    "tile_iou": 0.7684,
-    "flood_px": 4284,
-    "total_px": 65536,
-    "flood_pct": 6.54
-  },
-  "tile_0108": {
-    "file": "tile_0108_mask.png",
-    "bbox": [
-      1.5143381075851527,
-      14.005426746535445,
-      1.5614466397385929,
-      14.051992841907362
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_01536-04608",
-    "offset": [
-      0,
-      256
-    ],
-    "tile_iou": 0.0,
-    "flood_px": 91,
-    "total_px": 65536,
-    "flood_pct": 0.14
-  },
-  "tile_0109": {
-    "file": "tile_0109_mask.png",
-    "bbox": [
-      2.0820506206382126,
-      14.2859765961347,
-      2.1293372862480773,
-      14.332443337485442
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_07680-01536",
-    "offset": [
-      0,
-      0
-    ],
-    "tile_iou": 0.0,
-    "flood_px": 1,
-    "total_px": 65536,
-    "flood_pct": 0.0
-  },
-  "tile_0110": {
-    "file": "tile_0110_mask.png",
-    "bbox": [
-      2.0345863445578503,
-      14.285788854136895,
-      2.08186262006336,
-      14.332264453944513
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_07168-01536",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09026-07257",
     "offset": [
       256,
       256
     ],
-    "tile_iou": 0.2236,
-    "flood_px": 148,
-    "total_px": 65536,
-    "flood_pct": 0.23
+    "tile_iou": 0.8347,
+    "tile_f1": 0.9099,
+    "precision": 0.8663,
+    "recall": 0.9581,
+    "threshold": 0.6,
+    "flood_pct": 29.19
   },
-  "tile_0111": {
-    "file": "tile_0111_mask.png",
+  "tile_0060": {
+    "file": "tile_0060_mask.png",
     "bbox": [
-      1.7970299681800672,
-      14.330991846531996,
-      1.844262649574146,
-      14.377511858836401
+      -0.8285987197290482,
+      38.105250465958875,
+      -0.7987277650208635,
+      38.12884951568421
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_04608-01024",
-    "offset": [
-      256,
-      0
-    ],
-    "tile_iou": 0.8312,
-    "flood_px": 35584,
-    "total_px": 65536,
-    "flood_pct": 54.3
-  },
-  "tile_0112": {
-    "file": "tile_0112_mask.png",
-    "bbox": [
-      2.0820506206382126,
-      14.2859765961347,
-      2.1293372862480773,
-      14.332443337485442
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_07680-01536",
-    "offset": [
-      256,
-      256
-    ],
-    "tile_iou": 0.0,
-    "flood_px": 2,
-    "total_px": 65536,
-    "flood_pct": 0.0
-  },
-  "tile_0113": {
-    "file": "tile_0113_mask.png",
-    "bbox": [
-      1.5128370676819836,
-      14.23682120035558,
-      1.559988191431178,
-      14.28339129042193
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_01536-02048",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09038-07768",
     "offset": [
       0,
       0
     ],
-    "tile_iou": 0.6512,
-    "flood_px": 12016,
-    "total_px": 65536,
-    "flood_pct": 18.33
+    "tile_iou": 0.4985,
+    "tile_f1": 0.6653,
+    "precision": 0.5485,
+    "recall": 0.8453,
+    "threshold": 0.6,
+    "flood_pct": 16.13
   },
-  "tile_0114": {
-    "file": "tile_0114_mask.png",
+  "tile_0061": {
+    "file": "tile_0061_mask.png",
     "bbox": [
-      -0.8292983379326,
-      38.22069809571075,
-      -0.7694409940129918,
-      38.26571131206123
+      -0.799420071209553,
+      38.10470012464876,
+      -0.7695407454340005,
+      38.12830596606336
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09002-06237",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09038-07768",
     "offset": [
-      256,
-      0
-    ],
-    "tile_iou": 0.0989,
-    "flood_px": 220,
-    "total_px": 65536,
-    "flood_pct": 0.34
-  },
-  "tile_0115": {
-    "file": "tile_0115_mask.png",
-    "bbox": [
-      1.7970299681800672,
-      14.330991846531996,
-      1.844262649574146,
-      14.377511858836401
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_04608-01024",
-    "offset": [
-      256,
+      0,
       256
     ],
-    "tile_iou": 0.7396,
-    "flood_px": 1291,
-    "total_px": 65536,
-    "flood_pct": 1.97
+    "tile_iou": 0.6062,
+    "tile_f1": 0.7548,
+    "precision": 0.6692,
+    "recall": 0.8657,
+    "threshold": 0.6,
+    "flood_pct": 10.57
   },
-  "tile_0116": {
-    "file": "tile_0116_mask.png",
+  "tile_0062": {
+    "file": "tile_0062_mask.png",
     "bbox": [
       -0.8292810845085359,
-      38.08273751967916,
-      -0.7695407454340005,
-      38.12775517144934
+      38.082194864477266,
+      -0.799420071209553,
+      38.10579356823184
     ],
-    "split": "train",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
     "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09038-07768",
     "offset": [
       256,
       0
     ],
-    "tile_iou": 0.0,
-    "flood_px": 0,
-    "total_px": 65536,
-    "flood_pct": 0.0
+    "tile_iou": 0.6566,
+    "tile_f1": 0.7927,
+    "precision": 0.7453,
+    "recall": 0.8466,
+    "threshold": 0.6,
+    "flood_pct": 7.3
   },
-  "tile_0117": {
-    "file": "tile_0117_mask.png",
+  "tile_0063": {
+    "file": "tile_0063_mask.png",
     "bbox": [
-      1.9887556141800935,
-      13.915292652867874,
-      2.0359506159165752,
-      13.961773208666724
+      -0.8001115874919894,
+      38.08164497619056,
+      -0.7702422125960126,
+      38.105250465958875
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_06656-05632",
-    "offset": [
-      256,
-      0
-    ],
-    "tile_iou": 0.0534,
-    "flood_px": 2903,
-    "total_px": 65536,
-    "flood_pct": 4.43
-  },
-  "tile_0118": {
-    "file": "tile_0118_mask.png",
-    "bbox": [
-      1.6540712556849397,
-      14.422788910367364,
-      1.7012895679304607,
-      14.469336314225137
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_03072-00000",
-    "offset": [
-      0,
-      256
-    ],
-    "tile_iou": 0.0,
-    "flood_px": 0,
-    "total_px": 65536,
-    "flood_pct": 0.0
-  },
-  "tile_0119": {
-    "file": "tile_0119_mask.png",
-    "bbox": [
-      -0.9212843342540391,
-      38.08277958109232,
-      -0.8615982498603239,
-      38.12784573251879
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08231-07786",
-    "offset": [
-      0,
-      0
-    ],
-    "tile_iou": 0.0,
-    "flood_px": 2,
-    "total_px": 65536,
-    "flood_pct": 0.0
-  },
-  "tile_0120": {
-    "file": "tile_0120_mask.png",
-    "bbox": [
-      -0.967230258233061,
-      38.082772593987784,
-      -0.9075713498441637,
-      38.12786292315944
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_07828-07795",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09038-07768",
     "offset": [
       256,
       256
     ],
-    "tile_iou": 0.5589,
-    "flood_px": 1114,
-    "total_px": 65536,
-    "flood_pct": 1.7
+    "tile_iou": 0.7312,
+    "tile_f1": 0.8447,
+    "precision": 0.8508,
+    "recall": 0.8387,
+    "threshold": 0.6,
+    "flood_pct": 10.65
   },
-  "tile_0121": {
-    "file": "tile_0121_mask.png",
+  "tile_0064": {
+    "file": "tile_0064_mask.png",
     "bbox": [
-      -0.8752252959903994,
-      38.08276653026694,
-      -0.8155120242914715,
-      38.12780841589063
+      -0.8285904364113686,
+      38.059293691208005,
+      -0.7987388838343752,
+      38.082892369912614
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08635-07777",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09050-08278",
     "offset": [
       0,
       0
     ],
-    "tile_iou": 0.8573,
-    "flood_px": 751,
-    "total_px": 65536,
-    "flood_pct": 1.15
+    "tile_iou": 0.6338,
+    "tile_f1": 0.7759,
+    "precision": 0.7054,
+    "recall": 0.862,
+    "threshold": 0.6,
+    "flood_pct": 0.93
   },
-  "tile_0122": {
-    "file": "tile_0122_mask.png",
+  "tile_0065": {
+    "file": "tile_0065_mask.png",
     "bbox": [
-      2.129870222498733,
-      14.193577414568654,
-      2.17714911577814,
-      14.240034489144222
+      -0.7994300458035309,
+      38.05874391336917,
+      -0.7695701415485827,
+      38.08234937215267
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_08192-02560",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09050-08278",
     "offset": [
       0,
       256
     ],
-    "tile_iou": 0.5816,
-    "flood_px": 1174,
-    "total_px": 65536,
-    "flood_pct": 1.79
+    "tile_iou": 0.6074,
+    "tile_f1": 0.7557,
+    "precision": 0.6175,
+    "recall": 0.9736,
+    "threshold": 0.6,
+    "flood_pct": 3.38
   },
-  "tile_0123": {
-    "file": "tile_0123_mask.png",
-    "bbox": [
-      -0.8752252959903994,
-      38.08276653026694,
-      -0.8155120242914715,
-      38.12780841589063
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08635-07777",
-    "offset": [
-      256,
-      0
-    ],
-    "tile_iou": 0.3076,
-    "flood_px": 456,
-    "total_px": 65536,
-    "flood_pct": 0.7
-  },
-  "tile_0124": {
-    "file": "tile_0124_mask.png",
-    "bbox": [
-      -0.7833350686044086,
-      38.08278059369341,
-      -0.7235676387159755,
-      38.12777397930286
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09441-07758",
-    "offset": [
-      0,
-      0
-    ],
-    "tile_iou": 0.0,
-    "flood_px": 0,
-    "total_px": 65536,
-    "flood_pct": 0.0
-  },
-  "tile_0125": {
-    "file": "tile_0125_mask.png",
-    "bbox": [
-      -0.8292864416967775,
-      38.12878475461918,
-      -0.7695071364087179,
-      38.173800925213634
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09026-07257",
-    "offset": [
-      256,
-      0
-    ],
-    "tile_iou": 0.5018,
-    "flood_px": 5614,
-    "total_px": 65536,
-    "flood_pct": 8.57
-  },
-  "tile_0126": {
-    "file": "tile_0126_mask.png",
-    "bbox": [
-      -0.9212199029847518,
-      38.036730332427126,
-      -0.861572571730295,
-      38.08179788806835
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08243-08297",
-    "offset": [
-      256,
-      0
-    ],
-    "tile_iou": 0.0,
-    "flood_px": 1,
-    "total_px": 65536,
-    "flood_pct": 0.0
-  },
-  "tile_0127": {
-    "file": "tile_0127_mask.png",
-    "bbox": [
-      2.081673946711736,
-      14.37855212913613,
-      2.1289788064334796,
-      14.425019708426827
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_07680-00512",
-    "offset": [
-      0,
-      0
-    ],
-    "tile_iou": 0.6174,
-    "flood_px": 4385,
-    "total_px": 65536,
-    "flood_pct": 6.69
-  },
-  "tile_0128": {
-    "file": "tile_0128_mask.png",
+  "tile_0066": {
+    "file": "tile_0066_mask.png",
     "bbox": [
       -0.8292716792027147,
-      38.03678001282355,
-      -0.7695701415485827,
-      38.08179914128949
+      38.03623790893876,
+      -0.7994300458035309,
+      38.059836241892285
     ],
-    "split": "train",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
     "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09050-08278",
     "offset": [
       256,
       0
     ],
-    "tile_iou": 0.887,
-    "flood_px": 41906,
-    "total_px": 65536,
-    "flood_pct": 63.94
+    "tile_iou": 0.5082,
+    "tile_f1": 0.6739,
+    "precision": 0.5988,
+    "recall": 0.7705,
+    "threshold": 0.6,
+    "flood_pct": 1.51
   },
-  "tile_0129": {
-    "file": "tile_0129_mask.png",
+  "tile_0067": {
+    "file": "tile_0067_mask.png",
     "bbox": [
-      1.9889563999709592,
-      13.869004470118973,
-      2.0361426979482222,
-      13.915484540878802
+      -0.800120419298638,
+      38.03568858384443,
+      -0.7702704436694472,
+      38.059293691208005
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_06656-06144",
-    "offset": [
-      256,
-      0
-    ],
-    "tile_iou": 0.0,
-    "flood_px": 0,
-    "total_px": 65536,
-    "flood_pct": 0.0
-  },
-  "tile_0130": {
-    "file": "tile_0130_mask.png",
-    "bbox": [
-      1.9883518341078419,
-      14.007868483136479,
-      2.035564344807366,
-      14.054350008138773
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_06656-04608",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09050-08278",
     "offset": [
       256,
       256
     ],
-    "tile_iou": 0.1,
-    "flood_px": 37,
-    "total_px": 65536,
-    "flood_pct": 0.06
+    "tile_iou": 0.6963,
+    "tile_f1": 0.821,
+    "precision": 0.7587,
+    "recall": 0.8943,
+    "threshold": 0.6,
+    "flood_pct": 1.92
   },
-  "tile_0131": {
-    "file": "tile_0131_mask.png",
+  "tile_0068": {
+    "file": "tile_0068_mask.png",
+    "bbox": [
+      -0.7826163164893742,
+      38.15123695722872,
+      -0.7527123228496525,
+      38.17484709868254
+    ],
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09429-07248",
+    "offset": [
+      0,
+      0
+    ],
+    "tile_iou": 0.858,
+    "tile_f1": 0.9236,
+    "precision": 0.9159,
+    "recall": 0.9314,
+    "threshold": 0.6,
+    "flood_pct": 49.84
+  },
+  "tile_0069": {
+    "file": "tile_0069_mask.png",
+    "bbox": [
+      -0.7534202605071423,
+      38.150674621038675,
+      -0.723507894012827,
+      38.17429155568538
+    ],
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09429-07248",
+    "offset": [
+      0,
+      256
+    ],
+    "tile_iou": 0.8533,
+    "tile_f1": 0.9209,
+    "precision": 0.9339,
+    "recall": 0.9082,
+    "threshold": 0.6,
+    "flood_pct": 55.19
+  },
+  "tile_0070": {
+    "file": "tile_0070_mask.png",
+    "bbox": [
+      -0.7833142750666144,
+      38.128182256897034,
+      -0.7534202605071423,
+      38.15179204320647
+    ],
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09429-07248",
+    "offset": [
+      256,
+      0
+    ],
+    "tile_iou": 0.7955,
+    "tile_f1": 0.8861,
+    "precision": 0.8413,
+    "recall": 0.936,
+    "threshold": 0.6,
+    "flood_pct": 40.27
+  },
+  "tile_0071": {
+    "file": "tile_0071_mask.png",
+    "bbox": [
+      -0.7541273903164577,
+      38.12762038340176,
+      -0.7242250123727803,
+      38.15123695722872
+    ],
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09429-07248",
+    "offset": [
+      256,
+      256
+    ],
+    "tile_iou": 0.8875,
+    "tile_f1": 0.9404,
+    "precision": 0.8983,
+    "recall": 0.9867,
+    "threshold": 0.6,
+    "flood_pct": 70.83
+  },
+  "tile_0072": {
+    "file": "tile_0072_mask.png",
+    "bbox": [
+      -0.7826382667210814,
+      38.105281416138055,
+      -0.7527537501298922,
+      38.12889116837232
+    ],
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09441-07758",
+    "offset": [
+      0,
+      0
+    ],
+    "tile_iou": 0.7197,
+    "tile_f1": 0.837,
+    "precision": 0.83,
+    "recall": 0.8442,
+    "threshold": 0.6,
+    "flood_pct": 21.25
+  },
+  "tile_0073": {
+    "file": "tile_0073_mask.png",
+    "bbox": [
+      -0.7534605087701545,
+      38.10471966215719,
+      -0.7235676387159755,
+      38.12833619597333
+    ],
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09441-07758",
+    "offset": [
+      0,
+      256
+    ],
+    "tile_iou": 0.8887,
+    "tile_f1": 0.9411,
+    "precision": 0.9241,
+    "recall": 0.9587,
+    "threshold": 0.6,
+    "flood_pct": 65.9
+  },
+  "tile_0074": {
+    "file": "tile_0074_mask.png",
     "bbox": [
       -0.7833350686044086,
-      38.08278059369341,
-      -0.7235676387159755,
-      38.12777397930286
+      38.08222653448113,
+      -0.7534605087701545,
+      38.10583593180238
     ],
-    "split": "train",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
     "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09441-07758",
     "offset": [
       256,
       0
     ],
-    "tile_iou": 0.0182,
-    "flood_px": 4681,
-    "total_px": 65536,
-    "flood_pct": 7.14
+    "tile_iou": 0.5073,
+    "tile_f1": 0.6732,
+    "precision": 0.7627,
+    "recall": 0.6024,
+    "threshold": 0.6,
+    "flood_pct": 9.05
   },
-  "tile_0132": {
-    "file": "tile_0132_mask.png",
+  "tile_0075": {
+    "file": "tile_0075_mask.png",
     "bbox": [
-      1.6071586973216996,
-      14.329953680040841,
-      1.6543486568118282,
-      14.376508273178578
+      -0.7541664610393105,
+      38.08166524290358,
+      -0.7242835571900287,
+      38.105281416138055
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_02560-01024",
-    "offset": [
-      0,
-      0
-    ],
-    "tile_iou": 0.9791,
-    "flood_px": 37795,
-    "total_px": 65536,
-    "flood_pct": 57.67
-  },
-  "tile_0133": {
-    "file": "tile_0133_mask.png",
-    "bbox": [
-      1.987329468284795,
-      14.239304911160346,
-      2.0345863445578503,
-      14.285788854136895
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_06656-02048",
-    "offset": [
-      0,
-      0
-    ],
-    "tile_iou": 0.4741,
-    "flood_px": 2082,
-    "total_px": 65536,
-    "flood_pct": 3.18
-  },
-  "tile_0134": {
-    "file": "tile_0134_mask.png",
-    "bbox": [
-      1.987329468284795,
-      14.239304911160346,
-      2.0345863445578503,
-      14.285788854136895
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_06656-02048",
-    "offset": [
-      256,
-      0
-    ],
-    "tile_iou": 0.3192,
-    "flood_px": 349,
-    "total_px": 65536,
-    "flood_pct": 0.53
-  },
-  "tile_0135": {
-    "file": "tile_0135_mask.png",
-    "bbox": [
-      1.6581291143707486,
-      13.728560087270798,
-      1.70521855196589,
-      13.775096920329263
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_03072-07680",
-    "offset": [
-      0,
-      256
-    ],
-    "tile_iou": 0.1007,
-    "flood_px": 114,
-    "total_px": 65536,
-    "flood_pct": 0.17
-  },
-  "tile_0136": {
-    "file": "tile_0136_mask.png",
-    "bbox": [
-      -0.6454001897672219,
-      38.17471083913576,
-      -0.5854735129465892,
-      38.21962805755662
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_00629-06708",
-    "offset": [
-      0,
-      0
-    ],
-    "tile_iou": 0.9788,
-    "flood_px": 26795,
-    "total_px": 65536,
-    "flood_pct": 40.89
-  },
-  "tile_0137": {
-    "file": "tile_0137_mask.png",
-    "bbox": [
-      1.5637256599666676,
-      13.681745851443795,
-      1.6107862716066552,
-      13.728298256433147
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_02048-08192",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09441-07758",
     "offset": [
       256,
       256
     ],
-    "tile_iou": 0.8603,
-    "flood_px": 20207,
-    "total_px": 65536,
-    "flood_pct": 30.83
+    "tile_iou": 0.6628,
+    "tile_f1": 0.7972,
+    "precision": 0.8618,
+    "recall": 0.7417,
+    "threshold": 0.6,
+    "flood_pct": 14.85
   },
-  "tile_0138": {
-    "file": "tile_0138_mask.png",
+  "tile_0076": {
+    "file": "tile_0076_mask.png",
     "bbox": [
-      -0.8292983379326,
-      38.22069809571075,
-      -0.7694409940129918,
-      38.26571131206123
+      -0.7826614887570543,
+      38.059235482223364,
+      -0.752796444506543,
+      38.082844843768484
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09002-06237",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09453-08269",
+    "offset": [
+      0,
+      0
+    ],
+    "tile_iou": 0.6507,
+    "tile_f1": 0.7884,
+    "precision": 0.7804,
+    "recall": 0.7966,
+    "threshold": 0.6,
+    "flood_pct": 2.02
+  },
+  "tile_0077": {
+    "file": "tile_0077_mask.png",
+    "bbox": [
+      -0.7535020229472283,
+      38.05867431223429,
+      -0.7236286446162032,
+      38.0822904437419
+    ],
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09453-08269",
+    "offset": [
+      0,
+      256
+    ],
+    "tile_iou": 0.0601,
+    "tile_f1": 0.1134,
+    "precision": 0.089,
+    "recall": 0.156,
+    "threshold": 0.6,
+    "flood_pct": 1.25
+  },
+  "tile_0078": {
+    "file": "tile_0078_mask.png",
+    "bbox": [
+      -0.7833571327530596,
+      38.036180418936866,
+      -0.7535020229472283,
+      38.05978942580018
+    ],
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09453-08269",
+    "offset": [
+      256,
+      0
+    ],
+    "tile_iou": 0.6281,
+    "tile_f1": 0.7716,
+    "precision": 0.85,
+    "recall": 0.7064,
+    "threshold": 0.6,
+    "flood_pct": 1.4
+  },
+  "tile_0079": {
+    "file": "tile_0079_mask.png",
+    "bbox": [
+      -0.754206796492893,
+      38.03561971105954,
+      -0.7243433620321217,
+      38.059235482223364
+    ],
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09453-08269",
+    "offset": [
+      256,
+      256
+    ],
+    "tile_iou": 0.3252,
+    "tile_f1": 0.4908,
+    "precision": 0.456,
+    "recall": 0.5314,
+    "threshold": 0.6,
+    "flood_pct": 1.16
+  },
+  "tile_0080": {
+    "file": "tile_0080_mask.png",
+    "bbox": [
+      -0.7366331042480214,
+      38.24324948938337,
+      -0.7066763898910279,
+      38.2668711257149
+    ],
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09807-06217",
     "offset": [
       0,
       0
     ],
     "tile_iou": 0.0,
-    "flood_px": 10,
-    "total_px": 65536,
-    "flood_pct": 0.02
+    "tile_f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "threshold": 0.6,
+    "flood_pct": 0.11
   },
-  "tile_0139": {
-    "file": "tile_0139_mask.png",
+  "tile_0081": {
+    "file": "tile_0081_mask.png",
+    "bbox": [
+      -0.7074012089769001,
+      38.24267454710874,
+      -0.6774361005271766,
+      38.26630298977919
+    ],
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09807-06217",
+    "offset": [
+      0,
+      256
+    ],
+    "tile_iou": 0.1084,
+    "tile_f1": 0.1956,
+    "precision": 0.181,
+    "recall": 0.2128,
+    "threshold": 0.6,
+    "flood_pct": 0.34
+  },
+  "tile_0082": {
+    "file": "tile_0082_mask.png",
+    "bbox": [
+      -0.737347884008991,
+      38.22019588655055,
+      -0.7074012089769001,
+      38.24381715832922
+    ],
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09807-06217",
+    "offset": [
+      256,
+      0
+    ],
+    "tile_iou": 0.1561,
+    "tile_f1": 0.2701,
+    "precision": 0.1979,
+    "recall": 0.4253,
+    "threshold": 0.6,
+    "flood_pct": 0.29
+  },
+  "tile_0083": {
+    "file": "tile_0083_mask.png",
+    "bbox": [
+      -0.7081252007000911,
+      38.21962141694768,
+      -0.6781701410681467,
+      38.24324948938337
+    ],
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09807-06217",
+    "offset": [
+      256,
+      256
+    ],
+    "tile_iou": 0.0645,
+    "tile_f1": 0.1212,
+    "precision": 0.1414,
+    "recall": 0.1061,
+    "threshold": 0.6,
+    "flood_pct": 0.15
+  },
+  "tile_0084": {
+    "file": "tile_0084_mask.png",
+    "bbox": [
+      -0.7366896586519467,
+      38.19720549105038,
+      -0.7067525794435057,
+      38.220826718618156
+    ],
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09819-06728",
+    "offset": [
+      0,
+      0
+    ],
+    "tile_iou": 0.0,
+    "tile_f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "threshold": 0.6,
+    "flood_pct": 0.37
+  },
+  "tile_0085": {
+    "file": "tile_0085_mask.png",
+    "bbox": [
+      -0.7074761793400252,
+      38.19663115161768,
+      -0.6775307255157497,
+      38.22025917387685
+    ],
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09819-06728",
+    "offset": [
+      0,
+      256
+    ],
+    "tile_iou": 0.3142,
+    "tile_f1": 0.4781,
+    "precision": 0.3463,
+    "recall": 0.7717,
+    "threshold": 0.6,
+    "flood_pct": 0.63
+  },
+  "tile_0086": {
+    "file": "tile_0086_mask.png",
+    "bbox": [
+      -0.7374032417401318,
+      38.174151705841055,
+      -0.7074761793400252,
+      38.197772569101296
+    ],
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09819-06728",
+    "offset": [
+      256,
+      0
+    ],
+    "tile_iou": 0.8768,
+    "tile_f1": 0.9344,
+    "precision": 0.9436,
+    "recall": 0.9253,
+    "threshold": 0.6,
+    "flood_pct": 11.98
+  },
+  "tile_0087": {
+    "file": "tile_0087_mask.png",
+    "bbox": [
+      -0.7081989534049774,
+      38.17357783877393,
+      -0.6782635258593608,
+      38.19720549105038
+    ],
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09819-06728",
+    "offset": [
+      256,
+      256
+    ],
+    "tile_iou": 0.1594,
+    "tile_f1": 0.2749,
+    "precision": 0.2142,
+    "recall": 0.3839,
+    "threshold": 0.6,
+    "flood_pct": 0.88
+  },
+  "tile_0088": {
+    "file": "tile_0088_mask.png",
+    "bbox": [
+      -0.7366278577252012,
+      38.15124898399114,
+      -0.7067102979374398,
+      38.174869830670346
+    ],
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09832-07238",
+    "offset": [
+      0,
+      0
+    ],
+    "tile_iou": 0.8076,
+    "tile_f1": 0.8936,
+    "precision": 0.9064,
+    "recall": 0.8811,
+    "threshold": 0.6,
+    "flood_pct": 35.04
+  },
+  "tile_0089": {
+    "file": "tile_0089_mask.png",
+    "bbox": [
+      -0.7074327197967624,
+      38.150675217187576,
+      -0.6775068048316308,
+      38.17430284692089
+    ],
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09832-07238",
+    "offset": [
+      0,
+      256
+    ],
+    "tile_iou": 0.5042,
+    "tile_f1": 0.6704,
+    "precision": 0.793,
+    "recall": 0.5806,
+    "threshold": 0.6,
+    "flood_pct": 2.98
+  },
+  "tile_0090": {
+    "file": "tile_0090_mask.png",
+    "bbox": [
+      -0.7373402851547511,
+      38.128195018731645,
+      -0.7074327197967624,
+      38.15181550132425
+    ],
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09832-07238",
+    "offset": [
+      256,
+      0
+    ],
+    "tile_iou": 0.8202,
+    "tile_f1": 0.9012,
+    "precision": 0.8486,
+    "recall": 0.9608,
+    "threshold": 0.6,
+    "flood_pct": 68.95
+  },
+  "tile_0091": {
+    "file": "tile_0091_mask.png",
+    "bbox": [
+      -0.7081543173058089,
+      38.12762172401289,
+      -0.678238406218291,
+      38.15124898399114
+    ],
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09832-07238",
+    "offset": [
+      256,
+      256
+    ],
+    "tile_iou": 0.7972,
+    "tile_f1": 0.8871,
+    "precision": 0.8294,
+    "recall": 0.9535,
+    "threshold": 0.6,
+    "flood_pct": 7.44
+  },
+  "tile_0092": {
+    "file": "tile_0092_mask.png",
+    "bbox": [
+      -0.7366814387431403,
+      38.10520431684039,
+      -0.706783426367257,
+      38.128824754594426
+    ],
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09844-07749",
+    "offset": [
+      0,
+      0
+    ],
+    "tile_iou": 0.8827,
+    "tile_f1": 0.9377,
+    "precision": 0.9121,
+    "recall": 0.9648,
+    "threshold": 0.6,
+    "flood_pct": 69.52
+  },
+  "tile_0093": {
+    "file": "tile_0093_mask.png",
+    "bbox": [
+      -0.7075046330834068,
+      38.10463115282543,
+      -0.6775982849145494,
+      38.128258362013646
+    ],
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09844-07749",
+    "offset": [
+      0,
+      256
+    ],
+    "tile_iou": 0.8348,
+    "tile_f1": 0.9099,
+    "precision": 0.8606,
+    "recall": 0.9653,
+    "threshold": 0.6,
+    "flood_pct": 50.45
+  },
+  "tile_0094": {
+    "file": "tile_0094_mask.png",
     "bbox": [
       -0.7373926734338829,
-      38.082715630023436,
-      -0.6775982849145494,
-      38.12768472592598
+      38.08215016939195,
+      -0.7075046330834068,
+      38.10577024330233
     ],
-    "split": "train",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09844-07749",
+    "offset": [
+      256,
+      0
+    ],
+    "tile_iou": 0.4698,
+    "tile_f1": 0.6392,
+    "precision": 0.6514,
+    "recall": 0.6275,
+    "threshold": 0.6,
+    "flood_pct": 5.64
+  },
+  "tile_0095": {
+    "file": "tile_0095_mask.png",
+    "bbox": [
+      -0.7082250169704585,
+      38.08157747715762,
+      -0.6783286502524636,
+      38.10520431684039
+    ],
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
     "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09844-07749",
     "offset": [
       256,
       256
     ],
-    "tile_iou": 0.4247,
-    "flood_px": 819,
-    "total_px": 65536,
-    "flood_pct": 1.25
+    "tile_iou": 0.6851,
+    "tile_f1": 0.8132,
+    "precision": 0.7072,
+    "recall": 0.9564,
+    "threshold": 0.6,
+    "flood_pct": 3.6
   },
-  "tile_0140": {
-    "file": "tile_0140_mask.png",
+  "tile_0096": {
+    "file": "tile_0096_mask.png",
+    "bbox": [
+      -0.7366168204602922,
+      38.059247147295956,
+      -0.7067382403138547,
+      38.082867203903994
+    ],
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09857-08259",
+    "offset": [
+      0,
+      0
+    ],
+    "tile_iou": 0.1869,
+    "tile_f1": 0.3149,
+    "precision": 0.2354,
+    "recall": 0.4755,
+    "threshold": 0.6,
+    "flood_pct": 0.63
+  },
+  "tile_0097": {
+    "file": "tile_0097_mask.png",
+    "bbox": [
+      -0.7074582728492687,
+      38.05867455595467,
+      -0.6775713762561127,
+      38.082301372387136
+    ],
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09857-08259",
+    "offset": [
+      0,
+      256
+    ],
+    "tile_iou": 0.232,
+    "tile_f1": 0.3766,
+    "precision": 0.5315,
+    "recall": 0.2916,
+    "threshold": 0.6,
+    "flood_pct": 0.39
+  },
+  "tile_0098": {
+    "file": "tile_0098_mask.png",
     "bbox": [
       -0.7373269032374685,
-      38.036757720094265,
-      -0.6775713762561127,
-      38.08172830925262
+      38.03619281998308,
+      -0.7074582728492687,
+      38.059812512966104
     ],
-    "split": "train",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09857-08259",
+    "offset": [
+      256,
+      0
+    ],
+    "tile_iou": 0.7833,
+    "tile_f1": 0.8785,
+    "precision": 0.8664,
+    "recall": 0.8909,
+    "threshold": 0.6,
+    "flood_pct": 4.6
+  },
+  "tile_0099": {
+    "file": "tile_0099_mask.png",
+    "bbox": [
+      -0.7081774840272013,
+      38.0356207001436,
+      -0.6783005465954184,
+      38.059247147295956
+    ],
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
     "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09857-08259",
     "offset": [
       256,
       256
     ],
-    "tile_iou": 0.6961,
-    "flood_px": 1336,
-    "total_px": 65536,
-    "flood_pct": 2.04
+    "tile_iou": 0.98,
+    "tile_f1": 0.9899,
+    "precision": 0.9901,
+    "recall": 0.9897,
+    "threshold": 0.6,
+    "flood_pct": 40.92
   },
-  "tile_0141": {
-    "file": "tile_0141_mask.png",
+  "tile_0100": {
+    "file": "tile_0100_mask.png",
     "bbox": [
-      -0.8292810845085359,
-      38.08273751967916,
-      -0.7695407454340005,
-      38.12775517144934
+      -0.6907317580424005,
+      38.28919882615782,
+      -0.6607418359371391,
+      38.31283156116476
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09038-07768",
-    "offset": [
-      0,
-      256
-    ],
-    "tile_iou": 0.6557,
-    "flood_px": 758,
-    "total_px": 65536,
-    "flood_pct": 1.16
-  },
-  "tile_0142": {
-    "file": "tile_0142_mask.png",
-    "bbox": [
-      -0.829293081396791,
-      38.17474159239449,
-      -0.76947480046779,
-      38.21975628595258
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09014-06747",
-    "offset": [
-      0,
-      256
-    ],
-    "tile_iou": 0.0,
-    "flood_px": 0,
-    "total_px": 65536,
-    "flood_pct": 0.0
-  },
-  "tile_0143": {
-    "file": "tile_0143_mask.png",
-    "bbox": [
-      -0.921236040647728,
-      38.128736408097595,
-      -0.8615111280012049,
-      38.17380109936118
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08220-07276",
-    "offset": [
-      0,
-      0
-    ],
-    "tile_iou": 0.0484,
-    "flood_px": 1767,
-    "total_px": 65536,
-    "flood_pct": 2.7
-  },
-  "tile_0144": {
-    "file": "tile_0144_mask.png",
-    "bbox": [
-      -0.921236040647728,
-      38.128736408097595,
-      -0.8615111280012049,
-      38.17380109936118
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08220-07276",
-    "offset": [
-      256,
-      0
-    ],
-    "tile_iou": 0.0734,
-    "flood_px": 111,
-    "total_px": 65536,
-    "flood_pct": 0.17
-  },
-  "tile_0145": {
-    "file": "tile_0145_mask.png",
-    "bbox": [
-      1.5149309387371985,
-      13.912867683256774,
-      1.562022668959764,
-      13.959432179512744
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_01536-05632",
-    "offset": [
-      0,
-      256
-    ],
-    "tile_iou": 0.0,
-    "flood_px": 0,
-    "total_px": 65536,
-    "flood_pct": 0.0
-  },
-  "tile_0146": {
-    "file": "tile_0146_mask.png",
-    "bbox": [
-      1.5634444366227886,
-      13.728027355040371,
-      1.6105133008387265,
-      13.77458052924148
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_02048-07680",
-    "offset": [
-      0,
-      256
-    ],
-    "tile_iou": 0.0731,
-    "flood_px": 203,
-    "total_px": 65536,
-    "flood_pct": 0.31
-  },
-  "tile_0147": {
-    "file": "tile_0147_mask.png",
-    "bbox": [
-      1.9881488384273354,
-      14.054156129563385,
-      2.0353701543906695,
-      14.100638138732997
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_06656-04096",
-    "offset": [
-      0,
-      256
-    ],
-    "tile_iou": 0.0,
-    "flood_px": 2,
-    "total_px": 65536,
-    "flood_pct": 0.0
-  },
-  "tile_0148": {
-    "file": "tile_0148_mask.png",
-    "bbox": [
-      1.656532429397681,
-      14.00625653062255,
-      1.7036725085429976,
-      14.052797597659335
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_03072-04608",
-    "offset": [
-      0,
-      0
-    ],
-    "tile_iou": 0.7962,
-    "flood_px": 24062,
-    "total_px": 65536,
-    "flood_pct": 36.72
-  },
-  "tile_0149": {
-    "file": "tile_0149_mask.png",
-    "bbox": [
-      -0.7833571327530596,
-      38.03673390634587,
-      -0.7236286446162032,
-      38.08172881135547
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09453-08269",
-    "offset": [
-      0,
-      0
-    ],
-    "tile_iou": 0.1055,
-    "flood_px": 48,
-    "total_px": 65536,
-    "flood_pct": 0.07
-  },
-  "tile_0150": {
-    "file": "tile_0150_mask.png",
-    "bbox": [
-      -0.645403141667607,
-      38.26671075517867,
-      -0.585397799892325,
-      38.311624827680504
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_00603-05687",
-    "offset": [
-      256,
-      0
-    ],
-    "tile_iou": 0.0,
-    "flood_px": 7,
-    "total_px": 65536,
-    "flood_pct": 0.01
-  },
-  "tile_0151": {
-    "file": "tile_0151_mask.png",
-    "bbox": [
-      -0.645403141667607,
-      38.26671075517867,
-      -0.585397799892325,
-      38.311624827680504
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_00603-05687",
-    "offset": [
-      256,
-      256
-    ],
-    "tile_iou": 0.8423,
-    "flood_px": 12793,
-    "total_px": 65536,
-    "flood_pct": 19.52
-  },
-  "tile_0152": {
-    "file": "tile_0152_mask.png",
-    "bbox": [
-      1.4681611118717437,
-      13.820016831098286,
-      1.5152257331204124,
-      13.866587879190208
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_01024-06656",
-    "offset": [
-      0,
-      256
-    ],
-    "tile_iou": 0.1583,
-    "flood_px": 50,
-    "total_px": 65536,
-    "flood_pct": 0.08
-  },
-  "tile_0153": {
-    "file": "tile_0153_mask.png",
-    "bbox": [
-      1.5611570521187583,
-      14.098272899290635,
-      1.6082931405331535,
-      14.144832220117129
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_02048-03584",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_10196-05697",
     "offset": [
       0,
       0
     ],
     "tile_iou": 0.0,
-    "flood_px": 1,
-    "total_px": 65536,
-    "flood_pct": 0.0
+    "tile_f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "threshold": 0.6,
+    "flood_pct": 0.34
   },
-  "tile_0154": {
-    "file": "tile_0154_mask.png",
+  "tile_0101": {
+    "file": "tile_0101_mask.png",
     "bbox": [
-      1.9883518341078419,
-      14.007868483136479,
-      2.035564344807366,
-      14.054350008138773
+      -0.6614823831063205,
+      38.2886118535764,
+      -0.6314840651711626,
+      38.312251396416215
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_06656-04608",
-    "offset": [
-      256,
-      0
-    ],
-    "tile_iou": 0.3511,
-    "flood_px": 591,
-    "total_px": 65536,
-    "flood_pct": 0.9
-  },
-  "tile_0155": {
-    "file": "tile_0155_mask.png",
-    "bbox": [
-      -0.8752950465993645,
-      38.174772305869,
-      -0.8155039588996272,
-      38.21981131007723
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08611-06756",
-    "offset": [
-      256,
-      256
-    ],
-    "tile_iou": 0.0,
-    "flood_px": 0,
-    "total_px": 65536,
-    "flood_pct": 0.0
-  },
-  "tile_0156": {
-    "file": "tile_0156_mask.png",
-    "bbox": [
-      1.6581291143707486,
-      13.728560087270798,
-      1.70521855196589,
-      13.775096920329263
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_03072-07680",
-    "offset": [
-      256,
-      0
-    ],
-    "tile_iou": 0.0,
-    "flood_px": 0,
-    "total_px": 65536,
-    "flood_pct": 0.0
-  },
-  "tile_0157": {
-    "file": "tile_0157_mask.png",
-    "bbox": [
-      -0.7374032417401318,
-      38.17471831749132,
-      -0.6775307255157497,
-      38.21968436178516
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09819-06728",
-    "offset": [
-      256,
-      256
-    ],
-    "tile_iou": 0.0,
-    "flood_px": 1,
-    "total_px": 65536,
-    "flood_pct": 0.0
-  },
-  "tile_0158": {
-    "file": "tile_0158_mask.png",
-    "bbox": [
-      -0.7373402851547511,
-      38.12876106993749,
-      -0.6775068048316308,
-      38.17372860773977
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09832-07238",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_10196-05697",
     "offset": [
       0,
       256
     ],
-    "tile_iou": 0.0,
-    "flood_px": 0,
-    "total_px": 65536,
-    "flood_pct": 0.0
+    "tile_iou": 0.6479,
+    "tile_f1": 0.7863,
+    "precision": 0.6603,
+    "recall": 0.9718,
+    "threshold": 0.6,
+    "flood_pct": 0.32
   },
-  "tile_0159": {
-    "file": "tile_0159_mask.png",
+  "tile_0102": {
+    "file": "tile_0102_mask.png",
     "bbox": [
-      1.5634444366227886,
-      13.728027355040371,
-      1.6105133008387265,
-      13.77458052924148
+      -0.6914622280084569,
+      38.266146152943804,
+      -0.6614823831063205,
+      38.28977851423342
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_02048-07680",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_10196-05697",
     "offset": [
       256,
-      256
-    ],
-    "tile_iou": 0.1546,
-    "flood_px": 167,
-    "total_px": 65536,
-    "flood_pct": 0.25
-  },
-  "tile_0160": {
-    "file": "tile_0160_mask.png",
-    "bbox": [
-      -0.9672107791660843,
-      38.12873025664997,
-      -0.907513105449589,
-      38.17381916399627
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_07817-07285",
-    "offset": [
-      256,
-      256
-    ],
-    "tile_iou": 0.8752,
-    "flood_px": 56236,
-    "total_px": 65536,
-    "flood_pct": 85.81
-  },
-  "tile_0161": {
-    "file": "tile_0161_mask.png",
-    "bbox": [
-      -0.6913671812866601,
-      38.12876724448428,
-      -0.6315066561627335,
-      38.17371042173852
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_10235-07228",
-    "offset": [
-      256,
-      256
+      0
     ],
     "tile_iou": 0.0,
-    "flood_px": 88,
-    "total_px": 65536,
+    "tile_f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "threshold": 0.6,
+    "flood_pct": 0.71
+  },
+  "tile_0103": {
+    "file": "tile_0103_mask.png",
+    "bbox": [
+      -0.6622220848423627,
+      38.26555966271701,
+      -0.6322338536030618,
+      38.28919882615782
+    ],
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_10196-05697",
+    "offset": [
+      256,
+      256
+    ],
+    "tile_iou": 0.2536,
+    "tile_f1": 0.4046,
+    "precision": 0.2978,
+    "recall": 0.631,
+    "threshold": 0.6,
+    "flood_pct": 0.27
+  },
+  "tile_0104": {
+    "file": "tile_0104_mask.png",
+    "bbox": [
+      -0.6907017604740008,
+      38.24324389387577,
+      -0.6607314769558456,
+      38.26687622992209
+    ],
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_10209-06207",
+    "offset": [
+      0,
+      0
+    ],
+    "tile_iou": 0.154,
+    "tile_f1": 0.2669,
+    "precision": 0.1908,
+    "recall": 0.4439,
+    "threshold": 0.6,
+    "flood_pct": 0.66
+  },
+  "tile_0105": {
+    "file": "tile_0105_mask.png",
+    "bbox": [
+      -0.6614708091323789,
+      38.242657512643966,
+      -0.6314921492712148,
+      38.266296644871474
+    ],
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_10209-06207",
+    "offset": [
+      0,
+      256
+    ],
+    "tile_iou": 0.2824,
+    "tile_f1": 0.4404,
+    "precision": 0.6778,
+    "recall": 0.3262,
+    "threshold": 0.6,
+    "flood_pct": 0.14
+  },
+  "tile_0106": {
+    "file": "tile_0106_mask.png",
+    "bbox": [
+      -0.6914310379748556,
+      38.22019103997822,
+      -0.6614708091323789,
+      38.243823002541106
+    ],
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_10209-06207",
+    "offset": [
+      256,
+      0
+    ],
+    "tile_iou": 0.1116,
+    "tile_f1": 0.2008,
+    "precision": 0.142,
+    "recall": 0.3429,
+    "threshold": 0.6,
+    "flood_pct": 0.26
+  },
+  "tile_0107": {
+    "file": "tile_0107_mask.png",
+    "bbox": [
+      -0.662209297407335,
+      38.21960514080667,
+      -0.6322407016920166,
+      38.24324389387577
+    ],
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_10209-06207",
+    "offset": [
+      256,
+      256
+    ],
+    "tile_iou": 0.4516,
+    "tile_f1": 0.6222,
+    "precision": 0.4773,
+    "recall": 0.8936,
+    "threshold": 0.6,
     "flood_pct": 0.13
   },
-  "tile_0162": {
-    "file": "tile_0162_mask.png",
+  "tile_0108": {
+    "file": "tile_0108_mask.png",
     "bbox": [
-      1.5143381075851527,
-      14.005426746535445,
-      1.5614466397385929,
-      14.051992841907362
+      -0.690673167970724,
+      38.197198580687896,
+      -0.6607225183879456,
+      38.220830516189054
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_01536-04608",
-    "offset": [
-      256,
-      256
-    ],
-    "tile_iou": 0.8794,
-    "flood_px": 12592,
-    "total_px": 65536,
-    "flood_pct": 19.21
-  },
-  "tile_0163": {
-    "file": "tile_0163_mask.png",
-    "bbox": [
-      1.8928736300853863,
-      14.146312380125046,
-      1.9400919204036078,
-      14.19281272113317
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_05632-03072",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_10222-06718",
     "offset": [
       0,
       0
     ],
-    "tile_iou": 0.6023,
-    "flood_px": 8139,
-    "total_px": 65536,
-    "flood_pct": 12.42
+    "tile_iou": 0.0653,
+    "tile_f1": 0.1226,
+    "precision": 0.0832,
+    "recall": 0.2335,
+    "threshold": 0.6,
+    "flood_pct": 0.72
   },
-  "tile_0164": {
-    "file": "tile_0164_mask.png",
+  "tile_0109": {
+    "file": "tile_0109_mask.png",
     "bbox": [
-      1.7020924310187295,
-      14.330491735144157,
-      1.7493038191726356,
-      14.377029103391802
+      -0.6614606342625157,
+      38.196612792707946,
+      -0.631501627814167,
+      38.22025151273026
     ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_03584-01024",
-    "offset": [
-      0,
-      256
-    ],
-    "tile_iou": 0.7354,
-    "flood_px": 14957,
-    "total_px": 65536,
-    "flood_pct": 22.82
-  },
-  "tile_0165": {
-    "file": "tile_0165_mask.png",
-    "bbox": [
-      -0.967230258233061,
-      38.082772593987784,
-      -0.9075713498441637,
-      38.12786292315944
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_07828-07795",
-    "offset": [
-      0,
-      256
-    ],
-    "tile_iou": 0.0156,
-    "flood_px": 64,
-    "total_px": 65536,
-    "flood_pct": 0.1
-  },
-  "tile_0166": {
-    "file": "tile_0166_mask.png",
-    "bbox": [
-      -0.8752950465993645,
-      38.174772305869,
-      -0.8155039588996272,
-      38.21981131007723
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08611-06756",
-    "offset": [
-      0,
-      0
-    ],
-    "tile_iou": 0.0,
-    "flood_px": 0,
-    "total_px": 65536,
-    "flood_pct": 0.0
-  },
-  "tile_0167": {
-    "file": "tile_0167_mask.png",
-    "bbox": [
-      -0.9672509019924312,
-      38.03672452146072,
-      -0.9076307493320475,
-      38.081816276323565
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_07839-08306",
-    "offset": [
-      0,
-      0
-    ],
-    "tile_iou": 0.5378,
-    "flood_px": 1458,
-    "total_px": 65536,
-    "flood_pct": 2.22
-  },
-  "tile_0168": {
-    "file": "tile_0168_mask.png",
-    "bbox": [
-      -0.8292716792027147,
-      38.03678001282355,
-      -0.7695701415485827,
-      38.08179914128949
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09050-08278",
-    "offset": [
-      0,
-      256
-    ],
-    "tile_iou": 0.6285,
-    "flood_px": 3730,
-    "total_px": 65536,
-    "flood_pct": 5.69
-  },
-  "tile_0169": {
-    "file": "tile_0169_mask.png",
-    "bbox": [
-      1.656532429397681,
-      14.00625653062255,
-      1.7036725085429976,
-      14.052797597659335
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_03072-04608",
-    "offset": [
-      256,
-      0
-    ],
-    "tile_iou": 0.8326,
-    "flood_px": 8771,
-    "total_px": 65536,
-    "flood_pct": 13.38
-  },
-  "tile_0170": {
-    "file": "tile_0170_mask.png",
-    "bbox": [
-      2.129870222498733,
-      14.193577414568654,
-      2.17714911577814,
-      14.240034489144222
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_08192-02560",
-    "offset": [
-      256,
-      256
-    ],
-    "tile_iou": 0.6995,
-    "flood_px": 11153,
-    "total_px": 65536,
-    "flood_pct": 17.02
-  },
-  "tile_0171": {
-    "file": "tile_0171_mask.png",
-    "bbox": [
-      2.1317754630707135,
-      13.68438855685147,
-      2.1789570818198345,
-      13.730841341494083
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_08192-08192",
-    "offset": [
-      256,
-      256
-    ],
-    "tile_iou": 0.0,
-    "flood_px": 204,
-    "total_px": 65536,
-    "flood_pct": 0.31
-  },
-  "tile_0172": {
-    "file": "tile_0172_mask.png",
-    "bbox": [
-      1.5637256599666676,
-      13.681745851443795,
-      1.6107862716066552,
-      13.728298256433147
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_02048-08192",
-    "offset": [
-      0,
-      256
-    ],
-    "tile_iou": 0.267,
-    "flood_px": 984,
-    "total_px": 65536,
-    "flood_pct": 1.5
-  },
-  "tile_0173": {
-    "file": "tile_0173_mask.png",
-    "bbox": [
-      2.1317754630707135,
-      13.68438855685147,
-      2.1789570818198345,
-      13.730841341494083
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_08192-08192",
-    "offset": [
-      0,
-      0
-    ],
-    "tile_iou": 0.7201,
-    "flood_px": 5246,
-    "total_px": 65536,
-    "flood_pct": 8.0
-  },
-  "tile_0174": {
-    "file": "tile_0174_mask.png",
-    "bbox": [
-      1.9881488384273354,
-      14.054156129563385,
-      2.0353701543906695,
-      14.100638138732997
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_06656-04096",
-    "offset": [
-      256,
-      256
-    ],
-    "tile_iou": 0.2569,
-    "flood_px": 47,
-    "total_px": 65536,
-    "flood_pct": 0.07
-  },
-  "tile_0175": {
-    "file": "tile_0175_mask.png",
-    "bbox": [
-      -0.9672509019924312,
-      38.03672452146072,
-      -0.9076307493320475,
-      38.081816276323565
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_07839-08306",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_10222-06718",
     "offset": [
       0,
       256
     ],
     "tile_iou": 0.0,
-    "flood_px": 0,
-    "total_px": 65536,
-    "flood_pct": 0.0
+    "tile_f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "threshold": 0.6,
+    "flood_pct": 0.66
   },
-  "tile_0176": {
-    "file": "tile_0176_mask.png",
-    "bbox": [
-      -0.7373402851547511,
-      38.12876106993749,
-      -0.6775068048316308,
-      38.17372860773977
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09832-07238",
-    "offset": [
-      0,
-      0
-    ],
-    "tile_iou": 0.0,
-    "flood_px": 0,
-    "total_px": 65536,
-    "flood_pct": 0.0
-  },
-  "tile_0177": {
-    "file": "tile_0177_mask.png",
-    "bbox": [
-      -0.6914114276692137,
-      38.03676573161969,
-      -0.6316289811135624,
-      38.081712037061045
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_10260-08249",
-    "offset": [
-      256,
-      256
-    ],
-    "tile_iou": 0.6208,
-    "flood_px": 885,
-    "total_px": 65536,
-    "flood_pct": 1.35
-  },
-  "tile_0178": {
-    "file": "tile_0178_mask.png",
-    "bbox": [
-      -0.8752621372901245,
-      38.12872455313505,
-      -0.815510040048104,
-      38.1737650002299
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08623-07267",
-    "offset": [
-      256,
-      0
-    ],
-    "tile_iou": 0.7226,
-    "flood_px": 16703,
-    "total_px": 65536,
-    "flood_pct": 25.49
-  },
-  "tile_0179": {
-    "file": "tile_0179_mask.png",
-    "bbox": [
-      -0.967230258233061,
-      38.082772593987784,
-      -0.9075713498441637,
-      38.12786292315944
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_07828-07795",
-    "offset": [
-      256,
-      0
-    ],
-    "tile_iou": 0.9549,
-    "flood_px": 20418,
-    "total_px": 65536,
-    "flood_pct": 31.16
-  },
-  "tile_0180": {
-    "file": "tile_0180_mask.png",
-    "bbox": [
-      1.5146350639002808,
-      13.959147305891538,
-      1.561735178352227,
-      14.005712601795821
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_01536-05120",
-    "offset": [
-      0,
-      0
-    ],
-    "tile_iou": 0.0,
-    "flood_px": 3493,
-    "total_px": 65536,
-    "flood_pct": 5.33
-  },
-  "tile_0181": {
-    "file": "tile_0181_mask.png",
-    "bbox": [
-      -0.7373402851547511,
-      38.12876106993749,
-      -0.6775068048316308,
-      38.17372860773977
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09832-07238",
-    "offset": [
-      256,
-      256
-    ],
-    "tile_iou": 0.1725,
-    "flood_px": 449,
-    "total_px": 65536,
-    "flood_pct": 0.69
-  },
-  "tile_0182": {
-    "file": "tile_0182_mask.png",
-    "bbox": [
-      1.5128370676819836,
-      14.23682120035558,
-      1.559988191431178,
-      14.28339129042193
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_01536-02048",
-    "offset": [
-      0,
-      256
-    ],
-    "tile_iou": 0.6439,
-    "flood_px": 2082,
-    "total_px": 65536,
-    "flood_pct": 3.18
-  },
-  "tile_0183": {
-    "file": "tile_0183_mask.png",
-    "bbox": [
-      -0.7373269032374685,
-      38.036757720094265,
-      -0.6775713762561127,
-      38.08172830925262
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09857-08259",
-    "offset": [
-      256,
-      0
-    ],
-    "tile_iou": 0.4859,
-    "flood_px": 1080,
-    "total_px": 65536,
-    "flood_pct": 1.65
-  },
-  "tile_0184": {
-    "file": "tile_0184_mask.png",
-    "bbox": [
-      1.5611570521187583,
-      14.098272899290635,
-      1.6082931405331535,
-      14.144832220117129
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_02048-03584",
-    "offset": [
-      0,
-      256
-    ],
-    "tile_iou": 0.0,
-    "flood_px": 0,
-    "total_px": 65536,
-    "flood_pct": 0.0
-  },
-  "tile_0185": {
-    "file": "tile_0185_mask.png",
-    "bbox": [
-      -0.7374032417401318,
-      38.17471831749132,
-      -0.6775307255157497,
-      38.21968436178516
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09819-06728",
-    "offset": [
-      256,
-      0
-    ],
-    "tile_iou": 0.7192,
-    "flood_px": 16708,
-    "total_px": 65536,
-    "flood_pct": 25.49
-  },
-  "tile_0186": {
-    "file": "tile_0186_mask.png",
-    "bbox": [
-      1.9895543486968221,
-      13.730138857980137,
-      2.0367147379284316,
-      13.776617471856525
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_06656-07680",
-    "offset": [
-      256,
-      256
-    ],
-    "tile_iou": 0.8207,
-    "flood_px": 23175,
-    "total_px": 65536,
-    "flood_pct": 35.36
-  },
-  "tile_0187": {
-    "file": "tile_0187_mask.png",
-    "bbox": [
-      -0.7373269032374685,
-      38.036757720094265,
-      -0.6775713762561127,
-      38.08172830925262
-    ],
-    "split": "train",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09857-08259",
-    "offset": [
-      0,
-      256
-    ],
-    "tile_iou": 0.593,
-    "flood_px": 51,
-    "total_px": 65536,
-    "flood_pct": 0.08
-  },
-  "tile_0188": {
-    "file": "tile_0188_mask.png",
-    "bbox": [
-      2.1317754630707135,
-      13.68438855685147,
-      2.1789570818198345,
-      13.730841341494083
-    ],
-    "split": "val",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_08192-08192",
-    "offset": [
-      256,
-      0
-    ],
-    "tile_iou": 0.5918,
-    "flood_px": 7058,
-    "total_px": 65536,
-    "flood_pct": 10.77
-  },
-  "tile_0189": {
-    "file": "tile_0189_mask.png",
-    "bbox": [
-      1.5149309387371985,
-      13.912867683256774,
-      1.562022668959764,
-      13.959432179512744
-    ],
-    "split": "val",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_01536-05632",
-    "offset": [
-      256,
-      256
-    ],
-    "tile_iou": 0.0,
-    "flood_px": 4,
-    "total_px": 65536,
-    "flood_pct": 0.01
-  },
-  "tile_0190": {
-    "file": "tile_0190_mask.png",
-    "bbox": [
-      1.6581291143707486,
-      13.728560087270798,
-      1.70521855196589,
-      13.775096920329263
-    ],
-    "split": "val",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_03072-07680",
-    "offset": [
-      0,
-      0
-    ],
-    "tile_iou": 0.0,
-    "flood_px": 3,
-    "total_px": 65536,
-    "flood_pct": 0.0
-  },
-  "tile_0191": {
-    "file": "tile_0191_mask.png",
-    "bbox": [
-      1.9889563999709592,
-      13.869004470118973,
-      2.0361426979482222,
-      13.915484540878802
-    ],
-    "split": "val",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_06656-06144",
-    "offset": [
-      0,
-      256
-    ],
-    "tile_iou": 0.905,
-    "flood_px": 42602,
-    "total_px": 65536,
-    "flood_pct": 65.01
-  },
-  "tile_0192": {
-    "file": "tile_0192_mask.png",
-    "bbox": [
-      1.562594510136449,
-      13.866870790661078,
-      1.6096883323947224,
-      13.913426271300947
-    ],
-    "split": "val",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_02048-06144",
-    "offset": [
-      0,
-      0
-    ],
-    "tile_iou": 0.0,
-    "flood_px": 0,
-    "total_px": 65536,
-    "flood_pct": 0.0
-  },
-  "tile_0193": {
-    "file": "tile_0193_mask.png",
-    "bbox": [
-      1.9889563999709592,
-      13.869004470118973,
-      2.0361426979482222,
-      13.915484540878802
-    ],
-    "split": "val",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_06656-06144",
-    "offset": [
-      0,
-      0
-    ],
-    "tile_iou": 0.8254,
-    "flood_px": 19798,
-    "total_px": 65536,
-    "flood_pct": 30.21
-  },
-  "tile_0194": {
-    "file": "tile_0194_mask.png",
-    "bbox": [
-      1.5146350639002808,
-      13.959147305891538,
-      1.561735178352227,
-      14.005712601795821
-    ],
-    "split": "val",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_01536-05120",
-    "offset": [
-      0,
-      256
-    ],
-    "tile_iou": 0.0,
-    "flood_px": 1,
-    "total_px": 65536,
-    "flood_pct": 0.0
-  },
-  "tile_0195": {
-    "file": "tile_0195_mask.png",
-    "bbox": [
-      -0.829293081396791,
-      38.17474159239449,
-      -0.76947480046779,
-      38.21975628595258
-    ],
-    "split": "val",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09014-06747",
-    "offset": [
-      256,
-      256
-    ],
-    "tile_iou": 0.4126,
-    "flood_px": 527,
-    "total_px": 65536,
-    "flood_pct": 0.8
-  },
-  "tile_0196": {
-    "file": "tile_0196_mask.png",
-    "bbox": [
-      1.8939836889022335,
-      13.914881266033882,
-      1.9411583056287187,
-      13.961378870471533
-    ],
-    "split": "val",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_05632-05632",
-    "offset": [
-      256,
-      256
-    ],
-    "tile_iou": 0.8353,
-    "flood_px": 12720,
-    "total_px": 65536,
-    "flood_pct": 19.41
-  },
-  "tile_0197": {
-    "file": "tile_0197_mask.png",
-    "bbox": [
-      1.5143381075851527,
-      14.005426746535445,
-      1.5614466397385929,
-      14.051992841907362
-    ],
-    "split": "val",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_01536-04608",
-    "offset": [
-      0,
-      0
-    ],
-    "tile_iou": 0.0,
-    "flood_px": 0,
-    "total_px": 65536,
-    "flood_pct": 0.0
-  },
-  "tile_0198": {
-    "file": "tile_0198_mask.png",
-    "bbox": [
-      1.987329468284795,
-      14.239304911160346,
-      2.0345863445578503,
-      14.285788854136895
-    ],
-    "split": "val",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_06656-02048",
-    "offset": [
-      0,
-      256
-    ],
-    "tile_iou": 0.6641,
-    "flood_px": 570,
-    "total_px": 65536,
-    "flood_pct": 0.87
-  },
-  "tile_0199": {
-    "file": "tile_0199_mask.png",
-    "bbox": [
-      -0.9672509019924312,
-      38.03672452146072,
-      -0.9076307493320475,
-      38.081816276323565
-    ],
-    "split": "val",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_07839-08306",
-    "offset": [
-      256,
-      256
-    ],
-    "tile_iou": 0.0044,
-    "flood_px": 30,
-    "total_px": 65536,
-    "flood_pct": 0.05
-  },
-  "tile_0200": {
-    "file": "tile_0200_mask.png",
+  "tile_0110": {
+    "file": "tile_0110_mask.png",
     "bbox": [
       -0.6914012516857644,
-      38.1747235973572,
-      -0.631501627814167,
-      38.21966524268536
+      38.174145545797764,
+      -0.6614606342625157,
+      38.19777710804923
     ],
-    "split": "val",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_10222-06718",
+    "offset": [
+      256,
+      0
+    ],
+    "tile_iou": 0.0,
+    "tile_f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "threshold": 0.6,
+    "flood_pct": 0.33
+  },
+  "tile_0111": {
+    "file": "tile_0111_mask.png",
+    "bbox": [
+      -0.6621979077661254,
+      38.17356023958351,
+      -0.6322489429249502,
+      38.197198580687896
+    ],
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
     "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_10222-06718",
     "offset": [
       256,
       256
     ],
-    "tile_iou": 0.0,
-    "flood_px": 13,
-    "total_px": 65536,
-    "flood_pct": 0.02
+    "tile_iou": 0.795,
+    "tile_f1": 0.8858,
+    "precision": 0.9471,
+    "recall": 0.8319,
+    "threshold": 0.6,
+    "flood_pct": 16.92
   },
-  "tile_0201": {
-    "file": "tile_0201_mask.png",
+  "tile_0112": {
+    "file": "tile_0112_mask.png",
     "bbox": [
-      1.9877406322580957,
-      14.146730882273832,
-      2.034979660464567,
-      14.193213858916478
+      -0.6906402861841289,
+      38.151242987507025,
+      -0.660709187485602,
+      38.1748745237948
     ],
-    "split": "val",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_06656-03072",
-    "offset": [
-      256,
-      256
-    ],
-    "tile_iou": 0.6632,
-    "flood_px": 12861,
-    "total_px": 65536,
-    "flood_pct": 19.62
-  },
-  "tile_0202": {
-    "file": "tile_0202_mask.png",
-    "bbox": [
-      -0.8292716792027147,
-      38.03678001282355,
-      -0.7695701415485827,
-      38.08179914128949
-    ],
-    "split": "val",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09050-08278",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_10235-07228",
     "offset": [
       0,
       0
     ],
-    "tile_iou": 0.249,
-    "flood_px": 621,
-    "total_px": 65536,
-    "flood_pct": 0.95
+    "tile_iou": 0.0598,
+    "tile_f1": 0.1128,
+    "precision": 0.1754,
+    "recall": 0.0831,
+    "threshold": 0.6,
+    "flood_pct": 0.26
   },
-  "tile_0203": {
-    "file": "tile_0203_mask.png",
+  "tile_0113": {
+    "file": "tile_0113_mask.png",
     "bbox": [
-      1.5140400687630766,
-      14.051706004629871,
-      1.5611570521187583,
-      14.098272899290635
-    ],
-    "split": "val",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_01536-04096",
-    "offset": [
-      0,
-      256
-    ],
-    "tile_iou": 0.439,
-    "flood_px": 934,
-    "total_px": 65536,
-    "flood_pct": 1.43
-  },
-  "tile_0204": {
-    "file": "tile_0204_mask.png",
-    "bbox": [
-      2.081673946711736,
-      14.37855212913613,
-      2.1289788064334796,
-      14.425019708426827
-    ],
-    "split": "val",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_07680-00512",
-    "offset": [
-      256,
-      256
-    ],
-    "tile_iou": 0.4083,
-    "flood_px": 292,
-    "total_px": 65536,
-    "flood_pct": 0.45
-  },
-  "tile_0205": {
-    "file": "tile_0205_mask.png",
-    "bbox": [
-      1.5140400687630766,
-      14.051706004629871,
-      1.5611570521187583,
-      14.098272899290635
-    ],
-    "split": "val",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_01536-04096",
-    "offset": [
-      256,
-      0
-    ],
-    "tile_iou": 0.7885,
-    "flood_px": 2866,
-    "total_px": 65536,
-    "flood_pct": 4.37
-  },
-  "tile_0206": {
-    "file": "tile_0206_mask.png",
-    "bbox": [
-      -0.9672107791660843,
-      38.12873025664997,
-      -0.907513105449589,
-      38.17381916399627
-    ],
-    "split": "val",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_07817-07285",
-    "offset": [
-      0,
-      256
-    ],
-    "tile_iou": 0.778,
-    "flood_px": 21492,
-    "total_px": 65536,
-    "flood_pct": 32.79
-  },
-  "tile_0207": {
-    "file": "tile_0207_mask.png",
-    "bbox": [
-      -0.9672107791660843,
-      38.12873025664997,
-      -0.907513105449589,
-      38.17381916399627
-    ],
-    "split": "val",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_07817-07285",
-    "offset": [
-      256,
-      0
-    ],
-    "tile_iou": 0.8047,
-    "flood_px": 15764,
-    "total_px": 65536,
-    "flood_pct": 24.05
-  },
-  "tile_0208": {
-    "file": "tile_0208_mask.png",
-    "bbox": [
-      -0.7374032417401318,
-      38.17471831749132,
-      -0.6775307255157497,
-      38.21968436178516
-    ],
-    "split": "val",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09819-06728",
-    "offset": [
-      0,
-      256
-    ],
-    "tile_iou": 0.6846,
-    "flood_px": 801,
-    "total_px": 65536,
-    "flood_pct": 1.22
-  },
-  "tile_0209": {
-    "file": "tile_0209_mask.png",
-    "bbox": [
-      1.5637256599666676,
-      13.681745851443795,
-      1.6107862716066552,
-      13.728298256433147
-    ],
-    "split": "val",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_02048-08192",
-    "offset": [
-      0,
-      0
-    ],
-    "tile_iou": 0.8711,
-    "flood_px": 46448,
-    "total_px": 65536,
-    "flood_pct": 70.87
-  },
-  "tile_0210": {
-    "file": "tile_0210_mask.png",
-    "bbox": [
-      1.5146350639002808,
-      13.959147305891538,
-      1.561735178352227,
-      14.005712601795821
-    ],
-    "split": "val",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_01536-05120",
-    "offset": [
-      256,
-      0
-    ],
-    "tile_iou": 0.0,
-    "flood_px": 0,
-    "total_px": 65536,
-    "flood_pct": 0.0
-  },
-  "tile_0211": {
-    "file": "tile_0211_mask.png",
-    "bbox": [
-      -0.8292864416967775,
-      38.12878475461918,
-      -0.7695071364087179,
-      38.173800925213634
-    ],
-    "split": "val",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09026-07257",
-    "offset": [
-      0,
-      0
-    ],
-    "tile_iou": 0.0,
-    "flood_px": 0,
-    "total_px": 65536,
-    "flood_pct": 0.0
-  },
-  "tile_0212": {
-    "file": "tile_0212_mask.png",
-    "bbox": [
-      1.6540712556849397,
-      14.422788910367364,
-      1.7012895679304607,
-      14.469336314225137
-    ],
-    "split": "val",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_03072-00000",
-    "offset": [
-      0,
-      0
-    ],
-    "tile_iou": 0.5338,
-    "flood_px": 10139,
-    "total_px": 65536,
-    "flood_pct": 15.47
-  },
-  "tile_0213": {
-    "file": "tile_0213_mask.png",
-    "bbox": [
-      -0.7833350686044086,
-      38.08278059369341,
-      -0.7235676387159755,
-      38.12777397930286
-    ],
-    "split": "val",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09441-07758",
-    "offset": [
-      0,
-      256
-    ],
-    "tile_iou": 0.7915,
-    "flood_px": 49262,
-    "total_px": 65536,
-    "flood_pct": 75.17
-  },
-  "tile_0214": {
-    "file": "tile_0214_mask.png",
-    "bbox": [
-      2.0353701543906695,
-      14.100638138732997,
-      2.082610592227113,
-      14.147111932408546
-    ],
-    "split": "val",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_07168-03584",
-    "offset": [
-      256,
-      0
-    ],
-    "tile_iou": 0.7849,
-    "flood_px": 11599,
-    "total_px": 65536,
-    "flood_pct": 17.7
-  },
-  "tile_0215": {
-    "file": "tile_0215_mask.png",
-    "bbox": [
-      1.4681611118717437,
-      13.820016831098286,
-      1.5152257331204124,
-      13.866587879190208
-    ],
-    "split": "val",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_01024-06656",
-    "offset": [
-      256,
-      0
-    ],
-    "tile_iou": 0.7006,
-    "flood_px": 13898,
-    "total_px": 65536,
-    "flood_pct": 21.21
-  },
-  "tile_0216": {
-    "file": "tile_0216_mask.png",
-    "bbox": [
-      -0.8292810845085359,
-      38.08273751967916,
-      -0.7695407454340005,
-      38.12775517144934
-    ],
-    "split": "val",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09038-07768",
-    "offset": [
-      0,
-      0
-    ],
-    "tile_iou": 0.6834,
-    "flood_px": 347,
-    "total_px": 65536,
-    "flood_pct": 0.53
-  },
-  "tile_0217": {
-    "file": "tile_0217_mask.png",
-    "bbox": [
-      -0.7373402851547511,
-      38.12876106993749,
-      -0.6775068048316308,
-      38.17372860773977
-    ],
-    "split": "val",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09832-07238",
-    "offset": [
-      256,
-      0
-    ],
-    "tile_iou": 0.8635,
-    "flood_px": 15998,
-    "total_px": 65536,
-    "flood_pct": 24.41
-  },
-  "tile_0218": {
-    "file": "tile_0218_mask.png",
-    "bbox": [
-      1.5140400687630766,
-      14.051706004629871,
-      1.5611570521187583,
-      14.098272899290635
-    ],
-    "split": "val",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_01536-04096",
-    "offset": [
-      0,
-      0
-    ],
-    "tile_iou": 0.0315,
-    "flood_px": 291,
-    "total_px": 65536,
-    "flood_pct": 0.44
-  },
-  "tile_0219": {
-    "file": "tile_0219_mask.png",
-    "bbox": [
-      1.562594510136449,
-      13.866870790661078,
-      1.6096883323947224,
-      13.913426271300947
-    ],
-    "split": "val",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_02048-06144",
-    "offset": [
-      256,
-      0
-    ],
-    "tile_iou": 0.864,
-    "flood_px": 5672,
-    "total_px": 65536,
-    "flood_pct": 8.65
-  },
-  "tile_0220": {
-    "file": "tile_0220_mask.png",
-    "bbox": [
-      1.8939836889022335,
-      13.914881266033882,
-      1.9411583056287187,
-      13.961378870471533
-    ],
-    "split": "val",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_05632-05632",
-    "offset": [
-      0,
-      0
-    ],
-    "tile_iou": 0.0092,
-    "flood_px": 17,
-    "total_px": 65536,
-    "flood_pct": 0.03
-  },
-  "tile_0221": {
-    "file": "tile_0221_mask.png",
-    "bbox": [
-      -0.6913671812866601,
-      38.12876724448428,
+      -0.6614460923326123,
+      38.150657790916284,
       -0.6315066561627335,
-      38.17371042173852
+      38.17429610010113
     ],
-    "split": "val",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
     "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_10235-07228",
     "offset": [
       0,
       256
     ],
-    "tile_iou": 0.9996,
-    "flood_px": 65512,
-    "total_px": 65536,
-    "flood_pct": 99.96
+    "tile_iou": 0.8904,
+    "tile_f1": 0.942,
+    "precision": 0.902,
+    "recall": 0.9857,
+    "threshold": 0.6,
+    "flood_pct": 23.47
   },
-  "tile_0222": {
-    "file": "tile_0222_mask.png",
+  "tile_0114": {
+    "file": "tile_0114_mask.png",
     "bbox": [
-      1.5611570521187583,
-      14.098272899290635,
-      1.6082931405331535,
-      14.144832220117129
+      -0.6913671812866601,
+      38.1281897721193,
+      -0.6614460923326123,
+      38.15182093538891
     ],
-    "split": "val",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_02048-03584",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_10235-07228",
     "offset": [
       256,
       0
     ],
-    "tile_iou": 0.0,
-    "flood_px": 6,
-    "total_px": 65536,
-    "flood_pct": 0.01
+    "tile_iou": 0.0057,
+    "tile_f1": 0.0113,
+    "precision": 0.0057,
+    "recall": 1.0,
+    "threshold": 0.6,
+    "flood_pct": 0.27
   },
-  "tile_0223": {
-    "file": "tile_0223_mask.png",
+  "tile_0115": {
+    "file": "tile_0115_mask.png",
     "bbox": [
-      1.5149309387371985,
-      13.912867683256774,
-      1.562022668959764,
-      13.959432179512744
+      -0.6621821563302789,
+      38.127605057001865,
+      -0.6322527393301228,
+      38.151242987507025
     ],
-    "split": "val",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_01536-05632",
-    "offset": [
-      256,
-      0
-    ],
-    "tile_iou": 0.0447,
-    "flood_px": 67,
-    "total_px": 65536,
-    "flood_pct": 0.1
-  },
-  "tile_0224": {
-    "file": "tile_0224_mask.png",
-    "bbox": [
-      1.7020924310187295,
-      14.330491735144157,
-      1.7493038191726356,
-      14.377029103391802
-    ],
-    "split": "val",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_03584-01024",
-    "offset": [
-      0,
-      0
-    ],
-    "tile_iou": 0.2568,
-    "flood_px": 5580,
-    "total_px": 65536,
-    "flood_pct": 8.51
-  },
-  "tile_0225": {
-    "file": "tile_0225_mask.png",
-    "bbox": [
-      -0.6453950044250045,
-      38.12875541047742,
-      -0.5855074890619598,
-      38.17367419927453
-    ],
-    "split": "val",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_00642-07218",
-    "offset": [
-      0,
-      256
-    ],
-    "tile_iou": 0.8613,
-    "flood_px": 48674,
-    "total_px": 65536,
-    "flood_pct": 74.27
-  },
-  "tile_0226": {
-    "file": "tile_0226_mask.png",
-    "bbox": [
-      1.9883518341078419,
-      14.007868483136479,
-      2.035564344807366,
-      14.054350008138773
-    ],
-    "split": "val",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_06656-04608",
-    "offset": [
-      0,
-      256
-    ],
-    "tile_iou": 0.2229,
-    "flood_px": 91,
-    "total_px": 65536,
-    "flood_pct": 0.14
-  },
-  "tile_0227": {
-    "file": "tile_0227_mask.png",
-    "bbox": [
-      1.8944220730237873,
-      13.822307565160706,
-      1.9415794566575943,
-      13.868804073092866
-    ],
-    "split": "val",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_05632-06656",
-    "offset": [
-      0,
-      0
-    ],
-    "tile_iou": 0.0031,
-    "flood_px": 2,
-    "total_px": 65536,
-    "flood_pct": 0.0
-  },
-  "tile_0228": {
-    "file": "tile_0228_mask.png",
-    "bbox": [
-      -0.8752621372901245,
-      38.12872455313505,
-      -0.815510040048104,
-      38.1737650002299
-    ],
-    "split": "val",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_08623-07267",
-    "offset": [
-      0,
-      0
-    ],
-    "tile_iou": 0.7693,
-    "flood_px": 7704,
-    "total_px": 65536,
-    "flood_pct": 11.76
-  },
-  "tile_0229": {
-    "file": "tile_0229_mask.png",
-    "bbox": [
-      -0.7373926734338829,
-      38.082715630023436,
-      -0.6775982849145494,
-      38.12768472592598
-    ],
-    "split": "val",
-    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_09844-07749",
-    "offset": [
-      0,
-      0
-    ],
-    "tile_iou": 0.061,
-    "flood_px": 126,
-    "total_px": 65536,
-    "flood_pct": 0.19
-  },
-  "tile_0230": {
-    "file": "tile_0230_mask.png",
-    "bbox": [
-      1.8944220730237873,
-      13.822307565160706,
-      1.9415794566575943,
-      13.868804073092866
-    ],
-    "split": "val",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_05632-06656",
-    "offset": [
-      0,
-      256
-    ],
-    "tile_iou": 0.9288,
-    "flood_px": 40806,
-    "total_px": 65536,
-    "flood_pct": 62.27
-  },
-  "tile_0231": {
-    "file": "tile_0231_mask.png",
-    "bbox": [
-      1.9887556141800935,
-      13.915292652867874,
-      2.0359506159165752,
-      13.961773208666724
-    ],
-    "split": "val",
-    "chip": "S1A_IW_GRDH_1SDV_20190909T180355_20190909T180420_028948_034852_CA54_06656-05632",
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_10235-07228",
     "offset": [
       256,
       256
     ],
-    "tile_iou": 0.4553,
-    "flood_px": 159,
-    "total_px": 65536,
-    "flood_pct": 0.24
+    "tile_iou": 0.8565,
+    "tile_f1": 0.9227,
+    "precision": 0.8571,
+    "recall": 0.9991,
+    "threshold": 0.6,
+    "flood_pct": 12.17
+  },
+  "tile_0116": {
+    "file": "tile_0116_mask.png",
+    "bbox": [
+      -0.6906869429456741,
+      38.059243026183346,
+      -0.6607948865820842,
+      38.08287373582019
+    ],
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_10260-08249",
+    "offset": [
+      0,
+      0
+    ],
+    "tile_iou": 0.4181,
+    "tile_f1": 0.5896,
+    "precision": 0.7859,
+    "recall": 0.4718,
+    "threshold": 0.6,
+    "flood_pct": 0.58
+  },
+  "tile_0117": {
+    "file": "tile_0117_mask.png",
+    "bbox": [
+      -0.6615293363060095,
+      38.058659042539006,
+      -0.6316289811135624,
+      38.082296501869706
+    ],
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_10260-08249",
+    "offset": [
+      0,
+      256
+    ],
+    "tile_iou": 0.9787,
+    "tile_f1": 0.9892,
+    "precision": 0.9799,
+    "recall": 0.9987,
+    "threshold": 0.6,
+    "flood_pct": 57.69
+  },
+  "tile_0118": {
+    "file": "tile_0118_mask.png",
+    "bbox": [
+      -0.6914114276692137,
+      38.03618944781354,
+      -0.6615293363060095,
+      38.05981978491491
+    ],
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_10260-08249",
+    "offset": [
+      256,
+      0
+    ],
+    "tile_iou": 0.9551,
+    "tile_f1": 0.977,
+    "precision": 0.9815,
+    "recall": 0.9725,
+    "threshold": 0.6,
+    "flood_pct": 30.82
+  },
+  "tile_0119": {
+    "file": "tile_0119_mask.png",
+    "bbox": [
+      -0.6622629482536636,
+      38.03560594503637,
+      -0.6323725674423051,
+      38.059243026183346
+    ],
+    "split": "test",
+    "event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "event": "Spain_Valencia_2019",
+    "source": "c2smsfloods",
+    "source_event_id": "e7e6e693-aec9-44b2-928d-80ba818b647e",
+    "chip": "S1A_IW_GRDH_1SDV_20190917T060212_20190917T060237_029057_034C21_586C_10260-08249",
+    "offset": [
+      256,
+      256
+    ],
+    "tile_iou": 0.9362,
+    "tile_f1": 0.967,
+    "precision": 0.9368,
+    "recall": 0.9993,
+    "threshold": 0.6,
+    "flood_pct": 67.23
   }
 }

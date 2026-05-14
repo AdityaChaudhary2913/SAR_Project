@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import MapView from "./MapView";
 import InferencePanel from "./InferencePanel";
+import ComparisonModal from "./ComparisonModal";
 import { getMetrics, runInference } from "./api";
 
 export default function App() {
@@ -9,6 +10,7 @@ export default function App() {
 	const [metrics, setMetrics] = useState(null);
 	const [loading, setLoading] = useState(false);
 	const [error, setError] = useState(null);
+	const [modalOpen, setModalOpen] = useState(false);
 
 	useEffect(() => {
 		getMetrics().then(setMetrics).catch(() => null);
@@ -22,6 +24,7 @@ export default function App() {
 		try {
 			const data = await runInference(selection.bbox);
 			setResult(data);
+			setModalOpen(true);
 		} catch (e) {
 			setError(e.message);
 		} finally {
@@ -40,6 +43,7 @@ export default function App() {
 				error={error}
 			/>
 			<MapView onBBoxSelect={setSelection} result={result} />
+			<ComparisonModal result={result} open={modalOpen} onClose={() => setModalOpen(false)} />
 		</>
 	);
 }

@@ -68,22 +68,30 @@ export default function InferencePanel({
 						<span style={styles.value}>{(result.overlap_score * 100).toFixed(0)}% overlap</span>
 					</div>
 					<div style={styles.resultRow}>
-						<span style={styles.label}>Tile IoU</span>
-						<span style={styles.value}>{formatMetric(result.tile_iou)}</span>
+						<span style={styles.label}>UNet IoU</span>
+						<span style={styles.value}>{formatMetric(result.unet_tile_iou)}</span>
 					</div>
 					<div style={styles.resultRow}>
-						<span style={styles.label}>Tile F1</span>
-						<span style={styles.value}>{formatMetric(result.tile_f1)}</span>
+						<span style={styles.label}>RF IoU</span>
+						<span style={styles.value}>{formatMetric(result.rf_tile_iou)}</span>
 					</div>
 					<div style={styles.resultRow}>
 						<span style={styles.label}>Threshold</span>
 						<span style={styles.value}>{result.threshold ? result.threshold.toFixed(2) : "—"}</span>
 					</div>
 					<div style={styles.resultRow}>
-						<span style={styles.label}>Predicted flood</span>
+						<span style={styles.label}>UNet flood</span>
 						<span style={styles.value}>
-							{result.flood_pct !== null && result.flood_pct !== undefined
-								? `${Number(result.flood_pct).toFixed(1)}%`
+							{result.unet_flood_pct !== null && result.unet_flood_pct !== undefined
+								? `${Number(result.unet_flood_pct).toFixed(1)}%`
+								: "—"}
+						</span>
+					</div>
+					<div style={styles.resultRow}>
+						<span style={styles.label}>RF flood</span>
+						<span style={styles.value}>
+							{result.rf_flood_pct !== null && result.rf_flood_pct !== undefined
+								? `${Number(result.rf_flood_pct).toFixed(1)}%`
 								: "—"}
 						</span>
 					</div>
@@ -107,6 +115,7 @@ export default function InferencePanel({
 							/>
 							Holdout test tile
 						</div>
+						<div style={styles.legendItem}>Modal opens with raw tile, UNet, and RF overlays.</div>
 					</div>
 				</div>
 			)}

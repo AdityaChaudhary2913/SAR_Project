@@ -9,8 +9,8 @@ import {
 } from "react-leaflet";
 import { API_BASE_URL, getTilesCoverage } from "./api";
 
-const REGION_CENTER = [13.845, 0.95];
-const REGION_ZOOM = 6;
+const REGION_CENTER = [38.1497, -0.7657];
+const REGION_ZOOM = 11;
 
 const SPLIT_STYLES = {
 	train: { color: "#38bdf8", fillColor: "#38bdf8" },
@@ -193,7 +193,7 @@ export default function MapView({ onBBoxSelect, result }) {
 
 				{result && (
 					<ImageOverlay
-						url={`${API_BASE_URL}${result.mask_url}`}
+						url={`${API_BASE_URL}${result.unet_overlay_url}`}
 						bounds={[
 							[result.bbox[1], result.bbox[0]],
 							[result.bbox[3], result.bbox[2]],

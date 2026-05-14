@@ -1,0 +1,14 @@
+{
+  "best_epoch": 48,
+  "best_val_iou_05": 0.23180181879018033,
+  "in_channels": 2,
+  "derived_channels": [],
+  "split_scope": "chip",
+  "train_event_ids": [
+    "e92c811f-ba53-4df2-aad0-afea8b733621",
+    "sen1floods11_USA"
+  ],
+  "holdout_event_ids": [
+    "e7e6e693-aec9-44b2-928d-80ba818b647e"
+  ]
+}
