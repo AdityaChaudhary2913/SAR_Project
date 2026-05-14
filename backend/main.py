@@ -80,6 +80,8 @@ def predict(req: AOIRequest):
         "bbox": meta["bbox"],
         "event": meta.get("event", meta.get("chip", best_tile)),
         "event_id": meta.get("event_id"),
+        "source": meta.get("source"),
+        "source_event_id": meta.get("source_event_id"),
         "split": meta.get("split", "unknown"),
         "tile_iou": meta.get("tile_iou"),
         "tile_f1": meta.get("tile_f1"),
@@ -100,6 +102,8 @@ def tiles_list():
             "bbox": meta["bbox"],
             "event": meta.get("event", meta.get("chip", tile_id)),
             "event_id": meta.get("event_id"),
+            "source": meta.get("source"),
+            "source_event_id": meta.get("source_event_id"),
             "split": meta.get("split", "unknown"),
         }
         for tile_id, meta in registry.items()

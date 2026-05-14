@@ -8,12 +8,12 @@ from rasterio.windows import Window, bounds as window_bounds
 from rasterio.warp import transform_bounds
 
 
-def _tile_bbox(raw_base, event_id, chip_id, row, col, tile_size):
-    vv_path = Path(raw_base) / "chips" / event_id / "s1" / chip_id / "VV.tif"
-    if not vv_path.exists():
+def _tile_bbox(geo_image_path, row, col, tile_size):
+    image_path = Path(geo_image_path)
+    if not image_path.exists():
         return None
 
-    with rasterio.open(vv_path) as src:
+    with rasterio.open(image_path) as src:
         window = Window(col_off=col, row_off=row, width=tile_size, height=tile_size)
         left, bottom, right, top = window_bounds(window, src.transform)
         if src.crs and src.crs.to_string() != "EPSG:4326":
@@ -37,7 +37,6 @@ def _save_overlay_png(mask, output_path):
 def export_demo_assets(
     split_records,
     threshold,
-    raw_base,
     registry_path,
     tiles_dir,
     event_names=None,
@@ -66,7 +65,7 @@ def export_demo_assets(
             output_path = tiles_dir / output_name
             _save_overlay_png(binary_mask, output_path)
 
-            bbox = _tile_bbox(raw_base, event_id, chip_id, row, col, tile_size)
+            bbox = _tile_bbox(record.get("geo_image_path"), row, col, tile_size)
             if bbox is None:
                 continue
 
@@ -77,6 +76,8 @@ def export_demo_assets(
                 "split": split_name,
                 "event_id": event_id,
                 "event": event_names.get(event_id, event_id),
+                "source": record.get("source", "unknown"),
+                "source_event_id": record.get("source_event_id", event_id),
                 "chip": chip_id,
                 "offset": [row, col],
                 "tile_iou": round(float(record["iou"]), 4),

@@ -54,10 +54,13 @@ def _scan_processed_dir(processed_dir):
             chip_records.append(
                 {
                     "event_id": event_dir.name,
+                    "source": "unknown",
+                    "source_event_id": event_dir.name,
                     "chip_id": chip_id,
                     "image_path": str(img_path),
                     "mask_path": str(mask_path),
                     "valid_mask_path": str(valid_mask_path) if valid_mask_path.exists() else None,
+                    "geo_image_path": None,
                     "height": int(img.shape[1]),
                     "width": int(img.shape[2]),
                     "channels": int(img.shape[0]),
@@ -81,7 +84,7 @@ def _resolve_chip_records(processed_dir):
     chip_records = []
     for chip in manifest.get("chips", []):
         record = dict(chip)
-        for key in ("image_path", "mask_path", "valid_mask_path"):
+        for key in ("image_path", "mask_path", "valid_mask_path", "geo_image_path"):
             if record.get(key):
                 path = Path(record[key])
                 if not path.is_absolute():
@@ -220,7 +223,10 @@ class SARTileDataset(Dataset):
             "mask": torch.from_numpy(mask).unsqueeze(0),
             "valid_mask": torch.from_numpy(valid_mask).unsqueeze(0),
             "event_id": sample["event_id"],
+            "source": sample.get("source", "unknown"),
+            "source_event_id": sample.get("source_event_id", sample["event_id"]),
             "chip_id": sample["chip_id"],
+            "geo_image_path": sample.get("geo_image_path"),
             "row": row,
             "col": col,
             "tile_id": sample["tile_id"],

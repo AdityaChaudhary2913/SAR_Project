@@ -9,8 +9,8 @@ A small end-to-end SAR flood segmentation project: data preprocessing, a Random 
 
 - Task: flood / water segmentation on Sentinel-1 SAR chips
 - Models: Random Forest baseline + UNet
-- Data source: C2SMSFloods v1 (Cloud to Street + Microsoft)
-- Data split: chip-level train/validation split plus a dedicated holdout event for final testing
+- Data source: C2SMSFloods v1 for training plus a Sen1Floods11 holdout event for final testing
+- Data split: chip-level train/validation split on training events plus a dedicated Sen1Floods11 holdout event
 - Features: normalized VV, VH, VV-VH, and VV/VH
 - Labels: nodata is preserved through a valid-mask and ignored in loss / metrics
 - Web app: AOI selection on a map, match the best exported tile, overlay the prediction mask
@@ -70,9 +70,9 @@ Training is intended to be run in Kaggle using the provided notebook.
 
 The notebook will:
 
-- Install dependencies (awscli, rasterio, segmentation-models-pytorch)
+- Install dependencies (`awscli`, `gsutil`, `rasterio`, `segmentation-models-pytorch`)
 - Clone this repo into /kaggle/working
-- Download the configured train events plus one holdout event
+- Download the configured C2SMS train events plus one Sen1Floods11 holdout event
 - Preprocess the raw chips into data/processed
 - Train the RF baseline and the UNet
 - Tune the decision threshold on validation data
@@ -97,6 +97,7 @@ If Internet is disabled, upload the raw data into Kaggle and update the download
 
 - The backend does not run the model live; it matches the AOI against a registry of exported prediction tiles and serves the corresponding PNG overlay.
 - Coverage rectangles are colored by split so the holdout event is visible in the demo.
+- The default holdout event is `sen1floods11_USA` (`USA_Midwest_2019`), while the train/validation events remain the two configured C2SMS scenes.
 
 ## References and Notes
 

@@ -5,11 +5,16 @@ data:
     - e7e6e693-aec9-44b2-928d-80ba818b647e
     - e92c811f-ba53-4df2-aad0-afea8b733621
   holdout_event_ids:
-    - 95eff095-c3e9-4c12-bfde-1708b7e19bae
+    - sen1floods11_USA
   event_names:
     e7e6e693-aec9-44b2-928d-80ba818b647e: Spain_Valencia_2019
     e92c811f-ba53-4df2-aad0-afea8b733621: WestAfrica_Niger_2019
-    95eff095-c3e9-4c12-bfde-1708b7e19bae: Holdout_Event_95eff095
+    sen1floods11_USA: USA_Midwest_2019
+  sen1floods11:
+    s1_dir: data/raw/sen1floods11/v1.1/data/flood_events/HandLabeled/S1Hand
+    label_dir: data/raw/sen1floods11/v1.1/data/flood_events/HandLabeled/LabelHand
+    holdout_events:
+      - USA
   split_scope: chip
   val_split: 0.2
   tile_size: 256

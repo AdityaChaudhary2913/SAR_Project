@@ -64,7 +64,10 @@ def collect_records(model, loader, device):
                     "valid_mask": valid_np[idx, 0],
                     "probability": probs[idx, 0],
                     "event_id": batch["event_id"][idx],
+                    "source": batch["source"][idx],
+                    "source_event_id": batch["source_event_id"][idx],
                     "chip_id": batch["chip_id"][idx],
+                    "geo_image_path": batch["geo_image_path"][idx],
                     "row": int(batch["row"][idx]),
                     "col": int(batch["col"][idx]),
                     "tile_id": batch["tile_id"][idx],
@@ -367,7 +370,6 @@ def main():
         export_demo_assets(
             split_records={"test": demo_records},
             threshold=val_summary["threshold"],
-            raw_base=cfg["data"]["raw_dir"],
             registry_path=demo_cfg["registry_path"],
             tiles_dir=demo_cfg["tiles_dir"],
             event_names=cfg["data"].get("event_names", {}),
