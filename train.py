@@ -63,9 +63,15 @@ def train_one_epoch(model, loader, optimizer, device, loss_cfg):
         valid_masks = batch["valid_mask"].to(device)
         if valid_masks.sum().item() == 0:
             continue
+        if not torch.isfinite(images).all():
+            print("⚠️  Skipping batch with non-finite input pixels.")
+            continue
 
         optimizer.zero_grad()
         logits = model(images)
+        if not torch.isfinite(logits).all():
+            print("⚠️  Skipping batch with non-finite logits.")
+            continue
         loss = combined_loss(
             logits,
             masks,
@@ -73,6 +79,9 @@ def train_one_epoch(model, loader, optimizer, device, loss_cfg):
             bce_weight=loss_cfg["bce_weight"],
             dice_weight=loss_cfg["dice_weight"],
         )
+        if not torch.isfinite(loss):
+            print("⚠️  Skipping batch with non-finite loss.")
+            continue
         loss.backward()
         optimizer.step()
 
@@ -98,15 +107,25 @@ def validate(model, loader, device, loss_cfg):
         valid_masks = batch["valid_mask"].to(device)
         if valid_masks.sum().item() == 0:
             continue
+        if not torch.isfinite(images).all():
+            print("⚠️  Skipping validation batch with non-finite input pixels.")
+            continue
 
         logits = model(images)
-        total_loss += combined_loss(
+        if not torch.isfinite(logits).all():
+            print("⚠️  Skipping validation batch with non-finite logits.")
+            continue
+        loss = combined_loss(
             logits,
             masks,
             valid_masks,
             bce_weight=loss_cfg["bce_weight"],
             dice_weight=loss_cfg["dice_weight"],
-        ).item()
+        )
+        if not torch.isfinite(loss):
+            print("⚠️  Skipping validation batch with non-finite loss.")
+            continue
+        total_loss += loss.item()
         total_iou += iou_score(logits, masks, valid_masks)
         steps += 1
 

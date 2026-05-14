@@ -21,6 +21,21 @@ def normalize_sar(chip, norm_min, norm_max):
     return (chip - norm_min) / (norm_max - norm_min)
 
 
+def sanitize_image_channels(image_channels, valid_mask):
+    finite_mask = np.ones_like(valid_mask, dtype=bool)
+    for channel in image_channels:
+        finite_mask &= np.isfinite(channel)
+
+    combined_valid = ((valid_mask == 1) & finite_mask).astype(np.uint8)
+    sanitized = []
+    for channel in image_channels:
+        cleaned = np.nan_to_num(channel, nan=0.0, posinf=1.0, neginf=0.0).astype(np.float32)
+        cleaned = np.where(combined_valid == 1, cleaned, 0.0)
+        sanitized.append(cleaned)
+
+    return sanitized, combined_valid
+
+
 def build_derived_channels(vv_norm, vh_norm, derived_channels, ratio_eps):
     channels = []
     channel_names = []
@@ -123,15 +138,6 @@ def process_c2sms_event(event_dir, out_dir, cfg):
             stats["skipped_all_nodata"] += 1
             continue
 
-        clean_mask = np.where(valid_mask == 1, mask, 0).astype(np.uint8)
-        flood_pixels = int(((clean_mask == 1) & (valid_mask == 1)).sum())
-        flood_ratio = flood_pixels / valid_pixels
-        valid_ratio = valid_pixels / clean_mask.size
-
-        if flood_ratio < min_flood_ratio:
-            stats["skipped_low_flood"] += 1
-            continue
-
         vv_norm = normalize_sar(vv, norm_min, norm_max)
         vh_norm = normalize_sar(vh, norm_min, norm_max)
 
@@ -143,6 +149,21 @@ def process_c2sms_event(event_dir, out_dir, cfg):
             ratio_eps=ratio_eps,
         )
         image_channels.extend(extra_channels)
+        image_channels, valid_mask = sanitize_image_channels(image_channels, valid_mask)
+        valid_pixels = int(valid_mask.sum())
+        if valid_pixels == 0:
+            stats["skipped_all_nodata"] += 1
+            continue
+
+        clean_mask = np.where(valid_mask == 1, mask, 0).astype(np.uint8)
+        flood_pixels = int(((clean_mask == 1) & (valid_mask == 1)).sum())
+        flood_ratio = flood_pixels / valid_pixels
+        valid_ratio = valid_pixels / clean_mask.size
+
+        if flood_ratio < min_flood_ratio:
+            stats["skipped_low_flood"] += 1
+            continue
+
         image = np.stack(image_channels, axis=0).astype(np.float32)
 
         chip_id = chip_dir.name
@@ -231,15 +252,6 @@ def process_sen1floods11_event(source_event_id, out_dir, cfg):
             stats["skipped_all_nodata"] += 1
             continue
 
-        clean_mask = np.where(valid_mask == 1, mask, 0).astype(np.uint8)
-        flood_pixels = int(((clean_mask == 1) & (valid_mask == 1)).sum())
-        flood_ratio = flood_pixels / valid_pixels
-        valid_ratio = valid_pixels / clean_mask.size
-
-        if flood_ratio < min_flood_ratio:
-            stats["skipped_low_flood"] += 1
-            continue
-
         vv_norm = normalize_sar(vv, norm_min, norm_max)
         vh_norm = normalize_sar(vh, norm_min, norm_max)
 
@@ -251,6 +263,21 @@ def process_sen1floods11_event(source_event_id, out_dir, cfg):
             ratio_eps=ratio_eps,
         )
         image_channels.extend(extra_channels)
+        image_channels, valid_mask = sanitize_image_channels(image_channels, valid_mask)
+        valid_pixels = int(valid_mask.sum())
+        if valid_pixels == 0:
+            stats["skipped_all_nodata"] += 1
+            continue
+
+        clean_mask = np.where(valid_mask == 1, mask, 0).astype(np.uint8)
+        flood_pixels = int(((clean_mask == 1) & (valid_mask == 1)).sum())
+        flood_ratio = flood_pixels / valid_pixels
+        valid_ratio = valid_pixels / clean_mask.size
+
+        if flood_ratio < min_flood_ratio:
+            stats["skipped_low_flood"] += 1
+            continue
+
         image = np.stack(image_channels, axis=0).astype(np.float32)
 
         image_path = img_out / f"{chip_id}.npy"

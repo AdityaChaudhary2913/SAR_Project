@@ -215,6 +215,18 @@ class SARTileDataset(Dataset):
         else:
             valid_mask = np.ones_like(mask, dtype=np.float32)
 
+        image = np.nan_to_num(image, nan=0.0, posinf=1.0, neginf=0.0)
+        mask = np.nan_to_num(mask, nan=0.0, posinf=0.0, neginf=0.0)
+        valid_mask = np.nan_to_num(valid_mask, nan=0.0, posinf=0.0, neginf=0.0)
+
+        finite_pixels = np.all(np.isfinite(image), axis=0)
+        valid_mask = np.where(finite_pixels, valid_mask, 0.0)
+
+        image = np.where(valid_mask[None, ...] > 0.5, image, 0.0).astype(np.float32)
+        mask = np.where(valid_mask > 0.5, mask, 0.0).astype(np.float32)
+        mask = np.clip(mask, 0.0, 1.0)
+        valid_mask = (valid_mask > 0.5).astype(np.float32)
+
         if self.augment:
             image, mask, valid_mask = self._augment(image, mask, valid_mask)
 
