@@ -237,8 +237,9 @@ def plot_training_curve(history_path, metrics_path, save_dir):
     best_val_iou = max(history["val_iou"]) if history["val_iou"] else 0.0
     ax2.axhline(best_val_iou, color="#3a7ebf", linestyle=":", linewidth=1.2, label=f"Best Val IoU@0.50 ({best_val_iou:.4f})")
 
-    if metrics and metrics.get("rf_baseline", {}).get("val"):
-        rf_iou = metrics["rf_baseline"]["val"]["iou"]
+    rf_val = metrics.get("rf_baseline", {}).get("val") if metrics else None
+    if rf_val and not rf_val.get("skipped") and "iou" in rf_val:
+        rf_iou = rf_val["iou"]
         ax2.axhline(rf_iou, color="gray", linestyle="--", linewidth=1.2, label=f"RF Baseline ({rf_iou:.4f})")
 
     ax2.set_xlabel("Epoch")

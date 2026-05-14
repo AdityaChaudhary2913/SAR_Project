@@ -21,9 +21,7 @@ data:
   norm_min: -25.0
   norm_max: 0.0
   min_flood_ratio: 0.0
-  derived_channels:
-    - vv_minus_vh
-    - vv_div_vh
+  derived_channels: []
   ratio_eps: 0.001
 
 train:

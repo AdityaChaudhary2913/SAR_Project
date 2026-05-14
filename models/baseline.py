@@ -58,6 +58,19 @@ def evaluate_rf(clf, loader, split_name="val"):
     if X_eval.size == 0:
         return None
 
+    expected_features = getattr(clf, "n_features_in_", None)
+    if expected_features is not None and X_eval.shape[1] != expected_features:
+        print(
+            f"⚠️  Skipping RF evaluation on {split_name}: "
+            f"model expects {expected_features} feature(s), but loader provides {X_eval.shape[1]}."
+        )
+        return {
+            "skipped": True,
+            "reason": f"feature_mismatch:{expected_features}!={X_eval.shape[1]}",
+            "expected_features": int(expected_features),
+            "provided_features": int(X_eval.shape[1]),
+        }
+
     y_pred = clf.predict(X_eval)
     intersection = ((y_pred == 1) & (y_eval == 1)).sum()
     union = ((y_pred == 1) | (y_eval == 1)).sum()
