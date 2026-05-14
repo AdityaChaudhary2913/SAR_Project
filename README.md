@@ -97,7 +97,7 @@ If Internet is disabled, upload the raw data into Kaggle and update the download
 
 - The backend does not run the model live; it matches the AOI against a registry of exported prediction tiles and serves the corresponding PNG overlay.
 - Coverage rectangles are colored by split so the holdout event is visible in the demo.
-- The default holdout event is `sen1floods11_USA` (`USA_Midwest_2019`), while the train/validation events remain the two configured C2SMS scenes.
+- The default split trains on `WestAfrica_Niger_2019` plus `USA_Midwest_2019`, and uses `Spain_Valencia_2019` as the final holdout event.
 
 ## References and Notes
 

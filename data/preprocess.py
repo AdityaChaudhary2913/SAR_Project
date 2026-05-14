@@ -295,15 +295,22 @@ def main():
     out_base.mkdir(parents=True, exist_ok=True)
 
     c2sms_raw_base = Path(data_cfg["raw_dir"]) / "chips"
-    train_event_ids = set(data_cfg.get("train_event_ids", []))
+    selected_event_ids = set(data_cfg.get("train_event_ids", [])) | set(
+        data_cfg.get("holdout_event_ids", [])
+    )
     c2sms_event_dirs = sorted(c2sms_raw_base.glob("*/s1"))
-    if train_event_ids:
-        c2sms_event_dirs = [event_dir for event_dir in c2sms_event_dirs if event_dir.parent.name in train_event_ids]
+    if selected_event_ids:
+        c2sms_event_dirs = [
+            event_dir for event_dir in c2sms_event_dirs if event_dir.parent.name in selected_event_ids
+        ]
 
     sen1_cfg = data_cfg.get("sen1floods11", {})
-    sen1_holdout_events = list(sen1_cfg.get("holdout_events", []))
+    sen1_selected_events = list(sen1_cfg.get("train_events", [])) + list(
+        sen1_cfg.get("holdout_events", [])
+    )
+    sen1_selected_events = sorted(set(sen1_selected_events))
 
-    total_event_count = len(c2sms_event_dirs) + len(sen1_holdout_events)
+    total_event_count = len(c2sms_event_dirs) + len(sen1_selected_events)
     if total_event_count == 0:
         print("❌ No configured train or holdout events found to process.")
         return
@@ -333,7 +340,7 @@ def main():
         for key in total_stats:
             total_stats[key] += stats[key]
 
-    for source_event_id in sen1_holdout_events:
+    for source_event_id in sen1_selected_events:
         event_id = f"sen1floods11_{source_event_id}"
         out_dir = out_base / event_id
         stats, manifest_entries = process_sen1floods11_event(source_event_id, out_dir, cfg)
