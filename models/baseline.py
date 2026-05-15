@@ -75,38 +75,35 @@ def train_rf(train_loader, n_estimators=100, max_samples=500000):
 
 def evaluate_rf(clf, loader, split_name="val"):
     print(f"📊 Evaluating RF on {split_name} split...")
+
+    # --- Feature mismatch check (unchanged) ---
     X_eval, y_eval = extract_features(loader)
     if X_eval.size == 0:
         return None
 
     expected_features = getattr(clf, "n_features_in_", None)
     if expected_features is not None and X_eval.shape[1] != expected_features:
-        print(
-            f"⚠️  Skipping RF evaluation on {split_name}: "
-            f"model expects {expected_features} feature(s), but loader provides {X_eval.shape[1]}."
-        )
-        return {
-            "skipped": True,
-            "reason": f"feature_mismatch:{expected_features}!={X_eval.shape[1]}",
-            "expected_features": int(expected_features),
-            "provided_features": int(X_eval.shape[1]),
-        }
+        print(f"⚠️  Skipping RF evaluation on {split_name}: ...")
+        return {"skipped": True}
 
-    tiles = extract_features_per_tile(loader)
+    # --- Global prediction (for F1, precision, recall) ---
+    y_pred_global = clf.predict(X_eval)   # shape: (N_total_pixels,)
 
+    # --- Per-tile IoU ---
+    tiles = extract_features_per_tile(loader)   # list of (X_tile, y_tile)
     tile_ious = []
     for X_tile, y_tile in tiles:
-        y_pred = clf.predict(X_tile)
-        intersection = ((y_pred == 1) & (y_tile == 1)).sum()
-        union        = ((y_pred == 1) | (y_tile == 1)).sum()
-        iou          = float(intersection / (union + 1e-6))
-        tile_ious.append(iou)
+        y_pred_tile = clf.predict(X_tile)
+        intersection = ((y_pred_tile == 1) & (y_tile == 1)).sum()
+        union        = ((y_pred_tile == 1) | (y_tile == 1)).sum()
+        tile_ious.append(float(intersection / (union + 1e-6)))
 
-    iou = float(np.mean(tile_ious))
-        
-    f1 = float(f1_score(y_eval, y_pred, zero_division=0))
-    precision = float(precision_score(y_eval, y_pred, zero_division=0))
-    recall = float(recall_score(y_eval, y_pred, zero_division=0))
+    iou = float(np.mean(tile_ious)) if tile_ious else 0.0
+
+    # --- Global metrics (use y_pred_global, not y_pred from loop) ---
+    f1        = float(f1_score(y_eval, y_pred_global, zero_division=0))
+    precision = float(precision_score(y_eval, y_pred_global, zero_division=0))
+    recall    = float(recall_score(y_eval, y_pred_global, zero_division=0))
 
     print(f"\n{'=' * 35}")
     print(f"  Baseline RF Results ({split_name})")
