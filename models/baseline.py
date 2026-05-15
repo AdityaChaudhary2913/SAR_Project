@@ -26,6 +26,27 @@ def extract_features(loader):
         return np.empty((0, 0), dtype=np.float32), np.empty((0,), dtype=np.float32)
     return np.vstack(X), np.concatenate(y)
 
+def extract_features_per_tile(loader):
+    """Returns list of (X_tile, y_tile) tuples, one per valid sample."""
+    tiles = []
+    for batch in loader:
+        images = batch["image"].numpy()
+        masks = batch["mask"].numpy()
+        valid_masks = batch["valid_mask"].numpy()
+
+        batch_size, channels, _, _ = images.shape
+        for idx in range(batch_size):
+            image = images[idx].reshape(channels, -1).T  # (N_pixels, channels)
+            mask = masks[idx, 0].reshape(-1)  # (N_pixels,)
+            valid = valid_masks[idx, 0].reshape(-1) > 0.5  # (N_pixels,) bool
+
+            if not np.any(valid):
+                continue
+
+            tiles.append((image[valid], mask[valid]))  # one entry per tile
+
+    return tiles  # List of (X_tile, y_tile)
+
 
 def train_rf(train_loader, n_estimators=100, max_samples=500000):
     print("📦 Extracting pixel features from train set...")
@@ -71,10 +92,18 @@ def evaluate_rf(clf, loader, split_name="val"):
             "provided_features": int(X_eval.shape[1]),
         }
 
-    y_pred = clf.predict(X_eval)
-    intersection = ((y_pred == 1) & (y_eval == 1)).sum()
-    union = ((y_pred == 1) | (y_eval == 1)).sum()
-    iou = float(intersection / (union + 1e-6))
+    tiles = extract_features_per_tile(loader)
+
+    tile_ious = []
+    for X_tile, y_tile in tiles:
+        y_pred = clf.predict(X_tile)
+        intersection = ((y_pred == 1) & (y_tile == 1)).sum()
+        union        = ((y_pred == 1) | (y_tile == 1)).sum()
+        iou          = float(intersection / (union + 1e-6))
+        tile_ious.append(iou)
+
+    iou = float(np.mean(tile_ious))
+        
     f1 = float(f1_score(y_eval, y_pred, zero_division=0))
     precision = float(precision_score(y_eval, y_pred, zero_division=0))
     recall = float(recall_score(y_eval, y_pred, zero_division=0))
@@ -82,7 +111,7 @@ def evaluate_rf(clf, loader, split_name="val"):
     print(f"\n{'=' * 35}")
     print(f"  Baseline RF Results ({split_name})")
     print(f"{'=' * 35}")
-    print(f"  IoU       : {iou:.4f}")
+    print(f"Mean IoU    : {iou:.4f}")
     print(f"  F1        : {f1:.4f}")
     print(f"  Precision : {precision:.4f}")
     print(f"  Recall    : {recall:.4f}")
